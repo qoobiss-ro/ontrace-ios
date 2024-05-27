@@ -1,0 +1,20 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/vladbuhaescu/Library/Developer/Xcode/DerivedData/QoobissCoreIdentificationSDK-fhrronhfmxotnsfergfrggvnwoaq/Build/Intermediates.noindex/ArchiveIntermediates/QoobissCoreIdentificationSDK/InstallationBuildProductsLocation/Library/Frameworks/QoobissCoreIdentificationSDK.framework/QoobissCoreIdentificationSDK'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x55E1D, size: 0x8, addend: 0x0, symName: _QoobissCoreIdentificationSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x3A90, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x55E52, size: 0x8, addend: 0x0, symName: _QoobissCoreIdentificationSDKVersionNumber, symObjAddr: 0x58, symBinAddr: 0x3AE8, symSize: 0x0 }
+  - { offsetInCU: 0x77, offset: 0x55EDF, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerCACycfcTo', symObjAddr: 0x70, symBinAddr: 0x1760, symSize: 0x40 }
+  - { offsetInCU: 0xEA, offset: 0x55F52, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x140, symBinAddr: 0x1830, symSize: 0x50 }
+  - { offsetInCU: 0x132, offset: 0x55F9A, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC11viewDidLoadyyFTo', symObjAddr: 0x1B0, symBinAddr: 0x1880, symSize: 0x30 }
+  - { offsetInCU: 0x1C3, offset: 0x5602B, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfcTo', symObjAddr: 0x350, symBinAddr: 0x1A20, symSize: 0x30 }
+  - { offsetInCU: 0x221, offset: 0x56089, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerCMa', symObjAddr: 0x50, symBinAddr: 0x1740, symSize: 0x20 }
+  - { offsetInCU: 0x265, offset: 0x560CD, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x270, symBinAddr: 0x1940, symSize: 0x40 }
+  - { offsetInCU: 0x36C, offset: 0x561D4, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerCACycfC', symObjAddr: 0x0, symBinAddr: 0x16F0, symSize: 0x20 }
+  - { offsetInCU: 0x380, offset: 0x561E8, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerCACycfc', symObjAddr: 0x20, symBinAddr: 0x1710, symSize: 0x30 }
+  - { offsetInCU: 0x3F7, offset: 0x5625F, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC5coderACSgSo7NSCoderC_tcfC', symObjAddr: 0xB0, symBinAddr: 0x17A0, symSize: 0x40 }
+  - { offsetInCU: 0x40B, offset: 0x56273, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC5coderACSgSo7NSCoderC_tcfc', symObjAddr: 0xF0, symBinAddr: 0x17E0, symSize: 0x50 }
+  - { offsetInCU: 0x47E, offset: 0x562E6, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC3aaayyF', symObjAddr: 0x1E0, symBinAddr: 0x18B0, symSize: 0x90 }
+  - { offsetInCU: 0x4F3, offset: 0x5635B, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfC', symObjAddr: 0x2B0, symBinAddr: 0x1980, symSize: 0x70 }
+  - { offsetInCU: 0x507, offset: 0x5636F, size: 0x8, addend: 0x0, symName: '_$s28QoobissCoreIdentificationSDK18TestViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc', symObjAddr: 0x320, symBinAddr: 0x19F0, symSize: 0x30 }
+...

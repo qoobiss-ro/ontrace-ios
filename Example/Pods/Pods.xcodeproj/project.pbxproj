@@ -10,6 +10,9 @@
 		075EC249A2783C07BECCE068A9534360 /* Pods-QoobissSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90688DF86F99A4548E0537CF1FB65922 /* Pods-QoobissSDK_Example-dummy.m */; };
 		35173BAB928B6C614B3F9F0879270F68 /* Pods-QoobissSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1365B26F2C4B04B838CF84AA535F49D /* Pods-QoobissSDK_Tests-dummy.m */; };
 		424704719F9AE4B323A75C506EB30EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		48207F592C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
+		48207F5A2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
+		48207F5B2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
 		5445CDD7F39C41FE628FB39B3D8514F8 /* QoobissSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE3CBF14605986F86890A6B7B1730E0 /* QoobissSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77591A17735811D9135E78745EE28225 /* Pods-QoobissSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD89A3A28FCCF3978994110F90F56D26 /* Pods-QoobissSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E74D8E4CEBAEEBF2C27E66BA3E098B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -44,6 +47,7 @@
 		2F606FE8429E4BEE263A1B1679D7C4FB /* Pods-QoobissSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QoobissSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		39CE40DD0BB67232E309B0941258CA84 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = QoobissSDK/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3AEF2887E285053E00CA51DEF379FD03 /* Pods-QoobissSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QoobissSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QoobissCoreIdentificationSDK.xcframework; sourceTree = "<group>"; };
 		4ECCA30072D956888698F9C1C207589B /* Pods-QoobissSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		58626259290D9BA9A1D3295D8F9E687E /* Pods-QoobissSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		66429F7019259C5F0FC2E9222ACC75F5 /* Pods-QoobissSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F592C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */,
 				BEF49580B8B7386978F28AE8E4AFA782 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F5A2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */,
 				424704719F9AE4B323A75C506EB30EC4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F5B2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */,
 				8E74D8E4CEBAEEBF2C27E66BA3E098B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +118,7 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */,
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
