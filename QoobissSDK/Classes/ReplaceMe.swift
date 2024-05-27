@@ -1,4 +1,5 @@
 import UIKit
+import QoobissCoreIdentificationSDK
 
 public class ReplaceMe {
     
@@ -7,9 +8,7 @@ public class ReplaceMe {
     }
     
     func aaaa() {
-        let a = UIView()
-//        let aa = FirstClassA()
-//        let aaa = FirstClassB()
-//        IdentitySDKVersionNumber
+        let b = TestViewController()
+        b.aaa()
     }
 }
