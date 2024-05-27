@@ -1,0 +1,22 @@
+{
+  "name": "QoobissSDK",
+  "version": "0.1.0",
+  "summary": "A short description of QoobissSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/144892271/QoobissSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "144892271": "vlad.buhaescu@qoobiss.com"
+  },
+  "source": {
+    "git": "https://github.com/144892271/QoobissSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "QoobissSDK/Classes/**/*"
+}

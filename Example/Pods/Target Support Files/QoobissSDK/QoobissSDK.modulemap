@@ -1,0 +1,6 @@
+framework module QoobissSDK {
+  umbrella header "QoobissSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
