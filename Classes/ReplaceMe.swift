@@ -7,7 +7,7 @@ public class ReplaceMe {
         
     }
     
-    func aaaa() {
+    public func aaaa() {
         let b = TestViewController()
         b.aaa()
     }
