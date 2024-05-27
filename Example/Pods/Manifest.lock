@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - QoobissSDK (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - QoobissSDK (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   QoobissSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   QoobissSDK: ac7997d8485f847832b5e11564e50d90f59b3beb
 
-PODFILE CHECKSUM: 285f8c9538b0cc17e054c89e29ee1c84e963e0d5
+PODFILE CHECKSUM: f73dbbfe03067bea6b27667f14ad93ee4083277c
 
 COCOAPODS: 1.15.2

@@ -1,6 +1,0 @@
-framework module QoobissCoreIdentificationSDK {
-  umbrella header "QoobissCoreIdentificationSDK.h"
-  export *
-
-  module * { export * }
-}
