@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint QoobissSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint ApplesSDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,35 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QoobissSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of QoobissSDK.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/144892271/QoobissSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.version          = '0.0.1'
+  s.summary          = 'QoobissSDK is a framework that helps you KYC customers'
+  s.description      = 'QoobissSDK is a framework that helps you KYC customers using hid level APIs'
+  s.swift_versions          = '5.10'
+  s.ios.deployment_target   = '13.0'
+  s.homepage         = 'https://github.com/vlad-buhaescu-qoob/apples'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '144892271' => 'vlad.buhaescu@qoobiss.com' }
-  s.source           = { :git => 'https://github.com/144892271/QoobissSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'QoobissSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'QoobissSDK' => ['QoobissSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source           = { :git => 'https://github.com/vlad-buhaescu-qoob/apples.git', :tag => s.version.to_s }
+  s.source_files = '**/Classes/**'
+  s.exclude_files = 'Qoobiss_iOS_SDK/**/*.DS_Store', 'Qoobiss_iOS_SDK/**/.git', 'Qoobiss_iOS_SDK/**/hidden/*.swift'
+  s.vendored_frameworks = '**/QoobissCoreIdentificationSDK.xcframework'
 end

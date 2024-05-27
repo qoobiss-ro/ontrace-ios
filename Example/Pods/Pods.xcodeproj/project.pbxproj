@@ -13,13 +13,15 @@
 		48207F592C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
 		48207F5A2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
 		48207F5B2C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */; };
+		48207F5F2C04C2F7006719F0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48207F5D2C04C2F7006719F0 /* ReplaceMe.swift */; };
+		48207F602C04C2F7006719F0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48207F5D2C04C2F7006719F0 /* ReplaceMe.swift */; };
+		48207F612C04C2F7006719F0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48207F5D2C04C2F7006719F0 /* ReplaceMe.swift */; };
 		5445CDD7F39C41FE628FB39B3D8514F8 /* QoobissSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE3CBF14605986F86890A6B7B1730E0 /* QoobissSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77591A17735811D9135E78745EE28225 /* Pods-QoobissSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD89A3A28FCCF3978994110F90F56D26 /* Pods-QoobissSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E74D8E4CEBAEEBF2C27E66BA3E098B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9AC70CE3AADC04BAC013A56835F45B90 /* Pods-QoobissSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB78210F5313740A40314150ED0F2AB2 /* Pods-QoobissSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEF49580B8B7386978F28AE8E4AFA782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CFB58BD7E559BDFE18D24957A0B2C12C /* QoobissSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E716904FF53990D5A288623B6D7E2D0F /* QoobissSDK-dummy.m */; };
-		ED837BD25865938FEFD4B18B3C01A915 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CE40DD0BB67232E309B0941258CA84 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14A429BF32C86757CC746C27A0E0CF4E /* QoobissSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QoobissSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		14A429BF32C86757CC746C27A0E0CF4E /* QoobissSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QoobissSDK.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		17D945D001D33A01168AE3E9309086F8 /* QoobissSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QoobissSDK.modulemap; sourceTree = "<group>"; };
 		2779C6399126E827C864F60290F6FA4A /* QoobissSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QoobissSDK.release.xcconfig; sourceTree = "<group>"; };
 		2AE839B58267D5521C1FBDA8F76ED0DC /* Pods-QoobissSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2F606FE8429E4BEE263A1B1679D7C4FB /* Pods-QoobissSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QoobissSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		39CE40DD0BB67232E309B0941258CA84 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = QoobissSDK/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3AEF2887E285053E00CA51DEF379FD03 /* Pods-QoobissSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QoobissSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		48207F582C04C02C006719F0 /* QoobissCoreIdentificationSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QoobissCoreIdentificationSDK.xcframework; sourceTree = "<group>"; };
+		48207F5D2C04C2F7006719F0 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		4ECCA30072D956888698F9C1C207589B /* Pods-QoobissSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		58626259290D9BA9A1D3295D8F9E687E /* Pods-QoobissSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		66429F7019259C5F0FC2E9222ACC75F5 /* Pods-QoobissSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		48207F5E2C04C2F7006719F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48207F5D2C04C2F7006719F0 /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +162,7 @@
 		9C86946E94EC9330CB99EFD2C8841D3A /* QoobissSDK */ = {
 			isa = PBXGroup;
 			children = (
-				39CE40DD0BB67232E309B0941258CA84 /* ReplaceMe.swift */,
+				48207F5E2C04C2F7006719F0 /* Classes */,
 				A27C5B6C002E714EE3CD999974E4ECF8 /* Pod */,
 				600EA4C386303C0B371433DBED8F3385 /* Support Files */,
 			);
@@ -376,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F5F2C04C2F7006719F0 /* ReplaceMe.swift in Sources */,
 				075EC249A2783C07BECCE068A9534360 /* Pods-QoobissSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,8 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F612C04C2F7006719F0 /* ReplaceMe.swift in Sources */,
 				CFB58BD7E559BDFE18D24957A0B2C12C /* QoobissSDK-dummy.m in Sources */,
-				ED837BD25865938FEFD4B18B3C01A915 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48207F602C04C2F7006719F0 /* ReplaceMe.swift in Sources */,
 				35173BAB928B6C614B3F9F0879270F68 /* Pods-QoobissSDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
