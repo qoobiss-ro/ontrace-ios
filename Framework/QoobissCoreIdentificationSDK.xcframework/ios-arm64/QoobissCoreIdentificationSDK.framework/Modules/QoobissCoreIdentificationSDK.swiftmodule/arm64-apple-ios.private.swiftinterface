@@ -24,4 +24,6 @@ import _SwiftConcurrencyShims
 public struct IdentificationFlow {
   public static func startFlow(apiKey: Swift.String) -> some SwiftUICore.View
   
+  public static func startFlowTest() -> some SwiftUICore.View
+  
 }

@@ -9,15 +9,15 @@
 import UIKit
 import QoobissSDK
 import SwiftUI
+import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            AnyView(ReplaceMe().aaaa())
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .edgesIgnoringSafeArea(.all)
-        .foregroundColor(.blue)
+        AnyView(IdentificationFlow.startFlow(apiKey: "your_key"))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.red)
+            .foregroundColor(.white)
+            .ignoresSafeArea()
     }
 }
 
@@ -42,7 +42,6 @@ class ViewController: UIViewController {
 
 public extension UIView {
     ///  adds topAnchor  leadingAnchor  trailingAnchor and bottomAnchor constrsaints to a view that already belonging to a view hierarchy
-    ///   with default padding of 16
     func autoPin(top: CGFloat = 0,
                  leading: CGFloat = 0,
                  trailing: CGFloat = 0,
