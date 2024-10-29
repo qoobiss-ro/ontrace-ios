@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/vlad-buhaescu-qoob/apples.git', :tag => s.version.to_s }
   s.source_files = '**/Classes/**'
   s.exclude_files = 'Qoobiss_iOS_SDK/**/*.DS_Store', 'Qoobiss_iOS_SDK/**/.git', 'Qoobiss_iOS_SDK/**/hidden/*.swift'
-  s.vendored_frameworks = '**/QoobissCoreIdentificationSDK.xcframework'
+  s.vendored_frameworks = 'Framework/QoobissCoreIdentificationSDK.xcframework'
 end

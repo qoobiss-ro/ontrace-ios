@@ -1,8 +1,9 @@
 use_frameworks!
 
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 target 'QoobissSDK_Example' do
+  pod 'lottie-ios'
   pod 'QoobissSDK', :path => '../'
 
   target 'QoobissSDK_Tests' do

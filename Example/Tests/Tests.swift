@@ -1,5 +1,5 @@
 import XCTest
-import QoobissSDK
+//import QoobissSDK
 
 class Tests: XCTestCase {
     
