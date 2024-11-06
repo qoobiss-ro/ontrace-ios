@@ -1,23 +1,16 @@
 PODS:
   - lottie-ios (4.5.0)
-  - QoobissSDK (0.0.1)
 
 DEPENDENCIES:
   - lottie-ios
-  - QoobissSDK (from `../`)
 
 SPEC REPOS:
   trunk:
     - lottie-ios
 
-EXTERNAL SOURCES:
-  QoobissSDK:
-    :path: "../"
-
 SPEC CHECKSUMS:
   lottie-ios: a881093fab623c467d3bce374367755c272bdd59
-  QoobissSDK: f844f8359ef628e71302989c1cca8354a06175dc
 
-PODFILE CHECKSUM: 50de6aa8aaf89b2d665ea149c219c612c033037a
+PODFILE CHECKSUM: 72c94074d368b17e688d1e0f4901a2d6d5426c26
 
-COCOAPODS: 1.16.0
+COCOAPODS: 1.15.0

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E268F811B9A453720361CB13BD995312"
-               BuildableName = "Pods_QoobissSDK_Example.framework"
+               BuildableName = "Pods-QoobissSDK_Example"
                BlueprintName = "Pods-QoobissSDK_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

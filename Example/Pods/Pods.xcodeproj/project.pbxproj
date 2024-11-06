@@ -13,6 +13,7 @@
 		026A04D7B943BEC8C731B49DFBCFD6D0 /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7294D6AAECCEF27A0FEC29BF6A360 /* CompatibleAnimationKeypath.swift */; };
 		03EE2A26E267E5E653D5170D76E5B92D /* EpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD945F363C05BEA497EE96AA4C604D5A /* EpoxyModeled.swift */; };
 		045B74D8293A59534E8810C6ACC60948 /* ShapeItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B31C557D80CF3314ED5C874AF1CE31 /* ShapeItemLayer.swift */; };
+		0491733F580328F7662D55A6EF27D00E /* Pods-QoobissSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90688DF86F99A4548E0537CF1FB65922 /* Pods-QoobissSDK_Example-dummy.m */; };
 		0759D0CFDC3CCA6E9CA9A4092AED996D /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF633425B78060AD0746E1E9B73ABA /* PreCompositionLayer.swift */; };
 		0766CBBFB0FC07D9306A61373C872AD0 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92D21766BAF08E39DE525F1B9383FB /* DataExtension.swift */; };
 		0886E645960A06531A6D15DC7BDBD581 /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446FE3AF9EDF446DF81CA7DD51AB86E /* UnitBezier.swift */; };
@@ -98,6 +99,7 @@
 		4EDD955C28C3CCBD762397C5AC48C6B3 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125AB89CE5050492B9C2FC69A4B056 /* AnimationLayer.swift */; };
 		4F3B3A0A17D9F47555FCB5557850F27B /* DotLottieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD5D4758A8691AAB78716B76C121B7 /* DotLottieConfiguration.swift */; };
 		5058D34A72FA7FFD73A40A16E0FEA23C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
+		50CD564602DC9355D08451AE00910E1C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9C83D355C4F6BA6C2D7177BD9FC9D915 /* PrivacyInfo.xcprivacy */; };
 		513BAFC8815910C297EC06481CA19087 /* SetContentProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30139BB6AD73A58D512EBCEFA4DC5CCC /* SetContentProviding.swift */; };
 		5298DB873972266D7CF4F350785B0FD1 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15308B8463A7FAE13B3024DF952CD64 /* LottieAnimationView.swift */; };
 		55791330178343D8D8C3920DE3357D96 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B99D5FDA13DFEB28E232AF235A75B /* Archive+MemoryFile.swift */; };
@@ -114,8 +116,8 @@
 		5DF6173B0F822C43901F9EB187A3159B /* ShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68B434CFFF2E5ED7C44F606C530E00 /* ShapeAnimation.swift */; };
 		5EA1FA848124538B36F36A820FDB245B /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC89DAEDB91E81A7D5185B9D83E87E /* StrokeRenderer.swift */; };
 		5F04F8149AF0DC3DF6E4B48D9DAD06A7 /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63A626A4D96D584D3F85B5A0D414FF /* KeyframeExtensions.swift */; };
+		5F63CF7101C5D51C911DE8A8977AC394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		6008C2A4622EAF59206D1F34AAC73798 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241BD863256909A481A06AE086D44ED6 /* CGPointExtension.swift */; };
-		60F5699D373C33DE337CD30992B8284D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		61E47B59180B4F1F45DD8526D463F6AC /* Archive+ZIP64.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E3E5F737EB4ACF80BB00C5E0891E2 /* Archive+ZIP64.swift */; };
 		62BAE3F86A63CC32FEA47440A8A72C78 /* CallbackContextEpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D5A7E8F937B94F3D23185E6CE3D72 /* CallbackContextEpoxyModeled.swift */; };
 		633952284890BD2D10F205C5E0C92E79 /* DropShadowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B1E7E394D1892C481CF8D4902C504 /* DropShadowNode.swift */; };
@@ -125,7 +127,6 @@
 		6B5D50BEDCFB2CDDFFA768A3701B585E /* SizeValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B128C7D79A06F192F4FFAFD07F242 /* SizeValueProvider.swift */; };
 		6B6CE068B96C975D119EF5B49573CC6F /* TransformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70E331CDEF0664F35B4391DD48E1FBF /* TransformLayer.swift */; };
 		6C52569C8764A52BB82AC0622B4AC566 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF63B68ACF562B925E732090A5B702 /* Keyframe.swift */; };
-		6CEA09571A0B7F258579F965E5AD3F94 /* QoobissSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCA0B4DF5D9A0FD18D462AE09F5AA1 /* QoobissSDK-dummy.m */; };
 		6E2FB345DA85E4EECC6BC2927BDFA3B9 /* MeasuringViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA36B87181C05C66E92FAE29C26C57 /* MeasuringViewRepresentable.swift */; };
 		6FF26E4A42B8F6C33DFF6949F3ED315B /* LottieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB14137C8047950EC3A666498A15D9 /* LottieConfiguration.swift */; };
 		71964FC83FE5F90D590252F15515B985 /* DotLottieCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76361E36D5AA84D617DF664F15B869D1 /* DotLottieCacheProvider.swift */; };
@@ -133,7 +134,7 @@
 		723EF5B741BDFDBFBF080199B677EAC8 /* CALayer+fillBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53A6AE1B3DED1A4A638B3EBF73E0CD /* CALayer+fillBounds.swift */; };
 		72B7BD01C62A4C49D23996889B5C1174 /* EpoxyModelArrayBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56855EC9E00F4075B50EB790AAA28D36 /* EpoxyModelArrayBuilder.swift */; };
 		734229AF523686123F8AFABAE2F7B096 /* Archive+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572DA24A3D63D7C109AA69E2D0E1D23E /* Archive+Progress.swift */; };
-		755847E1A8307D2519552DA365B30843 /* LottiePrivacyInfo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62060F5D524AE8173817ADD9482A0FEB /* LottiePrivacyInfo.bundle */; };
+		755847E1A8307D2519552DA365B30843 /* lottie-ios-LottiePrivacyInfo in Resources */ = {isa = PBXBuildFile; fileRef = 62060F5D524AE8173817ADD9482A0FEB /* lottie-ios-LottiePrivacyInfo */; };
 		77CBBFC92961E8A24BFFE39B2EC994A3 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F58A1166488DF2948A066C1EE89E /* ShapeNode.swift */; };
 		78581E2B9F5DECD582C60C45BF66CE04 /* Keyframes+combined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53A0B456E403BB449ABFA2B3200EA4 /* Keyframes+combined.swift */; };
 		788F3CF7874B9DD9CE6F2E3F5E03D8D8 /* Archive+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF33FA982734EE3EDF1D56159A8C94 /* Archive+Helpers.swift */; };
@@ -143,6 +144,7 @@
 		7BFE00E57A5BD8889503A15D9A79DD0D /* TraitCollectionProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C21CF6DC7A0C9DF8D73BA3B365E88A /* TraitCollectionProviding.swift */; };
 		7C54CEBC7BCC27CD3745994246476C1C /* GradientRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13ECA92E50E9E5294A0FCC67B59622 /* GradientRenderLayer.swift */; };
 		7E8998C0A597092F21F566491244B985 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C219BE99C37AC281B07961BC20FB9C /* GroupOutputNode.swift */; };
+		7EC748E1417F6A47F1EB2D8A825346A8 /* Pods-QoobissSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD89A3A28FCCF3978994110F90F56D26 /* Pods-QoobissSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81176FBE705E3A09EB1F2FC1BF7459EE /* EpoxyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA919EB8FED933A1721B39DE4B96260B /* EpoxyLogger.swift */; };
 		81420ECBA79E5BEC503BCED0C811DC62 /* LottieAnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77AD11A914DA2631C47D45B68B602CE /* LottieAnimationViewInitializers.swift */; };
 		81B0EA86FD9829451E2A4DC545B39966 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8261A69D8AFAAF5F6C189D608BDB90B /* KeypathSearchable.swift */; };
@@ -156,7 +158,6 @@
 		86CF0F99EDE48EA887F5415D5FBA5206 /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E77C06037353F797D26FEB246A127 /* ShapeRenderLayer.swift */; };
 		87193369ACD3EBB1DF8489003F4F7A38 /* AnimatedProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AF50913DC441101E082DDAEA944A1 /* AnimatedProviding.swift */; };
 		87842AFBABF788EC98495FF4994FE128 /* BlendMode+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14022CB84DAB83E4B0E82F1D737C9567 /* BlendMode+Filter.swift */; };
-		8A89233FEE0FA47C2F91149309EFA04A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9C83D355C4F6BA6C2D7177BD9FC9D915 /* PrivacyInfo.xcprivacy */; };
 		8B4300869D42D421BE531C8410526858 /* ClassReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8610F1CEFCCCCD4C0C5E3B9E4A4C32 /* ClassReference.swift */; };
 		8B57784C8A7A0BA58600B06BA8782E67 /* LayerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1938A3AE6F5FAC62C1978B1977073 /* LayerEffect.swift */; };
 		8B78DDB931ABD77D2F654D170F1CC9AA /* DropShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596D049872C71841CD65E51266AF1A37 /* DropShadowStyle.swift */; };
@@ -170,7 +171,6 @@
 		90F4FC8CE6EC3A84AE758667B4F885AA /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD405D83D795689C5B1FC8773F3BCF7 /* LRUCache.swift */; };
 		9106D1C519588B43905EEF90E3FD7E41 /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32A9CFE5FA201C712415E5E03667FE /* CompositionLayer.swift */; };
 		9328643F463B9A47DA892014FD76085E /* MainThreadAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F248D009FD1FCF77981FBE96A103D5F7 /* MainThreadAnimationLayer.swift */; };
-		95688153C070B10A4F3CB9815CF32FCC /* Pods-QoobissSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90688DF86F99A4548E0537CF1FB65922 /* Pods-QoobissSDK_Example-dummy.m */; };
 		957D0644F2924A0EF7357ECD93FF9E85 /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C921B7E25579DEBC97DF75477AEC7A /* Trim.swift */; };
 		9743696DC28810A3F1581D2EF8D81B96 /* TextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D458B5DC3D7B3FAA550E3FC1D2C11B /* TextLayer.swift */; };
 		9826934ED3376CEE20D8BC4B76427582 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D08BDBA2061B6A9D81442248F7F4BBC /* Data+Compression.swift */; };
@@ -246,7 +246,6 @@
 		CE1920E0274BEA4D87DCAFA34A77CBCD /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E963C39C3E4A38F7BE6F6D91B7C2D47B /* NodeProperty.swift */; };
 		CFE48966C69164995506AD134B6CA3A7 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EDB8AB873D6641D46FA8017CE88624 /* GradientFill.swift */; };
 		D1E1AAACFD32F5CF4D925E883C480A40 /* ViewEpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8429A25961631673D1C861167547561 /* ViewEpoxyModeled.swift */; };
-		D29D498655FFFAC6E71ADE64DF56051B /* QoobissSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADA0ADFAE61E1CA8DA5E4CBF0DE840D /* QoobissSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3F5F754B0EBD22E2BBBBB335CE9E1E9 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFC96023EEB6B6CC47164AE0C505F8 /* TextLayerModel.swift */; };
 		D449773B7E71564EAAB23DC9DE88E217 /* DiffableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915048A2DDFD9A2259567E34B1762FD8 /* DiffableSection.swift */; };
 		D63E9768136566F411A575B469E0B177 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B16FB4370C261FFCD4AF22D6CA38BD /* Entry.swift */; };
@@ -261,7 +260,6 @@
 		DE4C3F988A3A3737645B226460249050 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797ABB24CB3BAA71E367BBB39F7BAAE /* Transform.swift */; };
 		DFB11DCD8E97ACC44AB7B8EEEA2B51C3 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9E7FB03EDF8B3C521CDA605A2F795 /* TestHelpers.swift */; };
 		E1AA5659B38445EF5ED75FB85BD53925 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BADE1C7BCE12E599172B9B1E172AAE9 /* MathKit.swift */; };
-		E1B2F0864F712DC0B2E7A85CBC5355FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		E1DCDEF53A7DAF091B07159DA19F93B7 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154F322223FD792339056EB14915ABC7 /* AnimationContext.swift */; };
 		E206A7C692D31FEF60DE8371DE039849 /* CustomPathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0E662923B6F2983F05773748757D6 /* CustomPathAnimation.swift */; };
 		E2248CEF9F34F2BB761ADF9A7B203BAB /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347FCA008EBB0315D1FCE3223CF8341 /* Stroke.swift */; };
@@ -300,38 +298,30 @@
 		FCFB16DDC5D877AE54E68E04CAAEB362 /* ViewDifferentiatorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8C7210C538EB5B8C2D3F9D3ACEFEA /* ViewDifferentiatorProviding.swift */; };
 		FCFF55CDE653727ED3B28558ECEF2B65 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E337F0A7112B54F5332335B831ED /* FilepathImageProvider.swift */; };
 		FEDE4294026DEA914D60A0056E746C96 /* DropShadowAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12C2CB7E676AFA0B047ABF1DEB94351 /* DropShadowAnimation.swift */; };
-		FEDFD3C846BBD7AE1EE04C7C725D23EF /* Pods-QoobissSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD89A3A28FCCF3978994110F90F56D26 /* Pods-QoobissSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFE79C460BB183A83F56790B178AEF12 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20BD55E39C69A6D1240003C601BE9F2 /* Binding+Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07FDB910A18DCA28FBB6E087DA21D964 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E268F811B9A453720361CB13BD995312;
-			remoteInfo = "Pods-QoobissSDK_Example";
-		};
-		4F25F2E58C72D96D516FAF32A5B1441B /* PBXContainerItemProxy */ = {
+		45BB224D0EEE908D65E2402BD8534DD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0B967D7F8561D42493EE289EC8D450D1;
 			remoteInfo = "lottie-ios";
 		};
-		56AD237F78730FC3022B96826283138A /* PBXContainerItemProxy */ = {
+		CC769B681A9F55B814C2C99CDDBCE862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E268F811B9A453720361CB13BD995312;
+			remoteInfo = "Pods-QoobissSDK_Example";
+		};
+		CE9F00815CAC71EF81886CD2D73BE2C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BF2A15FEC3F3424BBC4B9AD5F86F2D54;
 			remoteInfo = "lottie-ios-LottiePrivacyInfo";
-		};
-		5DC81F95FBF12F2696875C72484935E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E75FFD3D9F7C51ABDD16DAECC6781925;
-			remoteInfo = QoobissSDK;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -348,7 +338,6 @@
 		08AE529FD1B926A10132A7F30B6DF862 /* PathElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathElement.swift; path = Sources/Private/Utility/Primitives/PathElement.swift; sourceTree = "<group>"; };
 		08B72DDE926FE2B1128097C48F98F7AD /* EpoxyableView+SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EpoxyableView+SwiftUIView.swift"; path = "Sources/Private/EmbeddedLibraries/EpoxyCore/SwiftUI/EpoxyableView+SwiftUIView.swift"; sourceTree = "<group>"; };
 		09DEAEE1593C3761C26CE8B12D14AD4F /* ShapeContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeContainerLayer.swift; path = Sources/Private/MainThread/NodeRenderSystem/RenderLayers/ShapeContainerLayer.swift; sourceTree = "<group>"; };
-		0B267485C1A8AB7212C7AAEA8FE5291B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0B3A7CAE7DB60944B65E023D5854EBB9 /* CALayer+setupLayerHierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+setupLayerHierarchy.swift"; path = "Sources/Private/CoreAnimation/Layers/CALayer+setupLayerHierarchy.swift"; sourceTree = "<group>"; };
 		0D08BDBA2061B6A9D81442248F7F4BBC /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/Private/EmbeddedLibraries/ZipFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
 		0D3D728699C09AD5A725E6D6C462E7FD /* ImageLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLayer.swift; path = Sources/Private/CoreAnimation/Layers/ImageLayer.swift; sourceTree = "<group>"; };
@@ -359,7 +348,6 @@
 		0FB9C393E440807D0140D2461E0A001A /* IndexChangeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexChangeset.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Diffing/IndexChangeset.swift; sourceTree = "<group>"; };
 		11B31C557D80CF3314ED5C874AF1CE31 /* ShapeItemLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeItemLayer.swift; path = Sources/Private/CoreAnimation/Layers/ShapeItemLayer.swift; sourceTree = "<group>"; };
 		12859C28C19932AB25E3DAA27A2CC3F4 /* PathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Protocols/PathNode.swift; sourceTree = "<group>"; };
-		129BD4CE8DD12E4B9FDDC631B818FAAF /* QoobissSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QoobissSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		14022CB84DAB83E4B0E82F1D737C9567 /* BlendMode+Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlendMode+Filter.swift"; path = "Sources/Private/Utility/Extensions/BlendMode+Filter.swift"; sourceTree = "<group>"; };
 		154F322223FD792339056EB14915ABC7 /* AnimationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationContext.swift; path = Sources/Private/Utility/Helpers/AnimationContext.swift; sourceTree = "<group>"; };
 		157BB1331AF873BD260496C2E750AD7C /* Marker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Sources/Private/Model/Objects/Marker.swift; sourceTree = "<group>"; };
@@ -382,7 +370,6 @@
 		1D73BBCB1A915DB7A7A179ED67A71E5C /* DotLottieFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotLottieFile.swift; path = Sources/Public/DotLottie/DotLottieFile.swift; sourceTree = "<group>"; };
 		1D77B361397F9F935DFE2EED2A79D94C /* TextCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextCompositionLayer.swift; path = Sources/Private/MainThread/LayerContainers/CompLayers/TextCompositionLayer.swift; sourceTree = "<group>"; };
 		1E4093480CD282AEAA8F253052F02F5E /* CAAnimation+TimingConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAAnimation+TimingConfiguration.swift"; path = "Sources/Private/CoreAnimation/Animations/CAAnimation+TimingConfiguration.swift"; sourceTree = "<group>"; };
-		1EBCA0B4DF5D9A0FD18D462AE09F5AA1 /* QoobissSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QoobissSDK-dummy.m"; sourceTree = "<group>"; };
 		1ECB6E6A1A1E1BA723831983E7CC1BA4 /* StyledView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyledView.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Views/StyledView.swift; sourceTree = "<group>"; };
 		1F53A0B456E403BB449ABFA2B3200EA4 /* Keyframes+combined.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Keyframes+combined.swift"; path = "Sources/Private/CoreAnimation/Extensions/Keyframes+combined.swift"; sourceTree = "<group>"; };
 		1F6B128C7D79A06F192F4FFAFD07F242 /* SizeValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeValueProvider.swift; path = Sources/Public/DynamicProperties/ValueProviders/SizeValueProvider.swift; sourceTree = "<group>"; };
@@ -458,12 +445,11 @@
 		4AB09713E4E0B208B082C59977FE875B /* SingleValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueProvider.swift; path = Sources/Private/MainThread/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.swift; sourceTree = "<group>"; };
 		4B066DBDC1DB15E2F41CF7FB1580B7F9 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Sources/Public/iOS/UIColorExtension.swift; sourceTree = "<group>"; };
 		4E13ECA92E50E9E5294A0FCC67B59622 /* GradientRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientRenderLayer.swift; path = Sources/Private/CoreAnimation/Layers/GradientRenderLayer.swift; sourceTree = "<group>"; };
-		4E62DD18A5A25EE3292621F0E52C2809 /* QoobissSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QoobissSDK.modulemap; sourceTree = "<group>"; };
 		4ECCA30072D956888698F9C1C207589B /* Pods-QoobissSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4EF1BA6DA1569D97D5A12607DEF7CFB1 /* TrimPathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrimPathNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.swift; sourceTree = "<group>"; };
 		4FBAC32E95C8231B23EA4B4257616423 /* ContentConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentConfigurableView.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Views/ContentConfigurableView.swift; sourceTree = "<group>"; };
 		501E2D9E928B584BE42A86C684158214 /* AnimatedSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedSwitch.swift; path = Sources/Public/Controls/AnimatedSwitch.swift; sourceTree = "<group>"; };
-		51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "lottie-ios"; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D25342C7D9C92D81EA0725EBC76CDB /* ColorValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorValueProvider.swift; path = Sources/Public/DynamicProperties/ValueProviders/ColorValueProvider.swift; sourceTree = "<group>"; };
 		537C18E8DE7F54EB00902113F6A7D689 /* AnimatorNodeDebugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatorNodeDebugging.swift; path = Sources/Private/Utility/Debugging/AnimatorNodeDebugging.swift; sourceTree = "<group>"; };
 		54BF19CD6FB4EDA1C1A9254427343187 /* LottieViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieViewType.swift; path = Sources/Public/Controls/LottieViewType.swift; sourceTree = "<group>"; };
@@ -484,7 +470,7 @@
 		5FC22E737CA056F8425AF4B3D3AEDD7C /* LayerProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerProperty.swift; path = Sources/Private/CoreAnimation/Animations/LayerProperty.swift; sourceTree = "<group>"; };
 		61A376051F1B45623E1C5CD49404B184 /* LayerEffectNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerEffectNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/LayerEffectNodes/LayerEffectNode.swift; sourceTree = "<group>"; };
 		61EDB8AB873D6641D46FA8017CE88624 /* GradientFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientFill.swift; path = Sources/Private/Model/ShapeItems/GradientFill.swift; sourceTree = "<group>"; };
-		62060F5D524AE8173817ADD9482A0FEB /* LottiePrivacyInfo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottiePrivacyInfo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		62060F5D524AE8173817ADD9482A0FEB /* lottie-ios-LottiePrivacyInfo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "lottie-ios-LottiePrivacyInfo"; path = LottiePrivacyInfo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		63435D311E99300C95F9EB21A1372BB0 /* EpoxyModelProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EpoxyModelProperty.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Model/EpoxyModelProperty.swift; sourceTree = "<group>"; };
 		6489463735095AE459A53FC17959BCD4 /* PassThroughOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassThroughOutputNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.swift; sourceTree = "<group>"; };
 		64DE4E47C5A9109FA178890F3DB8CAEE /* RoundedCornersNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCornersNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/ModifierNodes/RoundedCornersNode.swift; sourceTree = "<group>"; };
@@ -502,7 +488,6 @@
 		6F2590900C2961B8ACAA4489F9390AE3 /* LegacyGradientFillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyGradientFillRenderer.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/OutputNodes/Renderables/LegacyGradientFillRenderer.swift; sourceTree = "<group>"; };
 		6F3105A67024379E2D5BBB0503BC9966 /* BehaviorsConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BehaviorsConfigurableView.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Views/BehaviorsConfigurableView.swift; sourceTree = "<group>"; };
 		703656C4182FB8E29A35FE2FD784F8D4 /* GradientStrokeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientStrokeRenderer.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer.swift; sourceTree = "<group>"; };
-		70685A027FE6318A73C5C2176E5BED4D /* QoobissSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QoobissSDK.debug.xcconfig; sourceTree = "<group>"; };
 		712BE191E9D5E290CF6DBCBA0E5EE4D4 /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
 		71BA36B87181C05C66E92FAE29C26C57 /* MeasuringViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeasuringViewRepresentable.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/SwiftUI/LayoutUtilities/MeasuringViewRepresentable.swift; sourceTree = "<group>"; };
 		71EBB0986993CAD8C1AA515C399757B0 /* EllipseNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipseNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/PathNodes/EllipseNode.swift; sourceTree = "<group>"; };
@@ -514,10 +499,8 @@
 		77DBF2D407EDF2CBE557BA8FFF72367C /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
 		7A85816FA7ACCF9615BE87540FC62699 /* AnimationSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSubview.swift; path = Sources/Public/iOS/AnimationSubview.swift; sourceTree = "<group>"; };
 		7C051A58DCDE3C6ECAACA85A4EE85E91 /* lottie-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		7C4C1D0F980FBFEE848E0D04A567CDF2 /* QoobissSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QoobissSDK-prefix.pch"; sourceTree = "<group>"; };
 		7CC0EA33AA96B0A19906FF012D7B8399 /* ItemsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemsExtension.swift; path = Sources/Private/MainThread/NodeRenderSystem/Extensions/ItemsExtension.swift; sourceTree = "<group>"; };
 		7E8E77C06037353F797D26FEB246A127 /* ShapeRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderLayer.swift; path = Sources/Private/MainThread/NodeRenderSystem/RenderLayers/ShapeRenderLayer.swift; sourceTree = "<group>"; };
-		7ED4AA2E806D8B60FACC91ACC1113CE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7EE5F58A1166488DF2948A066C1EE89E /* ShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift; sourceTree = "<group>"; };
 		80FF63B68ACF562B925E732090A5B702 /* Keyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keyframe.swift; path = Sources/Public/Keyframes/Keyframe.swift; sourceTree = "<group>"; };
 		8188F20BA0B0E2AAED0618CE63DFC06C /* UIView+SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwiftUIView.swift"; path = "Sources/Private/EmbeddedLibraries/EpoxyCore/SwiftUI/UIView+SwiftUIView.swift"; sourceTree = "<group>"; };
@@ -527,7 +510,6 @@
 		87419BC4BFF3842FFB8292267D8199C1 /* RectangleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectangleAnimation.swift; path = Sources/Private/CoreAnimation/Animations/RectangleAnimation.swift; sourceTree = "<group>"; };
 		89185471AC898FD79D04DF3435ED1611 /* KeyedDecodingContainerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedDecodingContainerExtensions.swift; path = Sources/Private/Model/Extensions/KeyedDecodingContainerExtensions.swift; sourceTree = "<group>"; };
 		8A656B43996513525C0BC2D74BE9FE39 /* ImageCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCompositionLayer.swift; path = Sources/Private/MainThread/LayerContainers/CompLayers/ImageCompositionLayer.swift; sourceTree = "<group>"; };
-		8ADA0ADFAE61E1CA8DA5E4CBF0DE840D /* QoobissSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QoobissSDK-umbrella.h"; sourceTree = "<group>"; };
 		8B96AB9683DF68190849ADBB0279D0CB /* LottieView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieView.swift; path = Sources/Public/Animation/LottieView.swift; sourceTree = "<group>"; };
 		8BC486F41ABF3017F16F0327642B925C /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Sources/Private/Model/ShapeItems/Fill.swift; sourceTree = "<group>"; };
 		8C68B434CFFF2E5ED7C44F606C530E00 /* ShapeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimation.swift; path = Sources/Private/CoreAnimation/Animations/ShapeAnimation.swift; sourceTree = "<group>"; };
@@ -550,10 +532,9 @@
 		993C8321D6CBC9A5357BE2AC8A82231E /* AnimationCacheProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationCacheProvider.swift; path = Sources/Public/AnimationCache/AnimationCacheProvider.swift; sourceTree = "<group>"; };
 		99A8EB4704BAB5625273FBC12CC8E909 /* StarAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarAnimation.swift; path = Sources/Private/CoreAnimation/Animations/StarAnimation.swift; sourceTree = "<group>"; };
 		99E9E7FB03EDF8B3C521CDA605A2F795 /* TestHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestHelpers.swift; path = Sources/Private/Utility/Debugging/TestHelpers.swift; sourceTree = "<group>"; };
-		9C83D355C4F6BA6C2D7177BD9FC9D915 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9C83D355C4F6BA6C2D7177BD9FC9D915 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		9CE1B6592A29ADBBC5FB53143C4D4955 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		9D7776AE64F6CA0F405FEC20D821F940 /* QoobissSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QoobissSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A06E222D780DC9ABD3BEA63F01927481 /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = Sources/Private/Model/Extensions/Bundle.swift; sourceTree = "<group>"; };
 		A0BABF503C830A6D981C95C5D7A1B887 /* Data+CompressionDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+CompressionDeprecated.swift"; path = "Sources/Private/EmbeddedLibraries/ZipFoundation/Data+CompressionDeprecated.swift"; sourceTree = "<group>"; };
 		A1365B26F2C4B04B838CF84AA535F49D /* Pods-QoobissSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QoobissSDK_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -591,7 +572,6 @@
 		C12C2CB7E676AFA0B047ABF1DEB94351 /* DropShadowAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropShadowAnimation.swift; path = Sources/Private/CoreAnimation/Animations/DropShadowAnimation.swift; sourceTree = "<group>"; };
 		C142DDC47A519CCBF0BA56EF26147B7C /* MaskContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskContainerLayer.swift; path = Sources/Private/MainThread/LayerContainers/CompLayers/MaskContainerLayer.swift; sourceTree = "<group>"; };
 		C23F360F7AE6DCAC16152CFE2A9835B9 /* KeyframeInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeInterpolator.swift; path = Sources/Private/Utility/Interpolatable/KeyframeInterpolator.swift; sourceTree = "<group>"; };
-		C38397757E314CBAF6FD2CB0DE098D33 /* Pods_QoobissSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QoobissSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E19FDC7F339C28F56493FB93EB4D91 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExtensions.swift; path = Sources/Private/Utility/Extensions/CGFloatExtensions.swift; sourceTree = "<group>"; };
 		C446FE3AF9EDF446DF81CA7DD51AB86E /* UnitBezier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnitBezier.swift; path = Sources/Private/Utility/Primitives/UnitBezier.swift; sourceTree = "<group>"; };
 		C70CC5585EC3C2A7CA877FE766D63576 /* LottieAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieAnimationLayer.swift; path = Sources/Public/Animation/LottieAnimationLayer.swift; sourceTree = "<group>"; };
@@ -605,7 +585,6 @@
 		CC444B0325C87A8024A4BEA179B3C66A /* Archive+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Reading.swift"; path = "Sources/Private/EmbeddedLibraries/ZipFoundation/Archive+Reading.swift"; sourceTree = "<group>"; };
 		CD92D21766BAF08E39DE525F1B9383FB /* DataExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataExtension.swift; path = Sources/Private/Utility/Extensions/DataExtension.swift; sourceTree = "<group>"; };
 		CD945F363C05BEA497EE96AA4C604D5A /* EpoxyModeled.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EpoxyModeled.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Model/EpoxyModeled.swift; sourceTree = "<group>"; };
-		CDE276791FF414F55D18ABA5EE410293 /* QoobissCoreIdentificationSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = QoobissCoreIdentificationSDK.xcframework; path = Framework/QoobissCoreIdentificationSDK.xcframework; sourceTree = "<group>"; };
 		CEF2363A6AC4494224CF34D2B7F91A7D /* KeyframeGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeGroup.swift; path = Sources/Private/Model/Keyframes/KeyframeGroup.swift; sourceTree = "<group>"; };
 		CF1202BAC56529702624A21BCD11C90D /* StrokeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeAnimation.swift; path = Sources/Private/CoreAnimation/Animations/StrokeAnimation.swift; sourceTree = "<group>"; };
 		CF902E939C5AD4F0F494F37F5E19436A /* EpoxySwiftUIIntrinsicContentSizeInvalidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EpoxySwiftUIIntrinsicContentSizeInvalidator.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/SwiftUI/EpoxySwiftUIIntrinsicContentSizeInvalidator.swift; sourceTree = "<group>"; };
@@ -624,8 +603,6 @@
 		DC32A9CFE5FA201C712415E5E03667FE /* CompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositionLayer.swift; path = Sources/Private/MainThread/LayerContainers/CompLayers/CompositionLayer.swift; sourceTree = "<group>"; };
 		DD2B0A93A85046A7D8B0A87C40FC5E09 /* GradientFillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientFillRenderer.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer.swift; sourceTree = "<group>"; };
 		DEFA120881B38059350282B2300BCDD6 /* GradientAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientAnimations.swift; path = Sources/Private/CoreAnimation/Animations/GradientAnimations.swift; sourceTree = "<group>"; };
-		DF2874FD23A9E059C5106BFBD0893951 /* QoobissSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QoobissSDK.release.xcconfig; sourceTree = "<group>"; };
-		DF511ABC59ADD4236A6E3B8AA104AD98 /* Pods_QoobissSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QoobissSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39BA96C2D8626C619617F1519E4BBFD /* SectionedChangeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedChangeset.swift; path = Sources/Private/EmbeddedLibraries/EpoxyCore/Diffing/SectionedChangeset.swift; sourceTree = "<group>"; };
 		E5F53B0D0B8B2C546CDF5E8CFE892C45 /* DotLottieAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotLottieAnimation.swift; path = Sources/Private/Model/DotLottie/DotLottieAnimation.swift; sourceTree = "<group>"; };
 		E82E3E5F737EB4ACF80BB00C5E0891E2 /* Archive+ZIP64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+ZIP64.swift"; path = "Sources/Private/EmbeddedLibraries/ZipFoundation/Archive+ZIP64.swift"; sourceTree = "<group>"; };
@@ -650,7 +627,6 @@
 		F5431B864B92900FA6B774392C2C4EF4 /* RenderingEngineOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderingEngineOption.swift; path = Sources/Public/Configuration/RenderingEngineOption.swift; sourceTree = "<group>"; };
 		F555AD18DA6773E63E923EFD4DBD50F7 /* LottieColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieColor.swift; path = Sources/Public/Primitives/LottieColor.swift; sourceTree = "<group>"; };
 		F5C5DD14E2FDDE2B3DAF41311B3EE0E7 /* CachedImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedImageProvider.swift; path = Sources/Private/MainThread/LayerContainers/Utility/CachedImageProvider.swift; sourceTree = "<group>"; };
-		F6E28E66F89D4B2DDA8145046A2B80BF /* QoobissSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "QoobissSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		F8261A69D8AFAAF5F6C189D608BDB90B /* KeypathSearchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeypathSearchable.swift; path = Sources/Private/MainThread/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable.swift; sourceTree = "<group>"; };
 		F8A5CA8833A70829DDA459FBF1E737B9 /* TransformAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimations.swift; path = Sources/Private/CoreAnimation/Animations/TransformAnimations.swift; sourceTree = "<group>"; };
 		F8DFC96023EEB6B6CC47164AE0C505F8 /* TextLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextLayerModel.swift; path = Sources/Private/Model/Layers/TextLayerModel.swift; sourceTree = "<group>"; };
@@ -661,7 +637,6 @@
 		FDBDC7E77499A5F6B074620356D228C7 /* KeyframeData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeData.swift; path = Sources/Private/Model/Keyframes/KeyframeData.swift; sourceTree = "<group>"; };
 		FEA42ED4AB14CFF49479258AFFFAB274 /* LottieLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieLogger.swift; path = Sources/Public/Logging/LottieLogger.swift; sourceTree = "<group>"; };
 		FF5D341A86DD00894A5F1414025CEBD7 /* CompatibilityTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompatibilityTracker.swift; path = Sources/Private/CoreAnimation/CompatibilityTracker.swift; sourceTree = "<group>"; };
-		FF5FD923C03693982EDF371B1142F46D /* QoobissSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QoobissSDK-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -673,11 +648,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28532D1381BD9104BA6D952F5AB3F600 /* Frameworks */ = {
+		3FBC8459A70765EFE0EC6B073029E849 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B2F0864F712DC0B2E7A85CBC5355FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		698BC615915F9654304CFD75A3F7A59D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F63CF7101C5D51C911DE8A8977AC394 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,34 +674,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9F774E48D4942B2143CFB4FF3989EF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60F5699D373C33DE337CD30992B8284D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9F4B19C040C9DE1CC6AF1DA73434947 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B956972C88BFA5AA51E1BEB6C7EF7EC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0B267485C1A8AB7212C7AAEA8FE5291B /* LICENSE */,
-				129BD4CE8DD12E4B9FDDC631B818FAAF /* QoobissSDK.podspec */,
-				7ED4AA2E806D8B60FACC91ACC1113CE5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		143C29E3BE492836E12A84EF2EC76B27 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,32 +696,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		416A1694E9C8B143DF16CBDF81E1B543 /* Products */ = {
+		3A889CD1294295EEBE992FC0733537FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */,
-				62060F5D524AE8173817ADD9482A0FEB /* LottiePrivacyInfo.bundle */,
-				C38397757E314CBAF6FD2CB0DE098D33 /* Pods_QoobissSDK_Example.framework */,
-				DF511ABC59ADD4236A6E3B8AA104AD98 /* Pods_QoobissSDK_Tests.framework */,
-				9D7776AE64F6CA0F405FEC20D821F940 /* QoobissSDK.framework */,
+				51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */,
+				62060F5D524AE8173817ADD9482A0FEB /* lottie-ios-LottiePrivacyInfo */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7F0BE74E6DD50AD87B0B4B3E2C2B06FF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4E62DD18A5A25EE3292621F0E52C2809 /* QoobissSDK.modulemap */,
-				1EBCA0B4DF5D9A0FD18D462AE09F5AA1 /* QoobissSDK-dummy.m */,
-				FF5FD923C03693982EDF371B1142F46D /* QoobissSDK-Info.plist */,
-				7C4C1D0F980FBFEE848E0D04A567CDF2 /* QoobissSDK-prefix.pch */,
-				8ADA0ADFAE61E1CA8DA5E4CBF0DE840D /* QoobissSDK-umbrella.h */,
-				F6E28E66F89D4B2DDA8145046A2B80BF /* QoobissSDK-xcframeworks.sh */,
-				70685A027FE6318A73C5C2176E5BED4D /* QoobissSDK.debug.xcconfig */,
-				DF2874FD23A9E059C5106BFBD0893951 /* QoobissSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/QoobissSDK";
 			sourceTree = "<group>";
 		};
 		85E25FAA6CCA197B9DC1DA77A15BE2B0 /* lottie-ios */ = {
@@ -1051,6 +989,7 @@
 				F7FEB07EBB5AD7F89D16D66A05A6B212 /* Resources */,
 				B3C71E73852FA29CA5735A9489A5DAE8 /* Support Files */,
 			);
+			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -1087,25 +1026,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CA697E52DA1E99BBF47787FBF4A605F1 /* QoobissSDK */ = {
-			isa = PBXGroup;
-			children = (
-				E75DB089E55D08C62B0FE92C6D90F03E /* Frameworks */,
-				0B956972C88BFA5AA51E1BEB6C7EF7EC /* Pod */,
-				7F0BE74E6DD50AD87B0B4B3E2C2B06FF /* Support Files */,
-			);
-			name = QoobissSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DA3B1A81A0B6A3528AA3B649ADA0C990 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				1B4EC9470AB5E25753400A80D40411AB /* Pods */,
-				416A1694E9C8B143DF16CBDF81E1B543 /* Products */,
+				3A889CD1294295EEBE992FC0733537FC /* Products */,
 				C6784984E141540BE651828A6E679C20 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -1126,14 +1053,6 @@
 			path = "Target Support Files/Pods-QoobissSDK_Tests";
 			sourceTree = "<group>";
 		};
-		DA3B1A81A0B6A3528AA3B649ADA0C990 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CA697E52DA1E99BBF47787FBF4A605F1 /* QoobissSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		E27BA2820BBC47C6D241FDBFDF765978 /* Pods-QoobissSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,14 +1068,6 @@
 			);
 			name = "Pods-QoobissSDK_Example";
 			path = "Target Support Files/Pods-QoobissSDK_Example";
-			sourceTree = "<group>";
-		};
-		E75DB089E55D08C62B0FE92C6D90F03E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CDE276791FF414F55D18ABA5EE410293 /* QoobissCoreIdentificationSDK.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F7FEB07EBB5AD7F89D16D66A05A6B212 /* Resources */ = {
@@ -1178,11 +1089,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49153B199C6A4B3D47F94636D406AE84 /* Headers */ = {
+		38636C3E49A313E1F62CED945772B655 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29D498655FFFAC6E71ADE64DF56051B /* QoobissSDK-umbrella.h in Headers */,
+				7EC748E1417F6A47F1EB2D8A825346A8 /* Pods-QoobissSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1191,14 +1102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				564AE2CA812E8F77BA3CCE56467149DE /* lottie-ios-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC8D5B7D7BD9C9F2232E681E4C0FECC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEDFD3C846BBD7AE1EE04C7C725D23EF /* Pods-QoobissSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1217,11 +1120,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				4AD7D7F8A95AE607A5D115CFDD71B506 /* PBXTargetDependency */,
+				7EEE7FA35BED52D203EE5ECCAD9A64D6 /* PBXTargetDependency */,
 			);
 			name = "lottie-ios";
 			productName = Lottie;
-			productReference = 51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */;
+			productReference = 51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */;
 			productType = "com.apple.product-type.framework";
 		};
 		69530D8CEC5E4342FB761E7749314B1D /* Pods-QoobissSDK_Tests */ = {
@@ -1236,20 +1139,19 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD3FD5C1C39AC9C8681CE1306A8D51CE /* PBXTargetDependency */,
+				7C6E15B1E837202C57E9D259F67AB04E /* PBXTargetDependency */,
 			);
 			name = "Pods-QoobissSDK_Tests";
 			productName = Pods_QoobissSDK_Tests;
-			productReference = DF511ABC59ADD4236A6E3B8AA104AD98 /* Pods_QoobissSDK_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BF2A15FEC3F3424BBC4B9AD5F86F2D54 /* lottie-ios-LottiePrivacyInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16D159E59905DBA8A0B94A9BD7E05773 /* Build configuration list for PBXNativeTarget "lottie-ios-LottiePrivacyInfo" */;
+			buildConfigurationList = FB08E2963CB9ACA1D69B4C216821D766 /* Build configuration list for PBXNativeTarget "lottie-ios-LottiePrivacyInfo" */;
 			buildPhases = (
-				68E2B8BACFD2600D3DF6F062E0C546C5 /* Sources */,
-				F9F4B19C040C9DE1CC6AF1DA73434947 /* Frameworks */,
-				3A901A394F21BD0856FC8E3A2B735461 /* Resources */,
+				1FD2BBE52463BC2F7194D30A553278AF /* Sources */,
+				3FBC8459A70765EFE0EC6B073029E849 /* Frameworks */,
+				DBD448F44BB25E3A7FF3DC772A7BF34E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1257,46 +1159,25 @@
 			);
 			name = "lottie-ios-LottiePrivacyInfo";
 			productName = LottiePrivacyInfo;
-			productReference = 62060F5D524AE8173817ADD9482A0FEB /* LottiePrivacyInfo.bundle */;
+			productReference = 62060F5D524AE8173817ADD9482A0FEB /* lottie-ios-LottiePrivacyInfo */;
 			productType = "com.apple.product-type.bundle";
 		};
 		E268F811B9A453720361CB13BD995312 /* Pods-QoobissSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9415CDB313BA11577E2CA8EE18B7B62B /* Build configuration list for PBXNativeTarget "Pods-QoobissSDK_Example" */;
+			buildConfigurationList = 70E0C7DB4E458F0321EF414861E027FA /* Build configuration list for PBXNativeTarget "Pods-QoobissSDK_Example" */;
 			buildPhases = (
-				CC8D5B7D7BD9C9F2232E681E4C0FECC1 /* Headers */,
-				56D60001BD8567C90BB1176310B61A51 /* Sources */,
-				28532D1381BD9104BA6D952F5AB3F600 /* Frameworks */,
-				D79CC24BF939D86D0F80A3BD0D7E3E59 /* Resources */,
+				38636C3E49A313E1F62CED945772B655 /* Headers */,
+				509A6E35C8A6F09FFE9E2229539D94D8 /* Sources */,
+				698BC615915F9654304CFD75A3F7A59D /* Frameworks */,
+				6FE8C830FCEDDB8AD31AB31CDABE4A4A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C821A25D3C4B8820402BFC88D589508A /* PBXTargetDependency */,
-				30CA251E1FF158BE3BEF3D4A33164D96 /* PBXTargetDependency */,
+				D112FB73A98051E7674B38C354B34F73 /* PBXTargetDependency */,
 			);
 			name = "Pods-QoobissSDK_Example";
 			productName = Pods_QoobissSDK_Example;
-			productReference = C38397757E314CBAF6FD2CB0DE098D33 /* Pods_QoobissSDK_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E75FFD3D9F7C51ABDD16DAECC6781925 /* QoobissSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B5B3E2C099BE6664D11C97D2FC4260D /* Build configuration list for PBXNativeTarget "QoobissSDK" */;
-			buildPhases = (
-				49153B199C6A4B3D47F94636D406AE84 /* Headers */,
-				F9BAC002DDD203B98F3220DEE2D83BAD /* [CP] Copy XCFrameworks */,
-				7986B4918326143CCD74BE34A889981E /* Sources */,
-				A9F774E48D4942B2143CFB4FF3989EF9 /* Frameworks */,
-				E00DF44B9801484831A69C65CD6C608C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QoobissSDK;
-			productName = QoobissSDK;
-			productReference = 9D7776AE64F6CA0F405FEC20D821F940 /* QoobissSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1308,7 +1189,7 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1317,7 +1198,9 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 416A1694E9C8B143DF16CBDF81E1B543 /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3A889CD1294295EEBE992FC0733537FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1325,7 +1208,6 @@
 				BF2A15FEC3F3424BBC4B9AD5F86F2D54 /* lottie-ios-LottiePrivacyInfo */,
 				E268F811B9A453720361CB13BD995312 /* Pods-QoobissSDK_Example */,
 				69530D8CEC5E4342FB761E7749314B1D /* Pods-QoobissSDK_Tests */,
-				E75FFD3D9F7C51ABDD16DAECC6781925 /* QoobissSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -1338,11 +1220,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A901A394F21BD0856FC8E3A2B735461 /* Resources */ = {
+		6FE8C830FCEDDB8AD31AB31CDABE4A4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A89233FEE0FA47C2F91149309EFA04A /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,47 +1231,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755847E1A8307D2519552DA365B30843 /* LottiePrivacyInfo.bundle in Resources */,
+				755847E1A8307D2519552DA365B30843 /* lottie-ios-LottiePrivacyInfo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D79CC24BF939D86D0F80A3BD0D7E3E59 /* Resources */ = {
+		DBD448F44BB25E3A7FF3DC772A7BF34E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E00DF44B9801484831A69C65CD6C608C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				50CD564602DC9355D08451AE00910E1C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		F9BAC002DDD203B98F3220DEE2D83BAD /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		1FD2BBE52463BC2F7194D30A553278AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/QoobissSDK/QoobissSDK-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/QoobissSDK/QoobissSDK-xcframeworks-output-files.xcfilelist",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/QoobissSDK/QoobissSDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		219D10F785951604E832127D8DC7AFCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1677,26 +1539,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56D60001BD8567C90BB1176310B61A51 /* Sources */ = {
+		509A6E35C8A6F09FFE9E2229539D94D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95688153C070B10A4F3CB9815CF32FCC /* Pods-QoobissSDK_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68E2B8BACFD2600D3DF6F062E0C546C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7986B4918326143CCD74BE34A889981E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CEA09571A0B7F258579F965E5AD3F94 /* QoobissSDK-dummy.m in Sources */,
+				0491733F580328F7662D55A6EF27D00E /* Pods-QoobissSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1711,37 +1558,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30CA251E1FF158BE3BEF3D4A33164D96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "lottie-ios";
-			target = 0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */;
-			targetProxy = 4F25F2E58C72D96D516FAF32A5B1441B /* PBXContainerItemProxy */;
-		};
-		4AD7D7F8A95AE607A5D115CFDD71B506 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "lottie-ios-LottiePrivacyInfo";
-			target = BF2A15FEC3F3424BBC4B9AD5F86F2D54 /* lottie-ios-LottiePrivacyInfo */;
-			targetProxy = 56AD237F78730FC3022B96826283138A /* PBXContainerItemProxy */;
-		};
-		C821A25D3C4B8820402BFC88D589508A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QoobissSDK;
-			target = E75FFD3D9F7C51ABDD16DAECC6781925 /* QoobissSDK */;
-			targetProxy = 5DC81F95FBF12F2696875C72484935E2 /* PBXContainerItemProxy */;
-		};
-		DD3FD5C1C39AC9C8681CE1306A8D51CE /* PBXTargetDependency */ = {
+		7C6E15B1E837202C57E9D259F67AB04E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-QoobissSDK_Example";
 			target = E268F811B9A453720361CB13BD995312 /* Pods-QoobissSDK_Example */;
-			targetProxy = 07FDB910A18DCA28FBB6E087DA21D964 /* PBXContainerItemProxy */;
+			targetProxy = CC769B681A9F55B814C2C99CDDBCE862 /* PBXContainerItemProxy */;
+		};
+		7EEE7FA35BED52D203EE5ECCAD9A64D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios-LottiePrivacyInfo";
+			target = BF2A15FEC3F3424BBC4B9AD5F86F2D54 /* lottie-ios-LottiePrivacyInfo */;
+			targetProxy = CE9F00815CAC71EF81886CD2D73BE2C3 /* PBXContainerItemProxy */;
+		};
+		D112FB73A98051E7674B38C354B34F73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios";
+			target = 0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */;
+			targetProxy = 45BB224D0EEE908D65E2402BD8534DD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34EFFB2093F42B773A7122D80B9FD56D /* Release */ = {
+		32A96982CC1B1E75D8928EDA7A2398A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF2874FD23A9E059C5106BFBD0893951 /* QoobissSDK.release.xcconfig */;
+			baseConfigurationReference = 58626259290D9BA9A1D3295D8F9E687E /* Pods-QoobissSDK_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1752,38 +1594,37 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/QoobissSDK/QoobissSDK-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/QoobissSDK/QoobissSDK-Info.plist";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/QoobissSDK/QoobissSDK.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_MODULE_NAME = QoobissSDK;
-				PRODUCT_NAME = QoobissSDK;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.10;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		524E64E30E7A5A64AE83FD04C8AF4980 /* Release */ = {
+		4C07C9F22231A41C1C317D638FCD32E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00A5F48C9E6308B34C129C5E99E3CEA3 /* lottie-ios.release.xcconfig */;
 			buildSettings = {
@@ -1800,9 +1641,52 @@
 			};
 			name = Release;
 		};
-		643380A512C242F66E7B2859979AF3E4 /* Debug */ = {
+		51F16B3A1D727351A7B4EA3315904E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70685A027FE6318A73C5C2176E5BED4D /* QoobissSDK.debug.xcconfig */;
+			baseConfigurationReference = E969DF82F6A36C330A10B1A66A0C8F6A /* Pods-QoobissSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		758A0B6A244D420C780784E7260D9A12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A5F48C9E6308B34C129C5E99E3CEA3 /* lottie-ios.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1814,11 +1698,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/QoobissSDK/QoobissSDK-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/QoobissSDK/QoobissSDK-Info.plist";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1827,107 +1710,17 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/QoobissSDK/QoobissSDK.modulemap";
+				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_MODULE_NAME = QoobissSDK;
-				PRODUCT_NAME = QoobissSDK;
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.10;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		75E1D2017AD2D56A13F985E5C8D14022 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58626259290D9BA9A1D3295D8F9E687E /* Pods-QoobissSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9AED55F404C09624F9F15D95CCC2CB05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE839B58267D5521C1FBDA8F76ED0DC /* Pods-QoobissSDK_Example.release.xcconfig */;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1935,10 +1728,11 @@
 			};
 			name = Release;
 		};
-		9D29A5FDDE77D363C8B68EB29079AA7A /* Release */ = {
+		89B0D2816E0B51CAFB0B769D8E2444EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ECCA30072D956888698F9C1C207589B /* Pods-QoobissSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = 7C051A58DCDE3C6ECAACA85A4EE85E91 /* lottie-ios.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1948,8 +1742,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC6A1BC856441CA59F5FC163B789B0B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECCA30072D956888698F9C1C207589B /* Pods-QoobissSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1978,67 +1814,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		9DEB0CCAB493B957B5148A7E8A7F4BB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C051A58DCDE3C6ECAACA85A4EE85E91 /* lottie-ios.debug.xcconfig */;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_MODULE_NAME = Lottie;
-				PRODUCT_NAME = Lottie;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A1C447D23CBCE1E3CD00D8E237A45172 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C051A58DCDE3C6ECAACA85A4EE85E91 /* lottie-ios.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lottie-ios";
-				IBSC_MODULE = Lottie;
-				INFOPLIST_FILE = "Target Support Files/lottie-ios/ResourceBundle-LottiePrivacyInfo-lottie-ios-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_NAME = LottiePrivacyInfo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		C8BE475C1343BF4F08A262D498C12651 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2103,10 +1878,29 @@
 			};
 			name = Release;
 		};
-		E9AAD4FABF64E0DD434C2850CF6F4C53 /* Debug */ = {
+		D37BFBACD1B95D601AB7151578DEB489 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E969DF82F6A36C330A10B1A66A0C8F6A /* Pods-QoobissSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = 7C051A58DCDE3C6ECAACA85A4EE85E91 /* lottie-ios.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lottie-ios";
+				IBSC_MODULE = Lottie;
+				INFOPLIST_FILE = "Target Support Files/lottie-ios/ResourceBundle-LottiePrivacyInfo-lottie-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = LottiePrivacyInfo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EC076C8862C89DBAB7F370A94CD544CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE839B58267D5521C1FBDA8F76ED0DC /* Pods-QoobissSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2116,10 +1910,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2129,7 +1922,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = "";
@@ -2140,11 +1933,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FC5E7D3C809C509160768ED00D62D428 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2214,64 +2009,10 @@
 			};
 			name = Debug;
 		};
-		FD6B0529975484CBC5C35508B1729885 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00A5F48C9E6308B34C129C5E99E3CEA3 /* lottie-ios.release.xcconfig */;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_MODULE_NAME = Lottie;
-				PRODUCT_NAME = Lottie;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16D159E59905DBA8A0B94A9BD7E05773 /* Build configuration list for PBXNativeTarget "lottie-ios-LottiePrivacyInfo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1C447D23CBCE1E3CD00D8E237A45172 /* Debug */,
-				524E64E30E7A5A64AE83FD04C8AF4980 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC5E7D3C809C509160768ED00D62D428 /* Debug */,
@@ -2280,11 +2021,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B5B3E2C099BE6664D11C97D2FC4260D /* Build configuration list for PBXNativeTarget "QoobissSDK" */ = {
+		70E0C7DB4E458F0321EF414861E027FA /* Build configuration list for PBXNativeTarget "Pods-QoobissSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643380A512C242F66E7B2859979AF3E4 /* Debug */,
-				34EFFB2093F42B773A7122D80B9FD56D /* Release */,
+				32A96982CC1B1E75D8928EDA7A2398A9 /* Debug */,
+				EC076C8862C89DBAB7F370A94CD544CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2292,17 +2033,8 @@
 		8DDC5CAB6793441D2695BAD72636BF3F /* Build configuration list for PBXNativeTarget "lottie-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DEB0CCAB493B957B5148A7E8A7F4BB3 /* Debug */,
-				FD6B0529975484CBC5C35508B1729885 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9415CDB313BA11577E2CA8EE18B7B62B /* Build configuration list for PBXNativeTarget "Pods-QoobissSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75E1D2017AD2D56A13F985E5C8D14022 /* Debug */,
-				9AED55F404C09624F9F15D95CCC2CB05 /* Release */,
+				89B0D2816E0B51CAFB0B769D8E2444EB /* Debug */,
+				758A0B6A244D420C780784E7260D9A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2310,8 +2042,17 @@
 		A68A771101E4AE7F44DFC5FF3725554D /* Build configuration list for PBXNativeTarget "Pods-QoobissSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9AAD4FABF64E0DD434C2850CF6F4C53 /* Debug */,
-				9D29A5FDDE77D363C8B68EB29079AA7A /* Release */,
+				51F16B3A1D727351A7B4EA3315904E47 /* Debug */,
+				AC6A1BC856441CA59F5FC163B789B0B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB08E2963CB9ACA1D69B4C216821D766 /* Build configuration list for PBXNativeTarget "lottie-ios-LottiePrivacyInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37BFBACD1B95D601AB7151578DEB489 /* Debug */,
+				4C07C9F22231A41C1C317D638FCD32E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
