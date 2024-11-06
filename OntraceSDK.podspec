@@ -8,22 +8,15 @@ Pod::Spec.new do |spec|
     spec.license      = { :type => 'MIT', :file => 'LICENSE' }
     spec.author       = { 'Qoobiss' => 'vlad.buhaescu@qoobiss.com' }
     spec.platform     = :ios, '13.0'
-    spec.source       = { :git => "https://github.com/qoobiss-ro/ontrace-ios.git" }
+    spec.source       = { :git => 'https://github.com/qoobiss-ro/ontrace-ios.git', :tag => '0.0.1' }
     spec.vendored_frameworks = '**/Framework/QoobissCoreIdentificationSDK.xcframework'
-    
     spec.resources = ['**/Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/*.{json, car, ttf, md, mlmodelc}' ]
     
     spec.frameworks = 'UIKit'
     spec.swift_version = '6.0'
-
-    # spec.pod_target_xcconfig = { 'CONFIGURATION_BUILD_DIR' => '${PODS_CONFIGURATION_BUILD_DIR}' }
-    # spec.user_target_xcconfig = { 'CONFIGURATION_BUILD_DIR' => '${PODS_CONFIGURATION_BUILD_DIR}' }
-    # spec.pod_target_xcconfig_file = '**/OntracePodConfig.xcconfig'
     
     spec.pod_target_xcconfig = {
         'SWIFT_OPTIMIZATION_LEVEL' => '-Onone',
-        'EXCLUDED_SOURCE_FILE_NAMES' => 'Info.plist',
-        'INFOPLIST_FILE' => 'Sources/App/Infoa.plist'
     }
 end
 
