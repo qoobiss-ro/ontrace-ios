@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
     spec.vendored_frameworks = '**/Framework/QoobissCoreIdentificationSDK.xcframework'
     
     spec.resources = ['**/Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/*.{json, car, ttf, md, mlmodelc}' ]
+    spec.dependency 'lottie-ios', '~> 4.5.0'
     
     spec.frameworks = 'UIKit'
     spec.swift_version = '6.0'

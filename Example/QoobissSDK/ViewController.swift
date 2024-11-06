@@ -1,10 +1,10 @@
 import UIKit
-import QoobissSDK
 import SwiftUI
 import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
+        Text("test")
         AnyView(IdentificationFlow.startFlow(apiKey: "your_key"))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.red)
