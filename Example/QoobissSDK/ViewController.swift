@@ -4,20 +4,24 @@ import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
-        Text("test")
-        AnyView(IdentificationFlow.startFlow(apiKey: "your_key"))
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.red)
-            .foregroundColor(.white)
-            .ignoresSafeArea()
+        AnyView(IdentificationFlow.startFlow(apiKey: "API_KEY",
+                                             onMessage: { message in
+            print("message is \(message)")
+        }, onComplete: { result in
+            print("result is \(result)")
+        }))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.red)
+        .foregroundColor(.white)
+        .ignoresSafeArea()
     }
 }
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let swiftUIView = AnyView(ContentView())
         let hostingController = UIHostingController(rootView: swiftUIView)
         
