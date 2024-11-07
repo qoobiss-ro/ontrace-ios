@@ -32,7 +32,6 @@ class ViewController: UIViewController {
 }
 
 public extension UIView {
-    ///  adds topAnchor  leadingAnchor  trailingAnchor and bottomAnchor constrsaints to a view that already belonging to a view hierarchy
     func autoPin(top: CGFloat = 0,
                  leading: CGFloat = 0,
                  trailing: CGFloat = 0,
