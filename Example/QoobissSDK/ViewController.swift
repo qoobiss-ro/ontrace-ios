@@ -1,10 +1,10 @@
 import UIKit
-import QoobissSDK
 import SwiftUI
 import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
+        Text("test")
         AnyView(IdentificationFlow.startFlow(apiKey: "your_key"))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.red)
@@ -32,7 +32,6 @@ class ViewController: UIViewController {
 }
 
 public extension UIView {
-    ///  adds topAnchor  leadingAnchor  trailingAnchor and bottomAnchor constrsaints to a view that already belonging to a view hierarchy
     func autoPin(top: CGFloat = 0,
                  leading: CGFloat = 0,
                  trailing: CGFloat = 0,

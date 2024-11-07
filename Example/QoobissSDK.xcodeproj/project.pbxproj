@@ -30,6 +30,8 @@
 /* Begin PBXFileReference section */
 		055B8BBF8536842CAED6C9F8 /* Pods-QoobissSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoobissSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B6C260C48EE1D820166266C /* Pods_QoobissSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QoobissSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488A65322CDBC62000437DF1 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488A65342CDBC74900437DF1 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* QoobissSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QoobissSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7AB5BF9411D7E6532036DEF6 /* Pods-QoobissSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoobissSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BA4B36A3A0CA688C90A4B654 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BCD752128D887DA8B97B823D /* OntraceSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OntraceSDK.podspec; path = ../OntraceSDK.podspec; sourceTree = "<group>"; };
+		BCD752128D887DA8B97B823D /* OntraceSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OntraceSDK.podspec; path = ../OntraceSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4E7F8077BB7D7EEFDC37B95 /* Pods-QoobissSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoobissSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DD2C0BF00611EF2A09F9BC79 /* Pods_QoobissSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QoobissSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC84E6702138D51CDA774520 /* Pods-QoobissSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoobissSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-QoobissSDK_Tests/Pods-QoobissSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,8 @@
 		86602BE3244E6057E04EEA5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				488A65342CDBC74900437DF1 /* Lottie.framework */,
+				488A65322CDBC62000437DF1 /* Lottie.framework */,
 				DD2C0BF00611EF2A09F9BC79 /* Pods_QoobissSDK_Example.framework */,
 				2B6C260C48EE1D820166266C /* Pods_QoobissSDK_Tests.framework */,
 			);
@@ -171,6 +175,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				10024DC51D8066AC4799697A /* [CP] Embed Pods Frameworks */,
+				BF58E0CCB01CB0203F9824D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,10 +277,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework/QoobissCoreIdentificationSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QoobissCoreIdentificationSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,6 +331,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF58E0CCB01CB0203F9824D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-resources.sh",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/01_id_front.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/02_id_back.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/03_uploading_ID.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/04_id_front_tilt.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/06_id_back_tilt.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/07_selfie_front.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/08_selfie_rotate_left.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/09_selfie_rotate_right.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/01_id_front.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/02_id_back.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/03_uploading_ID.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/04_id_front_tilt.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/06_id_back_tilt.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/07_selfie_front.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/08_selfie_rotate_left.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/09_selfie_rotate_right.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/10_selfie_tilt_front.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/11_selfie_tilt_back.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/13_process_complete.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
