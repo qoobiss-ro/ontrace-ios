@@ -285,7 +285,7 @@
           {
             "kind": "Function",
             "name": "startFlow",
-            "printedName": "startFlow(apiKey:)",
+            "printedName": "startFlow(apiKey:onMessage:onComplete:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -305,40 +305,47 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKeyQrSS_tFZ",
-            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKeyQrSS_tFZ",
-            "moduleName": "QoobissCoreIdentificationSDK",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startFlowTest",
-            "printedName": "startFlowTest()",
-            "children": [
+              },
               {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CompletionResult",
+                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE4TestQryFZ",
-            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE4TestQryFZ",
+            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKey9onMessage0I8CompleteQrSS_ySScyAA16CompletionResultOctFZ",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKey9onMessage0I8CompleteQrSS_ySScyAA16CompletionResultOctFZ",
             "moduleName": "QoobissCoreIdentificationSDK",
             "static": true,
             "declAttributes": [
@@ -698,20 +705,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -737,6 +730,207 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CompletionResult",
+        "printedName": "CompletionResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (Swift.String) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> QoobissCoreIdentificationSDK.CompletionResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO7successyACSS_tcACmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO7successyACSS_tcACmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: QoobissCoreIdentificationSDK.OntraceError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OntraceError",
+                            "printedName": "QoobissCoreIdentificationSDK.OntraceError",
+                            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO7failureyAcA12OntraceErrorV_tcACmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO7failureyAcA12OntraceErrorV_tcACmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: QoobissCoreIdentificationSDK.OntraceError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OntraceError",
+                            "printedName": "QoobissCoreIdentificationSDK.OntraceError",
+                            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO6cancelyAcA12OntraceErrorV_tcACmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO6cancelyAcA12OntraceErrorV_tcACmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO",
+        "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO",
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1220,6 +1414,48 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OntraceError",
+        "printedName": "OntraceError",
+        "declKind": "Struct",
+        "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV",
+        "mangledName": "$s28QoobissCoreIdentificationSDK12OntraceErrorV",
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1584,14 +1820,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Landing\/LandingPageViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 415,
+      "offset": 419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Landing\/LandingPageViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 454,
+      "offset": 458,
       "length": 5,
       "value": "false"
     },
@@ -1619,63 +1855,63 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TutorialScreen\/TutorialScreenViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 523,
+      "offset": 527,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 583,
+      "offset": 587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 624,
+      "offset": 628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 661,
+      "offset": 665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 700,
+      "offset": 704,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 2766,
+      "offset": 2768,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 2821,
+      "offset": 2823,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 2879,
+      "offset": 2881,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 2936,
+      "offset": 2938,
       "length": 4,
       "value": "0.85"
     },
@@ -2466,14 +2702,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5747,
+      "offset": 6045,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5804,
+      "offset": 6102,
       "length": 2,
       "value": "50"
     },
@@ -2711,49 +2947,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TermsAndConditions\/TermsAndConditionsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 534,
+      "offset": 538,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TermsAndConditions\/TermsAndConditionsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 626,
+      "offset": 630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TermsAndConditions\/TermsAndConditionsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 663,
+      "offset": 667,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/KycSessionData.swift",
-      "kind": "StringLiteral",
-      "offset": 288,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/KycSessionData.swift",
-      "kind": "StringLiteral",
-      "offset": 332,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/KycSessionData.swift",
-      "kind": "StringLiteral",
-      "offset": 371,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TermsAndConditions\/TermsAndConditionsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 279,
+      "offset": 280,
       "length": 4,
       "value": "true"
     },
@@ -2907,14 +3122,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberView.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 302,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberView.swift",
       "kind": "IntegerLiteral",
-      "offset": 343,
+      "offset": 344,
       "length": 2,
       "value": "12"
     },
@@ -2928,7 +3143,7 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Completion\/CompletionPageViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 407,
+      "offset": 411,
       "length": 5,
       "value": "false"
     },
@@ -2963,28 +3178,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 556,
+      "offset": 560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 597,
+      "offset": 601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 634,
+      "offset": 638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 673,
       "length": 2,
       "value": "\"\""
     },
@@ -3087,6 +3302,27 @@
       "value": "\"citizenship\""
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
+      "kind": "StringLiteral",
+      "offset": 80,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
+      "kind": "StringLiteral",
+      "offset": 124,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/TermsAndConditions\/TermsAndConditionsStrings.swift",
       "kind": "StringLiteral",
       "offset": 58,
@@ -3124,35 +3360,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5182,
+      "offset": 5367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8433,
+      "offset": 9306,
       "length": 4,
       "value": "-130"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8474,
+      "offset": 9347,
       "length": 3,
       "value": "650"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8519,
+      "offset": 9392,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8558,
+      "offset": 9431,
       "length": 3,
       "value": "350"
     },
@@ -3260,6 +3496,27 @@
       "offset": 243,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Error\/ErrorScreenView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Error\/ErrorScreenView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 333,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/Error\/ErrorScreenView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Design\/Atoms\/Fonts.swift",
@@ -3488,35 +3745,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPView.swift",
       "kind": "IntegerLiteral",
-      "offset": 275,
+      "offset": 276,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/OTP\/OTPView.swift",
       "kind": "IntegerLiteral",
-      "offset": 316,
+      "offset": 317,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/DocumentType\/DocumentTypeViewModel.swift",
       "kind": "Array",
-      "offset": 553,
+      "offset": 555,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/DocumentType\/DocumentTypeViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 698,
+      "offset": 702,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/DocumentType\/DocumentTypeViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 735,
+      "offset": 739,
       "length": 5,
       "value": "false"
     },
@@ -3593,35 +3850,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/HumanIdentification\/HumanIdentificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 634,
+      "offset": 638,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/HumanIdentification\/HumanIdentificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 675,
+      "offset": 679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/HumanIdentification\/HumanIdentificationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 712,
+      "offset": 716,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/HumanIdentification\/HumanIdentificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/HumanIdentification\/HumanIdentificationViewModel.swift",
       "kind": "Array",
-      "offset": 839,
+      "offset": 843,
       "length": 2,
       "value": "[]"
     },
