@@ -21,6 +21,21 @@ import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct Log {
+  public init(level: QoobissCoreIdentificationSDK.Log.Level)
+  public enum Level : Swift.Int {
+    case none
+    case debug
+    case error
+    case info
+    case verbose
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
 public struct IdentificationFlow {
   public static func startFlow(apiKey: Swift.String, onMessage: @escaping (Swift.String) -> Swift.Void, onComplete: @escaping (QoobissCoreIdentificationSDK.CompletionResult) -> Swift.Void) -> some SwiftUICore.View
   
@@ -32,3 +47,6 @@ public enum CompletionResult {
 }
 public struct OntraceError : Swift.Error {
 }
+extension QoobissCoreIdentificationSDK.Log.Level : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.Log.Level : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.Log.Level : Swift.RawRepresentable {}
