@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
 
     spec.license      = { :type => 'MIT', :file => 'LICENSE' }
     spec.author       = { 'Qoobiss' => 'vlad.buhaescu@qoobiss.com' }
-    spec.platform     = :ios, '13.0'
+    spec.platform     = :ios, '14.0'
     spec.source       = { :git => 'https://github.com/qoobiss-ro/ontrace-ios.git', :tag => spec.version }
     spec.vendored_frameworks = '**/Framework/QoobissCoreIdentificationSDK.xcframework'
     spec.resources = ['**/Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/*.{json, car, ttf, md, mlmodelc}' ]
