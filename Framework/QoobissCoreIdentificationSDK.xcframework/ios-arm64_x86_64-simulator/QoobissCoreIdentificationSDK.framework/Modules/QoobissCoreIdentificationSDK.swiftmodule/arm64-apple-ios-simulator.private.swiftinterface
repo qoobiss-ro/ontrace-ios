@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
 import AVFoundation
 import CoreImage.CIFilterBuiltins
@@ -41,9 +41,9 @@ public struct IdentificationFlow {
   
 }
 public enum CompletionResult {
-  case success(message: Swift.String)
-  case failure(error: QoobissCoreIdentificationSDK.OntraceError)
-  case cancel(error: QoobissCoreIdentificationSDK.OntraceError)
+  case success(requestId: Swift.String, message: Swift.String)
+  case failure(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)
+  case cancel(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)
 }
 public struct OntraceError : Swift.Error {
 }
