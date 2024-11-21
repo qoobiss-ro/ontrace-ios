@@ -187,387 +187,6 @@
         "moduleName": "QoobissCoreIdentificationSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "Log",
-        "printedName": "Log",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(level:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Log",
-                "printedName": "QoobissCoreIdentificationSDK.Log",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Level",
-                "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:28QoobissCoreIdentificationSDK3LogV5levelA2C5LevelO_tcfc",
-            "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5levelA2C5LevelO_tcfc",
-            "moduleName": "QoobissCoreIdentificationSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Level",
-            "printedName": "Level",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "none",
-                "printedName": "none",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QoobissCoreIdentificationSDK.Log.Level.Type) -> QoobissCoreIdentificationSDK.Log.Level",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Level",
-                            "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO4noneyA2EmF",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO4noneyA2EmF",
-                "moduleName": "QoobissCoreIdentificationSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "debug",
-                "printedName": "debug",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QoobissCoreIdentificationSDK.Log.Level.Type) -> QoobissCoreIdentificationSDK.Log.Level",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Level",
-                            "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO5debugyA2EmF",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO5debugyA2EmF",
-                "moduleName": "QoobissCoreIdentificationSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "error",
-                "printedName": "error",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QoobissCoreIdentificationSDK.Log.Level.Type) -> QoobissCoreIdentificationSDK.Log.Level",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Level",
-                            "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO5erroryA2EmF",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO5erroryA2EmF",
-                "moduleName": "QoobissCoreIdentificationSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "info",
-                "printedName": "info",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QoobissCoreIdentificationSDK.Log.Level.Type) -> QoobissCoreIdentificationSDK.Log.Level",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Level",
-                            "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO4infoyA2EmF",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO4infoyA2EmF",
-                "moduleName": "QoobissCoreIdentificationSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "verbose",
-                "printedName": "verbose",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QoobissCoreIdentificationSDK.Log.Level.Type) -> QoobissCoreIdentificationSDK.Log.Level",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Level",
-                            "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO7verboseyA2EmF",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO7verboseyA2EmF",
-                "moduleName": "QoobissCoreIdentificationSDK"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "QoobissCoreIdentificationSDK.Log.Level?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Level",
-                        "printedName": "QoobissCoreIdentificationSDK.Log.Level",
-                        "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueAESgSi_tcfc",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueAESgSi_tcfc",
-                "moduleName": "QoobissCoreIdentificationSDK",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueSivp",
-                "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueSivp",
-                "moduleName": "QoobissCoreIdentificationSDK",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueSivg",
-                    "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO8rawValueSivg",
-                    "moduleName": "QoobissCoreIdentificationSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:28QoobissCoreIdentificationSDK3LogV5LevelO",
-            "mangledName": "$s28QoobissCoreIdentificationSDK3LogV5LevelO",
-            "moduleName": "QoobissCoreIdentificationSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:28QoobissCoreIdentificationSDK3LogV",
-        "mangledName": "$s28QoobissCoreIdentificationSDK3LogV",
-        "moduleName": "QoobissCoreIdentificationSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -651,8 +270,89 @@
         "children": [
           {
             "kind": "Function",
-            "name": "startFlow",
-            "printedName": "startFlow(apiKey:onMessage:onComplete:)",
+            "name": "startFlowNative",
+            "printedName": "startFlowNative(apiKey:onMessage:onCompleteResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((QoobissCoreIdentificationSDK.OntraceCompletionResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissCoreIdentificationSDK.OntraceCompletionResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OntraceCompletionResult",
+                        "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE6Native6apiKey9onMessage0J14CompleteResultQrSS_ySScyAA017OntraceCompletionM0CcSgtFZ",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE6Native6apiKey9onMessage0J14CompleteResultQrSS_ySScyAA017OntraceCompletionM0CcSgtFZ",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startFlowCrossPlatform",
+            "printedName": "startFlowCrossPlatform(apiKey:onMessage:onComplete:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -694,7 +394,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult) -> ()",
+                "printedName": "(Swift.String) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -703,20 +403,21 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "CompletionResult",
-                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                    "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKey9onMessage0I8CompleteQrSS_ySScyAA16CompletionResultOctFZ",
-            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE06apiKey9onMessage0I8CompleteQrSS_ySScyAA16CompletionResultOctFZ",
+            "usr": "s:28QoobissCoreIdentificationSDK0C4FlowV05startE13CrossPlatform6apiKey9onMessage0K8CompleteQrSS_ySScySSctFZ",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C4FlowV05startE13CrossPlatform6apiKey9onMessage0K8CompleteQrSS_ySScySSctFZ",
             "moduleName": "QoobissCoreIdentificationSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -1072,202 +773,551 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CompletionResult",
-        "printedName": "CompletionResult",
+        "name": "OntraceCompletionResult",
+        "printedName": "OntraceCompletionResult",
         "children": [
           {
             "kind": "Var",
-            "name": "success",
-            "printedName": "success",
+            "name": "requestId",
+            "printedName": "requestId",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (Swift.String, Swift.String) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, Swift.String) -> QoobissCoreIdentificationSDK.CompletionResult",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(requestId: Swift.String, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
-                      }
-                    ]
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
-                ]
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvs",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvs",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvM",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestIdSSvM",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO7successyACSS_SStcACmF",
-            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO7successyACSS_SStcACmF",
-            "moduleName": "QoobissCoreIdentificationSDK"
+            ]
           },
           {
             "kind": "Var",
-            "name": "failure",
-            "printedName": "failure",
+            "name": "message",
+            "printedName": "message",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (Swift.String, QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "OntraceError",
-                            "printedName": "QoobissCoreIdentificationSDK.OntraceError",
-                            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV"
-                          }
-                        ]
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sq"
                   }
-                ]
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvs",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvs",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvM",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC7messageSSSgvM",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO7failureyACSS_AA12OntraceErrorVtcACmF",
-            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO7failureyACSS_AA12OntraceErrorVtcACmF",
-            "moduleName": "QoobissCoreIdentificationSDK"
+            ]
           },
           {
             "kind": "Var",
-            "name": "cancel",
-            "printedName": "cancel",
+            "name": "error",
+            "printedName": "error",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QoobissCoreIdentificationSDK.CompletionResult.Type) -> (Swift.String, QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, QoobissCoreIdentificationSDK.OntraceError) -> QoobissCoreIdentificationSDK.CompletionResult",
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "OntraceError",
-                            "printedName": "QoobissCoreIdentificationSDK.OntraceError",
-                            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV"
-                          }
-                        ]
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QoobissCoreIdentificationSDK.CompletionResult.Type",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CompletionResult",
-                        "printedName": "QoobissCoreIdentificationSDK.CompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sq"
                   }
-                ]
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvs",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvs",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvM",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC5errorSSSgvM",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identificationResult",
+            "printedName": "identificationResult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.IdentificationResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
-            "declKind": "EnumElement",
-            "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO6cancelyACSS_AA12OntraceErrorVtcACmF",
-            "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO6cancelyACSS_AA12OntraceErrorVtcACmF",
-            "moduleName": "QoobissCoreIdentificationSDK"
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdentificationResult",
+                        "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdentificationResult",
+                        "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvs",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvs",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvM",
+                "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC014identificationG0AA0cG0OSgvM",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(requestId:message:error:identificationResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OntraceCompletionResult",
+                "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.IdentificationResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestId7message5error014identificationG0ACSS_SSSgAhA0cG0OSgtcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC9requestId7message5error014identificationG0ACSS_SSSgAhA0cG0OSgtcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OntraceCompletionResult",
+                "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
+                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Enum",
-        "usr": "s:28QoobissCoreIdentificationSDK16CompletionResultO",
-        "mangledName": "$s28QoobissCoreIdentificationSDK16CompletionResultO",
+        "declKind": "Class",
+        "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC",
+        "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC",
         "moduleName": "QoobissCoreIdentificationSDK",
         "declAttributes": [
           "AccessControl"
@@ -1286,6 +1336,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -1330,6 +1394,270 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdentificationResult",
+        "printedName": "IdentificationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.IdentificationResult.Type) -> QoobissCoreIdentificationSDK.IdentificationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdentificationResult",
+                        "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO7successyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO7successyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.IdentificationResult.Type) -> QoobissCoreIdentificationSDK.IdentificationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdentificationResult",
+                        "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO7failureyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO7failureyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.IdentificationResult.Type) -> QoobissCoreIdentificationSDK.IdentificationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdentificationResult",
+                        "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO6cancelyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO6cancelyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.IdentificationResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdentificationResult",
+                    "printedName": "QoobissCoreIdentificationSDK.IdentificationResult",
+                    "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO8rawValueACSgSi_tcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO8rawValueACSgSi_tcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO8rawValueSivp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO8rawValueSivp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO8rawValueSivg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO8rawValueSivg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:28QoobissCoreIdentificationSDK0C6ResultO",
+        "mangledName": "$s28QoobissCoreIdentificationSDK0C6ResultO",
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1755,6 +2083,59 @@
         "kind": "TypeDecl",
         "name": "OntraceError",
         "printedName": "OntraceError",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OntraceError",
+                "printedName": "QoobissCoreIdentificationSDK.OntraceError",
+                "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK12OntraceErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK12OntraceErrorV6encode2toys7Encoder_p_tKF",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:28QoobissCoreIdentificationSDK12OntraceErrorV",
         "mangledName": "$s28QoobissCoreIdentificationSDK12OntraceErrorV",
@@ -1783,6 +2164,20 @@
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -2282,35 +2677,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/Log.swift",
       "kind": "IntegerLiteral",
-      "offset": 243,
+      "offset": 183,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/Log.swift",
       "kind": "IntegerLiteral",
-      "offset": 266,
+      "offset": 206,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/Log.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 229,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/Log.swift",
       "kind": "IntegerLiteral",
-      "offset": 311,
+      "offset": 251,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/Log.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 276,
       "length": 1,
       "value": "4"
     },
@@ -2807,14 +3202,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6232,
+      "offset": 6286,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6289,
+      "offset": 6343,
       "length": 2,
       "value": "50"
     },
@@ -3169,6 +3564,20 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/IdentificationResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 75,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/IdentificationResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92,
+      "length": 6,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/PhoneNumber\/PhoneNumberView.swift",
       "kind": "IntegerLiteral",
       "offset": 302,
@@ -3409,28 +3818,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9740,
+      "offset": 9705,
       "length": 4,
       "value": "-130"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9781,
+      "offset": 9746,
       "length": 3,
       "value": "650"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9826,
+      "offset": 9791,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9865,
+      "offset": 9830,
       "length": 3,
       "value": "350"
     },

@@ -4,10 +4,10 @@ import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
-        AnyView(IdentificationFlow.startFlow(apiKey: "API_KEY",
-                                             onMessage: { message in
+        AnyView(IdentificationFlow.startFlowNative(apiKey: "API_KEY",
+                                                   onMessage: { message in
             print("message is \(message)")
-        }, onComplete: { result in
+        }, onCompleteResult: { result in
             print("result is \(result)")
         }))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
