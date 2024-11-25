@@ -21,32 +21,38 @@ import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct Log {
-  public init(level: QoobissCoreIdentificationSDK.Log.Level)
-  public enum Level : Swift.Int {
-    case none
-    case debug
-    case error
-    case info
-    case verbose
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-}
+public typealias StringCallback = (Swift.String) -> Swift.Void
+public typealias ResultCallback = (QoobissCoreIdentificationSDK.OntraceCompletionResult) -> Swift.Void
 public struct IdentificationFlow {
-  public static func startFlow(apiKey: Swift.String, onMessage: @escaping (Swift.String) -> Swift.Void, onComplete: @escaping (QoobissCoreIdentificationSDK.CompletionResult) -> Swift.Void) -> some SwiftUICore.View
+  public static func startFlowNative(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onCompleteResult: QoobissCoreIdentificationSDK.ResultCallback? = nil) -> some SwiftUICore.View
+  
+  public static func startFlowCrossPlatform(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
   
 }
-public enum CompletionResult {
-  case success(requestId: Swift.String, message: Swift.String)
-  case failure(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)
-  case cancel(requestId: Swift.String, error: QoobissCoreIdentificationSDK.OntraceError)
+public class OntraceCompletionResult : Swift.Codable {
+  public var requestId: Swift.String
+  public var message: Swift.String?
+  public var error: Swift.String?
+  public var identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?
+  public init(requestId: Swift.String, message: Swift.String?, error: Swift.String?, identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
-public struct OntraceError : Swift.Error {
+public enum IdentificationResult : Swift.Int, Swift.Codable {
+  case success
+  case failure
+  case cancel
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-extension QoobissCoreIdentificationSDK.Log.Level : Swift.Equatable {}
-extension QoobissCoreIdentificationSDK.Log.Level : Swift.Hashable {}
-extension QoobissCoreIdentificationSDK.Log.Level : Swift.RawRepresentable {}
+public struct OntraceError : Swift.Error, Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.RawRepresentable {}

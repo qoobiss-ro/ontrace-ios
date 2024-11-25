@@ -1,6 +1,6 @@
 {
   "name": "OntraceSDK",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "summary": "An SDK to identify a user basedon their ID and face scan",
   "description": "An SDK to identify a user basedon their ID and face scan using Qoobiss",
   "homepage": "https://github.com/qoobiss-ro/ontrace-ios.git",
@@ -15,7 +15,8 @@
     "ios": "13.0"
   },
   "source": {
-    "git": "https://github.com/qoobiss-ro/ontrace-ios.git"
+    "git": "https://github.com/qoobiss-ro/ontrace-ios.git",
+    "tag": "0.0.9"
   },
   "vendored_frameworks": "**/Framework/QoobissCoreIdentificationSDK.xcframework",
   "resources": [
@@ -27,11 +28,7 @@
     ]
   },
   "frameworks": "UIKit",
-  "swift_versions": "6.0",
   "pod_target_xcconfig": {
-    "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
-    "EXCLUDED_SOURCE_FILE_NAMES": "Info.plist",
-    "INFOPLIST_FILE": "Sources/App/Infoa.plist"
-  },
-  "swift_version": "6.0"
+    "SWIFT_OPTIMIZATION_LEVEL": "-Onone"
+  }
 }

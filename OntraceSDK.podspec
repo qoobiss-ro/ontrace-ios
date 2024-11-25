@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'OntraceSDK'
-    spec.version      = '0.0.7'
+    spec.version      = '0.0.9'
     spec.summary      = 'An SDK to identify a user basedon their ID and face scan'
     spec.description  = 'An SDK to identify a user basedon their ID and face scan using Qoobiss'
     spec.homepage     = 'https://github.com/qoobiss-ro/ontrace-ios.git'
@@ -14,7 +14,6 @@ Pod::Spec.new do |spec|
     spec.dependency 'lottie-ios', '~> 4.5.0'
     
     spec.frameworks = 'UIKit'
-#    spec.swift_version = '6.0'
     
     spec.pod_target_xcconfig = {
         'SWIFT_OPTIMIZATION_LEVEL' => '-Onone',
