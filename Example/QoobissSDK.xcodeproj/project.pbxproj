@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07300FDEAE8AE431EFA3B435 /* Pods_QoobissSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFF2736CABBD582F0F96B1F /* Pods_QoobissSDK_Tests.framework */; };
+		4855DD8B2CF489B300955416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855DD8A2CF489B000955416 /* ContentView.swift */; };
 		489A00812CF0B8E6007E7848 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 489A00802CF0B8E6007E7848 /* Roboto-Regular.ttf */; };
 		489A00822CF0B8E6007E7848 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 489A007F2CF0B8E6007E7848 /* Roboto-Bold.ttf */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		36B081A1EF6B587626CF13E3 /* Pods-QoobissSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoobissSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4855DD8A2CF489B000955416 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		488A65322CDBC62000437DF1 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		488A65342CDBC74900437DF1 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		489A007F2CF0B8E6007E7848 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				4855DD8A2CF489B000955416 /* ContentView.swift */,
 				489A007F2CF0B8E6007E7848 /* Roboto-Bold.ttf */,
 				489A00802CF0B8E6007E7848 /* Roboto-Regular.ttf */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -388,6 +391,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4855DD8B2CF489B300955416 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

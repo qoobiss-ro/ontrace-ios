@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6ID9VuIUNf0VaZNWGzDCZ1V5YLc=
+		KD1f9cvmsC5/H/Un+jvMKsOePJM=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6ID9VuIUNf0VaZNWGzDCZ1V5YLc=
+		KD1f9cvmsC5/H/Un+jvMKsOePJM=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<data>
-		0aro4hZ1kepHt6afLtgVp2yxfAg=
+		G7rfFMDEEwTHVfb3z9vxEsfrN0g=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
 		<data>
@@ -234,7 +234,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PI/xQ+LzVXDSDGSIY+d9qo3XwunhbfXxU9C2GiPIcS4=
+			wK6zEKZqhneEqeUSZI7GPfl5IHZNt8spHRlnERbnWso=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PI/xQ+LzVXDSDGSIY+d9qo3XwunhbfXxU9C2GiPIcS4=
+			wK6zEKZqhneEqeUSZI7GPfl5IHZNt8spHRlnERbnWso=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -325,7 +325,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nyxKIxbnJfQu7qRvJokpJq9ka+22NSJWRe+xMfSjJMA=
+			vJ0nDVOASyZh8Vigm9cTcBUaaWzbkksDwUkPVmXnhLo=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
