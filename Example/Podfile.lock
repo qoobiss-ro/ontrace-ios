@@ -1,6 +1,6 @@
 PODS:
   - lottie-ios (4.5.0)
-  - OntraceSDK (0.0.9):
+  - OntraceSDK (0.0.10):
     - lottie-ios (~> 4.5.0)
 
 DEPENDENCIES:
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   lottie-ios: a881093fab623c467d3bce374367755c272bdd59
-  OntraceSDK: 1821ebec2ae504b99aee3e98bcf345c221660be9
+  OntraceSDK: d5254b40a978e71d007536e9f6e68e1e997927ba
 
 PODFILE CHECKSUM: 3d635d13ef100e90a6320541070a8f3a64f044e5
 
