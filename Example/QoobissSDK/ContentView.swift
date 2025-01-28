@@ -3,12 +3,13 @@ import QoobissCoreIdentificationSDK
 
 struct ContentView: View {
     var body: some View {
-        AnyView(IdentificationFlow.startFlowNative(apiKey: "API_KEY",
-                                                   onMessage: { message in
-            print("message is \(message)")
-        }, onCompleteResult: { result in
-            print("result is \(result)")
-        }))
+        AnyView(IdentificationFlow.startFlowNative(
+            apiKey: "YOUR_API_KEY",
+            onMessage: { message in
+                print("message is \(message)")
+            }, onCompleteResult: { result in
+                print("result is \(result)")
+            }))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.red)
         .foregroundColor(.white)
