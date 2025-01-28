@@ -17,8 +17,8 @@ pod 'OntraceSDK', '~> 0.0.10'
 ## Requirements
 
 iOS 13.0+
-Swift 6.0+
-Xcode 16+ (because of Swift minimum version)
+Swift 5.10+
+Xcode 16+
 
 ## Quick Start
 Here's a quick example to get started with `OntraceSDK`:
@@ -36,11 +36,10 @@ IdentificationFlow.startFlowNative(
 
 The `onMessage` callback will be called every time there is a new state to transition to.
 
-
 There are two scenarios for completing the flow and getting a callback from `onCompleteResult` :
 
-1. User cancels on the landing page or the second page, Terms and Conditions
-2. User gets through the flow
+Scenario 1: The user cancels the process on the landing page or the second page (Terms and Conditions).
+Scenario 2: The user successfully completes the entire flow.
 
 The response is of type OntraceCompletionResult. This response contains a requestId and using this API
 
