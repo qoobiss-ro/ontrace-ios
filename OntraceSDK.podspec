@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'OntraceSDK'
-    spec.version      = '0.0.9'
+    spec.version      = '0.0.10'
     spec.summary      = 'An SDK to identify a user basedon their ID and face scan'
     spec.description  = 'An SDK to identify a user basedon their ID and face scan using Qoobiss'
     spec.homepage     = 'https://github.com/qoobiss-ro/ontrace-ios.git'
