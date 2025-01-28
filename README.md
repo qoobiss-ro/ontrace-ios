@@ -13,6 +13,7 @@ To integrate `OntraceSDK` into your project, add the following to your `Podfile`
 ```ruby
 
 pod 'OntraceSDK', '~> 0.0.10'
+```
 
 ## Requirements
 
@@ -22,6 +23,8 @@ Xcode 16+
 
 ## Quick Start
 Here's a quick example to get started with `OntraceSDK`:
+
+### Initialisation
 
 ```swift
 import OntraceSDK
@@ -33,6 +36,10 @@ IdentificationFlow.startFlowNative(
     }, onCompleteResult: { result in
         print("result is \(result)")
     })
+
+```
+
+### Results
 
 The `onMessage` callback will be called every time there is a new state to transition to.
 
