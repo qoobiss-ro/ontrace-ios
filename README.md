@@ -18,16 +18,7 @@ target 'YourMainTarget' do
   
   use_frameworks!
 
-  pod 'OntraceSDK', '0.0.11'
-  
-  post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      end
-    end
-  end
-  
+  pod 'OntraceSDK', '0.0.16'
 end
 
 ```

@@ -309,12 +309,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QoobissSDK_Example/Pods-QoobissSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework/QoobissCoreIdentificationSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QoobissCoreIdentificationSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
