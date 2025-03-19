@@ -1,1 +1,2 @@
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/Lottie.framework

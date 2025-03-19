@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/OntraceSDK/OntraceSDK-xcframeworks.sh
 ${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework
+${PODS_ROOT}/../../Framework/Lottie.xcframework
