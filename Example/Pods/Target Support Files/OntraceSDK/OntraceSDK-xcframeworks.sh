@@ -23,6 +23,12 @@ variant_for_slice()
   "QoobissCoreIdentificationSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "Lottie.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "Lottie.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -33,6 +39,12 @@ archs_for_slice()
     echo "arm64"
     ;;
   "QoobissCoreIdentificationSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "Lottie.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "Lottie.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -118,4 +130,5 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/Lottie.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

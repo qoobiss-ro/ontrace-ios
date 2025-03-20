@@ -10,7 +10,6 @@ class ViewController: UIViewController {
         let hostingController = UIHostingController(rootView: swiftUIView)
         
         hostingController.view.translatesAutoresizingMaskIntoConstraints = false
-        hostingController.view.backgroundColor = .red
         view.backgroundColor = .yellow
         addChild(hostingController)
         view.addSubview(hostingController.view)

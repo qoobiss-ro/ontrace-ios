@@ -29,14 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25974E8461A1AEBA214F7A4BE4DEB8C1 /* PBXContainerItemProxy */ = {
+		27E5324F2C7F99C4994D801E2C33259F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3BED76E43B9A592FEDAF45E263EDFDB8;
 			remoteInfo = OntraceSDK;
 		};
-		A4D14E4D0059503E8CE8E9C34DFBF496 /* PBXContainerItemProxy */ = {
+		4DA05F9C30FB3984194C879F579C864E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,46 +46,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D478C6D5929788E88AC6B2CE0F1DEC /* 13_process_complete.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 13_process_complete.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json"; sourceTree = "<group>"; };
-		07A2A111F6B15F7D191F65F91ED24941 /* 01_id_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 01_id_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/01_id_front.json"; sourceTree = "<group>"; };
-		0A2A580D6697D56DB10FC5D66EEF9055 /* 10_selfie_tilt_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 10_selfie_tilt_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json"; sourceTree = "<group>"; };
-		0CA40180DCB69761F3E2366C003949E4 /* 09_selfie_rotate_right.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 09_selfie_rotate_right.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/09_selfie_rotate_right.json"; sourceTree = "<group>"; };
+		0A038F67E7F17F1F5FC713387023242F /* 09_selfie_rotate_right.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 09_selfie_rotate_right.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/09_selfie_rotate_right.json"; sourceTree = "<group>"; };
+		10CA7222E48B11D402B2B30F833DF9CC /* 07_selfie_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 07_selfie_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/07_selfie_front.json"; sourceTree = "<group>"; };
 		11F610DBE2795EBCC96E05D144551566 /* Pods-QoobissSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QoobissSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		159686D640EAAC94061F833DEBA858DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1D458AD8BFA369AB900ADABC9EBB8A52 /* Pods-QoobissSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QoobissSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		1F10617AEEA17608DDE9EA7E57332BD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		24B4F1DF5E541FD5AC06319822D9BA2D /* Pods-QoobissSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		272942851EF76C2B16E8DFF2B36CB423 /* 04_id_front_tilt.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 04_id_front_tilt.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/04_id_front_tilt.json"; sourceTree = "<group>"; };
-		2D6BB9FB04FB7407A522C1FCD8FE8506 /* 07_selfie_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 07_selfie_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/07_selfie_front.json"; sourceTree = "<group>"; };
-		2F85E07E39DF98FA3D868967106F03AB /* 02_id_back.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 02_id_back.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/02_id_back.json"; sourceTree = "<group>"; };
 		31AF78A282ED5226C18B2F4DD871BD2C /* Pods-QoobissSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QoobissSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		363B6A188028D773FF94FC4B4A31892B /* OntraceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OntraceSDK.debug.xcconfig; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		393F624378A9E9E1743FC6FE1BF43E0D /* 02_id_back.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 02_id_back.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/02_id_back.json"; sourceTree = "<group>"; };
 		3C2C744A7B4A9FAB254D93749DE58E50 /* Pods-QoobissSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3FFBE2A33CC6C347AC4B13EC6748C264 /* QoobissCoreIdentificationSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = QoobissCoreIdentificationSDK.xcframework; path = Framework/QoobissCoreIdentificationSDK.xcframework; sourceTree = "<group>"; };
+		4DE1AC07CA93BDB1DB13CAA0BF2781D2 /* 10_selfie_tilt_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 10_selfie_tilt_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json"; sourceTree = "<group>"; };
+		4EA37ECAE34F1DE647437970ACCC721F /* OntraceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OntraceSDK.release.xcconfig; sourceTree = "<group>"; };
+		53E7B66351E3CE2C7FD5E5A514C63DD7 /* OntraceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OntraceSDK.debug.xcconfig; sourceTree = "<group>"; };
 		59BB2B256DBEE73FC08E3F7FDADD0B60 /* Pods-QoobissSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QoobissSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		59C2AD0DE75208C18D6120CC6E635AB3 /* 06_id_back_tilt.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 06_id_back_tilt.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/06_id_back_tilt.json"; sourceTree = "<group>"; };
 		5A50A37C5F31B808726807009148E9E0 /* Pods-QoobissSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QoobissSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		5B522DEB153694C0439BBA8CC69F2112 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6B5F7678C54418D0DB6F1F504C669106 /* OntraceSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OntraceSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		6C4E0CE0C4BA76A651D7B6B655F535E5 /* Pods-QoobissSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QoobissSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		70E62235EFE419C30A5789B1F59DA35C /* OntraceSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OntraceSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		722E99F8BFE54EE933119A168E621C76 /* Pods-QoobissSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QoobissSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		7332FA7621D9CF68360472F222729E60 /* Pods-QoobissSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QoobissSDK_Example.modulemap"; sourceTree = "<group>"; };
+		74D4884EEF02F3A4F6D82FF6F3CA0261 /* 04_id_front_tilt.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 04_id_front_tilt.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/04_id_front_tilt.json"; sourceTree = "<group>"; };
+		797106DA0B10D4660390F6E58833D542 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7F85CFFD196E404CCC2035F07419E1BC /* Lottie.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Lottie.xcframework; path = Framework/Lottie.xcframework; sourceTree = "<group>"; };
+		81A4117C546821DB3AE5690054AA2B83 /* 03_uploading_ID.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 03_uploading_ID.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/03_uploading_ID.json"; sourceTree = "<group>"; };
 		83A900B0D3374F158F3EBB06B865C63F /* Pods-QoobissSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		87D3D0A62EE10164AD769BCBDAF3E068 /* Pods-QoobissSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		97C6FABC1D17212FA7DF6864E6364EB5 /* Pods-QoobissSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		97E40515AEF304A818AC00E8090263BF /* 06_id_back_tilt.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 06_id_back_tilt.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/06_id_back_tilt.json"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FE4C1C4315F3CA8561FA46F19012160 /* Pods-QoobissSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QoobissSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B2B1BD6D18C886B70543D4297CBE19E8 /* QoobissCoreIdentificationSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = QoobissCoreIdentificationSDK.xcframework; path = Framework/QoobissCoreIdentificationSDK.xcframework; sourceTree = "<group>"; };
+		A72B0A1DE8D0700188F167C76E621A70 /* 01_id_front.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 01_id_front.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/01_id_front.json"; sourceTree = "<group>"; };
 		B3CA65DDE6BD94B074E34394EF53D46A /* Pods-QoobissSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		C38397757E314CBAF6FD2CB0DE098D33 /* Pods-QoobissSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QoobissSDK_Example"; path = Pods_QoobissSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C52D18D6DBC417B79B368FD528D37178 /* 11_selfie_tilt_back.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 11_selfie_tilt_back.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json"; sourceTree = "<group>"; };
+		D13A80635B5C7630B4193F845B0EB513 /* 13_process_complete.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 13_process_complete.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json"; sourceTree = "<group>"; };
 		D1A35617ACD6D16FBFA0E1E68E676AB0 /* Pods-QoobissSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QoobissSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D327183618AAAA51CC460AA232512FF7 /* OntraceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OntraceSDK.release.xcconfig; sourceTree = "<group>"; };
 		DF511ABC59ADD4236A6E3B8AA104AD98 /* Pods-QoobissSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-QoobissSDK_Tests"; path = Pods_QoobissSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1CD10787CD0C887292D5B8395D2ED2A /* 08_selfie_rotate_left.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 08_selfie_rotate_left.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/08_selfie_rotate_left.json"; sourceTree = "<group>"; };
+		E17B90AF5B38ACB2674C0879E13B4808 /* 11_selfie_tilt_back.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 11_selfie_tilt_back.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json"; sourceTree = "<group>"; };
+		E671F40975EAD48055CD1BE86B8441B0 /* OntraceSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OntraceSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EA76F9942E70A4B258FD99699F8D4E99 /* OntraceSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OntraceSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		F2FD578F39B2BC20063713084002FFFF /* Pods-QoobissSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QoobissSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F9F497DA69D7E88C8F583EC9505A5B72 /* 08_selfie_rotate_left.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 08_selfie_rotate_left.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/08_selfie_rotate_left.json"; sourceTree = "<group>"; };
 		FBBC8B8047E0D3E7AB90B4EF1D2A16ED /* Pods-QoobissSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QoobissSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FEB33D2FCD40FCB3E4078B03D91B3B34 /* 03_uploading_ID.json */ = {isa = PBXFileReference; includeInIndex = 1; name = 03_uploading_ID.json; path = "Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/03_uploading_ID.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,36 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		253045BFFA8D7CED104E6C50B0FCEC44 /* Pod */ = {
+		097E54177CB40D4B921EF97FECE74884 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F10617AEEA17608DDE9EA7E57332BD2 /* LICENSE */,
-				70E62235EFE419C30A5789B1F59DA35C /* OntraceSDK.podspec */,
-				5B522DEB153694C0439BBA8CC69F2112 /* README.md */,
+				EA76F9942E70A4B258FD99699F8D4E99 /* OntraceSDK-xcframeworks.sh */,
+				53E7B66351E3CE2C7FD5E5A514C63DD7 /* OntraceSDK.debug.xcconfig */,
+				4EA37ECAE34F1DE647437970ACCC721F /* OntraceSDK.release.xcconfig */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		36DAE7FEB0B799C1FD7759D483170CD1 /* OntraceSDK */ = {
-			isa = PBXGroup;
-			children = (
-				07A2A111F6B15F7D191F65F91ED24941 /* 01_id_front.json */,
-				2F85E07E39DF98FA3D868967106F03AB /* 02_id_back.json */,
-				FEB33D2FCD40FCB3E4078B03D91B3B34 /* 03_uploading_ID.json */,
-				272942851EF76C2B16E8DFF2B36CB423 /* 04_id_front_tilt.json */,
-				59C2AD0DE75208C18D6120CC6E635AB3 /* 06_id_back_tilt.json */,
-				2D6BB9FB04FB7407A522C1FCD8FE8506 /* 07_selfie_front.json */,
-				F1CD10787CD0C887292D5B8395D2ED2A /* 08_selfie_rotate_left.json */,
-				0CA40180DCB69761F3E2366C003949E4 /* 09_selfie_rotate_right.json */,
-				0A2A580D6697D56DB10FC5D66EEF9055 /* 10_selfie_tilt_front.json */,
-				C52D18D6DBC417B79B368FD528D37178 /* 11_selfie_tilt_back.json */,
-				05D478C6D5929788E88AC6B2CE0F1DEC /* 13_process_complete.json */,
-				CF3B76CFA194618A06D9638923EAB8EB /* Frameworks */,
-				253045BFFA8D7CED104E6C50B0FCEC44 /* Pod */,
-				6B4F02453D6B563C3E951E1192EC8A10 /* Support Files */,
-			);
-			name = OntraceSDK;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OntraceSDK";
 			sourceTree = "<group>";
 		};
 		3891F6617ACD3D865D6F9BA4BC81266B /* Products */ = {
@@ -149,15 +129,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B4F02453D6B563C3E951E1192EC8A10 /* Support Files */ = {
+		71AAE4F930F62680E92EABE109F69867 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6B5F7678C54418D0DB6F1F504C669106 /* OntraceSDK-xcframeworks.sh */,
-				363B6A188028D773FF94FC4B4A31892B /* OntraceSDK.debug.xcconfig */,
-				D327183618AAAA51CC460AA232512FF7 /* OntraceSDK.release.xcconfig */,
+				159686D640EAAC94061F833DEBA858DA /* LICENSE */,
+				E671F40975EAD48055CD1BE86B8441B0 /* OntraceSDK.podspec */,
+				797106DA0B10D4660390F6E58833D542 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/OntraceSDK";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		8F41D9218B23F861D2E474782179BC8B /* Pods-QoobissSDK_Tests */ = {
@@ -176,6 +155,28 @@
 			path = "Target Support Files/Pods-QoobissSDK_Tests";
 			sourceTree = "<group>";
 		};
+		BFE8BE646A5D6B3BE728A6DF4EBAE1EB /* OntraceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A72B0A1DE8D0700188F167C76E621A70 /* 01_id_front.json */,
+				393F624378A9E9E1743FC6FE1BF43E0D /* 02_id_back.json */,
+				81A4117C546821DB3AE5690054AA2B83 /* 03_uploading_ID.json */,
+				74D4884EEF02F3A4F6D82FF6F3CA0261 /* 04_id_front_tilt.json */,
+				97E40515AEF304A818AC00E8090263BF /* 06_id_back_tilt.json */,
+				10CA7222E48B11D402B2B30F833DF9CC /* 07_selfie_front.json */,
+				F9F497DA69D7E88C8F583EC9505A5B72 /* 08_selfie_rotate_left.json */,
+				0A038F67E7F17F1F5FC713387023242F /* 09_selfie_rotate_right.json */,
+				4DE1AC07CA93BDB1DB13CAA0BF2781D2 /* 10_selfie_tilt_front.json */,
+				E17B90AF5B38ACB2674C0879E13B4808 /* 11_selfie_tilt_back.json */,
+				D13A80635B5C7630B4193F845B0EB513 /* 13_process_complete.json */,
+				CED2C985A8A1E18A3E5A7E87EA767CDB /* Frameworks */,
+				71AAE4F930F62680E92EABE109F69867 /* Pod */,
+				097E54177CB40D4B921EF97FECE74884 /* Support Files */,
+			);
+			name = OntraceSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CE2FAA1C355B59C9186BA7E400AA7E51 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +184,15 @@
 				8F41D9218B23F861D2E474782179BC8B /* Pods-QoobissSDK_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CED2C985A8A1E18A3E5A7E87EA767CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F85CFFD196E404CCC2035F07419E1BC /* Lottie.xcframework */,
+				3FFBE2A33CC6C347AC4B13EC6748C264 /* QoobissCoreIdentificationSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -194,14 +204,6 @@
 				3891F6617ACD3D865D6F9BA4BC81266B /* Products */,
 				CE2FAA1C355B59C9186BA7E400AA7E51 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CF3B76CFA194618A06D9638923EAB8EB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B2B1BD6D18C886B70543D4297CBE19E8 /* QoobissCoreIdentificationSDK.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -241,7 +243,7 @@
 		FD3A478190039D987B4065AE65DF8C17 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36DAE7FEB0B799C1FD7759D483170CD1 /* OntraceSDK */,
+				BFE8BE646A5D6B3BE728A6DF4EBAE1EB /* OntraceSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -280,7 +282,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC7CF7336E79BD3F2E3C68DD7AC562A0 /* PBXTargetDependency */,
+				858E625815D7D4759370933B233401B9 /* PBXTargetDependency */,
 			);
 			name = "Pods-QoobissSDK_Tests";
 			productName = Pods_QoobissSDK_Tests;
@@ -299,7 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D47AEC29844692A3D66C93ECC574B522 /* PBXTargetDependency */,
+				7C2BA2EA2D967F2B89EEED5B7B0EE4F1 /* PBXTargetDependency */,
 			);
 			name = "Pods-QoobissSDK_Example";
 			productName = Pods_QoobissSDK_Example;
@@ -394,17 +396,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC7CF7336E79BD3F2E3C68DD7AC562A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-QoobissSDK_Example";
-			target = E268F811B9A453720361CB13BD995312 /* Pods-QoobissSDK_Example */;
-			targetProxy = A4D14E4D0059503E8CE8E9C34DFBF496 /* PBXContainerItemProxy */;
-		};
-		D47AEC29844692A3D66C93ECC574B522 /* PBXTargetDependency */ = {
+		7C2BA2EA2D967F2B89EEED5B7B0EE4F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OntraceSDK;
 			target = 3BED76E43B9A592FEDAF45E263EDFDB8 /* OntraceSDK */;
-			targetProxy = 25974E8461A1AEBA214F7A4BE4DEB8C1 /* PBXContainerItemProxy */;
+			targetProxy = 27E5324F2C7F99C4994D801E2C33259F /* PBXContainerItemProxy */;
+		};
+		858E625815D7D4759370933B233401B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QoobissSDK_Example";
+			target = E268F811B9A453720361CB13BD995312 /* Pods-QoobissSDK_Example */;
+			targetProxy = 4DA05F9C30FB3984194C879F579C864E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,7 +518,7 @@
 		};
 		54B90A16566D4BA7E7F141F732DDE840 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 363B6A188028D773FF94FC4B4A31892B /* OntraceSDK.debug.xcconfig */;
+			baseConfigurationReference = 53E7B66351E3CE2C7FD5E5A514C63DD7 /* OntraceSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -574,7 +576,7 @@
 		};
 		715D13490B816CA8CDDC7E519FEB1687 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D327183618AAAA51CC460AA232512FF7 /* OntraceSDK.release.xcconfig */;
+			baseConfigurationReference = 4EA37ECAE34F1DE647437970ACCC721F /* OntraceSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

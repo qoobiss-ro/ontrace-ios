@@ -1,5 +1,5 @@
 PODS:
-  - OntraceSDK (0.0.15)
+  - OntraceSDK (0.0.16)
 
 DEPENDENCIES:
   - OntraceSDK (from `../OntraceSDK.podspec`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../OntraceSDK.podspec"
 
 SPEC CHECKSUMS:
-  OntraceSDK: 19ead60fa56a36278a97f6d5deb152ac38f9e55e
+  OntraceSDK: 0c1ed794a80addd1f84cc26bb6fa124bdc9fded7
 
-PODFILE CHECKSUM: e4862497285e2dfa6cdc3b5fe2550255eea179a7
+PODFILE CHECKSUM: daf6fd102028e9c75c1b8a44492c30c21586854e
 
 COCOAPODS: 1.16.2
