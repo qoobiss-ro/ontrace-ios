@@ -1724,15 +1724,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUICore",
-        "printedName": "SwiftUICore",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -2887,28 +2880,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/Domain\/SampleBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9939,
+      "offset": 10160,
       "length": 4,
       "value": "-130"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/Domain\/SampleBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9980,
+      "offset": 10201,
       "length": 3,
       "value": "650"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/Domain\/SampleBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 10025,
+      "offset": 10246,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/Domain\/SampleBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 10064,
+      "offset": 10285,
       "length": 3,
       "value": "350"
     },
@@ -3211,7 +3204,7 @@
       "kind": "IntegerLiteral",
       "offset": 6425,
       "length": 2,
-      "value": "50"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureStrings.swift",
@@ -3266,13 +3259,13 @@
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureStrings.swift",
       "kind": "StringLiteral",
       "offset": 574,
-      "length": 12,
-      "value": "\"Se incarca\""
+      "length": 14,
+      "value": "\"Se încarcă\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/IdCaptureStrings.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 618,
       "length": 70,
       "value": "\"Încadrează spatele actului de identitate în chenarul de pe ecran.\""
     },
@@ -3601,28 +3594,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 1950,
+      "offset": 2350,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 2006,
+      "offset": 2406,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 2065,
-      "length": 3,
-      "value": "0.6"
+      "offset": 2465,
+      "length": 4,
+      "value": "0.57"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/View\/FaceCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 2122,
+      "offset": 2523,
       "length": 4,
       "value": "0.85"
     },
@@ -3796,50 +3789,50 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/CoreMLModel\/ModelManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1827,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/IDScan\/CameraContent\/CoreMLModel\/ModelManager.swift",
       "kind": "Array",
-      "offset": 1869,
+      "offset": 1707,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5608,
+      "offset": 1169,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9705,
+      "offset": 9820,
       "length": 4,
       "value": "-130"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9746,
+      "offset": 9861,
       "length": 3,
       "value": "650"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9791,
+      "offset": 9906,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/SwiftUI\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9830,
+      "offset": 9945,
       "length": 3,
       "value": "350"
     },

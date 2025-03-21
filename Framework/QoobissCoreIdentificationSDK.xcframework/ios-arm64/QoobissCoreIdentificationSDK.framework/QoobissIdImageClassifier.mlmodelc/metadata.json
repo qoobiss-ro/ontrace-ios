@@ -70,10 +70,10 @@
     ],
     "generatedClassName" : "QoobissIdImageClassifier",
     "userDefinedMetadata" : {
-      "com.apple.createml.app.tag" : "121.4",
       "com.apple.createml.version" : "14.2.1",
-      "com.apple.coreml.model.preview.type" : "imageClassifier",
-      "com.apple.createml.app.version" : "5.0"
+      "com.apple.createml.app.tag" : "121.4",
+      "com.apple.createml.app.version" : "5.0",
+      "com.apple.coreml.model.preview.type" : "imageClassifier"
     },
     "method" : "predict"
   }

@@ -4,6 +4,7 @@ import Combine
 protocol ResultViewModelType: NSObject, ObservableObject {
     var validationResponse: ValidationResponse? { get set }
     var requestId: String { get set }
+    var errorMessage: String? { get set }
     func startTimer()
     func getResult()
 }
@@ -14,6 +15,7 @@ final class ResultViewModel: NSObject, ResultViewModelType {
     
     var requestId: String
     @Published var validationResponse: ValidationResponse?
+    @Published var errorMessage: String? = "empty"
     
     // MARK: Init
     
@@ -51,6 +53,10 @@ final class ResultViewModel: NSObject, ResultViewModelType {
                         self?.stopTimer()
                     }
                 case.failure(let error):
+                    self?.stopTimer()
+                    DispatchQueue.main.async {
+                        self?.errorMessage = "\(error.message) - Check Secrets"
+                    }
                     print("ResultViewModel error to view is \(error)")
             }
         }

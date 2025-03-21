@@ -10,14 +10,14 @@ public struct ResultError: Error, Codable {
 }
 
 protocol ResultRepositoryProtocol {
-    func getResult(requestId: String ,completion: @escaping (Result<ValidationResponse, Error>) -> Void)
+    func getResult(requestId: String ,completion: @escaping (Result<ValidationResponse, ResultError>) -> Void)
 }
 
 class ResultRepository: ResultRepositoryProtocol {
     
     private let decryptionUseCase = DecryptResponseUseCase()
     
-    func getResult(requestId: String, completion: @escaping (Result<ValidationResponse, Error>) -> Void) {
+    func getResult(requestId: String, completion: @escaping (Result<ValidationResponse, ResultError>) -> Void) {
         var request = URLRequest(url: URL(string: "https://apiro.id-kyc.com/dev_validation/identity/result?orderId=\(requestId)")!)
         request.addValue(Secrets.apiKey, forHTTPHeaderField: "ApiKey")
         request.httpMethod = "GET"
@@ -34,7 +34,7 @@ class ResultRepository: ResultRepositoryProtocol {
         task.resume()
     }
     
-    private func parseResponse(_ data: Data, completion: @escaping (Result<ValidationResponse, Error>) -> Void) {
+    private func parseResponse(_ data: Data, completion: @escaping (Result<ValidationResponse, ResultError>) -> Void) {
         let stringResponse = String(data: data, encoding: .utf8)
         let decrypted = self.decryptionUseCase.call(inputText: stringResponse ?? "")
         let decryptedRaw = decrypted?.extractJSONPart()
