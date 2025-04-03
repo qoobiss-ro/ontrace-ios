@@ -7,6 +7,7 @@
 How to publish a new version of the library
 
 1. Using the script in QoobissCoreIdentificationSDK generate the xcframework
+    /Users/vladbuhaescu/Documents/Developement/qoobiss-sdk/QoobissCoreIdentificationSDK/QoobissCoreIdentificationSDK/framework_script.sh
 2. Add it to the Qoobiss_iOS_SDK at path /Users/vladbuhaescu/Documents/Developement/qoobiss-sdk/Qoobiss_iOS_SDK/Framework
 3. Add a tag to the repo and update the podspec
 4. Validate the podspec with "pod lib lint --no-clean --verbose --allow-warnings"

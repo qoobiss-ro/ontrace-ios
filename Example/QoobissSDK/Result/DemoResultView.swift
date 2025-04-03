@@ -13,11 +13,14 @@ struct DemoResultView<VM: ResultViewModelType>: View {
     
     var body: some View {
         VStack (spacing: .zero) {
-            if resultViewModel.validationResponse == nil {
+            if resultViewModel.validationResponse == nil && resultViewModel.errorMessage == "empty" {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle())
                     .scaleEffect(2)
                     .padding()
+            }
+            if resultViewModel.errorMessage != "empty" {
+                Text(resultViewModel.errorMessage ?? "")
             }
             if resultViewModel.validationResponse != nil,
                let status = resultViewModel.validationResponse?.validationData.status,
@@ -44,7 +47,6 @@ struct DemoResultView<VM: ResultViewModelType>: View {
             resultViewModel.startTimer()
         }
         .padding(.top, 24)
-        .navigationBarBackButtonHidden(true)
     }
     
     @ViewBuilder
