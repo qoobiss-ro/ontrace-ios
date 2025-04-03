@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5XujvwrqVEIqPFgWO7EIQ8Df/FM=
+		DYaISXoR8r+fn0J9IY5n8iqu2eI=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3ErLEjtpcieUUSoQ5I0m5qiOYEs=
+		ySgxauxZ4N4Y537r7fLtGrs1/00=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3ErLEjtpcieUUSoQ5I0m5qiOYEs=
+		ySgxauxZ4N4Y537r7fLtGrs1/00=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KmVB3l1fxMXzW+pxRB+bw/LrkGY=
+		vHxtgZLVVBzQWL7WmX8wgbq9y68=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5XujvwrqVEIqPFgWO7EIQ8Df/FM=
+		DYaISXoR8r+fn0J9IY5n8iqu2eI=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A4YB9t9l/RXLBlmLHJUyBILw0B8=
+		tA5GMSIAjJOkR1eU3oDMph6J5Xs=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A4YB9t9l/RXLBlmLHJUyBILw0B8=
+		tA5GMSIAjJOkR1eU3oDMph6J5Xs=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DzeqnkLylew5B+8KqfnOOL34auE=
+		wfa9UjsK/IBhkw79Rmrwk6UAhUI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -234,14 +234,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wlzdwVzkinKdfjrrigoNuALmZxJwQfpyTq+EAH4B3/E=
+			fX8PP2uGqimRZUDk8dwSJgWxSaGiI6VctjtyP97SbXc=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIuiJK/xuJwV565T5PiFERGTw7tcrrvihnpHCsihWVc=
+			TGC25SRwZE9+0jOmxJLfGrh/s3G+HkI1YSUA04v5vmI=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -255,28 +255,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIuiJK/xuJwV565T5PiFERGTw7tcrrvihnpHCsihWVc=
+			TGC25SRwZE9+0jOmxJLfGrh/s3G+HkI1YSUA04v5vmI=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wiqjgcKlNu75wp25s/PLDxwaslj5uF5e0H0WbA+BdY=
+			KZnWCngowR28/u/J+NNgbNB79VfI/ltnxOJ3eNMi48c=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wlzdwVzkinKdfjrrigoNuALmZxJwQfpyTq+EAH4B3/E=
+			fX8PP2uGqimRZUDk8dwSJgWxSaGiI6VctjtyP97SbXc=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DUqpCtlNbZMnuND0JVvEmswGbrpc9pOidH4GIwpxCuE=
+			jjAiBSzmZWlU6wqFMThz/91x4Njf1E2Qyja/fTh7+Y8=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -290,14 +290,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DUqpCtlNbZMnuND0JVvEmswGbrpc9pOidH4GIwpxCuE=
+			jjAiBSzmZWlU6wqFMThz/91x4Njf1E2Qyja/fTh7+Y8=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/qfPFSGSgvm61gw3U8oW/vjtNGN/3Uk4swHLE2G6ZYg=
+			ZsQlPrps/+C3wi3R3t274faJPkOHKxlPahTZVUxFbJ4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

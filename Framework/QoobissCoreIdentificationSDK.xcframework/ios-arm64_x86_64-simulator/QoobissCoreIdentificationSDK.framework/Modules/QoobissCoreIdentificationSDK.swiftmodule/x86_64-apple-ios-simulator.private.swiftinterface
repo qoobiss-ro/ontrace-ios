@@ -29,7 +29,7 @@ public struct IdentificationFlow {
   public static func startFlowCrossPlatform(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
   
 }
-public class OntraceCompletionResult : Swift.Codable {
+@objc public class OntraceCompletionResult : ObjectiveC.NSObject, Swift.Codable {
   public var requestId: Swift.String
   public var message: Swift.String?
   public var error: Swift.String?

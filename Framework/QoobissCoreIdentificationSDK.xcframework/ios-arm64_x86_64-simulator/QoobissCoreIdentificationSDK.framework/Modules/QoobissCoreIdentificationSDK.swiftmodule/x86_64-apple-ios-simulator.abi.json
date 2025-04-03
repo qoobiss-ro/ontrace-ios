@@ -329,7 +329,7 @@
                         "kind": "TypeNominal",
                         "name": "OntraceCompletionResult",
                         "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
-                        "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+                        "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult"
                       }
                     ]
                   }
@@ -1200,7 +1200,7 @@
                 "kind": "TypeNominal",
                 "name": "OntraceCompletionResult",
                 "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
-                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+                "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult"
               },
               {
                 "kind": "TypeNominal",
@@ -1263,13 +1263,39 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OntraceCompletionResult",
+                "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
+                "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult(im)init",
+            "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultCACycfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "OntraceCompletionResult",
                 "printedName": "QoobissCoreIdentificationSDK.OntraceCompletionResult",
-                "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC"
+                "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult"
               },
               {
                 "kind": "TypeNominal",
@@ -1316,13 +1342,32 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:28QoobissCoreIdentificationSDK23OntraceCompletionResultC",
+        "usr": "c:@M@QoobissCoreIdentificationSDK@objc(cs)OntraceCompletionResult",
         "mangledName": "$s28QoobissCoreIdentificationSDK23OntraceCompletionResultC",
         "moduleName": "QoobissCoreIdentificationSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -1339,17 +1384,52 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
