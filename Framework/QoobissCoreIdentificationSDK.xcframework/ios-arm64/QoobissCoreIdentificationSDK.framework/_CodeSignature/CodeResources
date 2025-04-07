@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wh/B6gxZbyx/FrJq9hJilCYuNwo=
+		e2Sj8C3hXkzgM8Zj2e6x8Fwf/7c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/coremldata.bin</key>
 		<data>
-		TrchL3Qd27P1UCH7y2OFwZsRbqE=
+		MZW++Gr581BJsvkAuK/50Tl3rXA=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<data>
-		0aro4hZ1kepHt6afLtgVp2yxfAg=
+		G7rfFMDEEwTHVfb3z9vxEsfrN0g=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
 		<data>
@@ -242,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ool2RSE7SihTVl1JZk76pjXGfSg2v8qoPBWglHSDA5o=
+			5eqmvRDK/OHDKFN6mwUE9ODfJ4vL8z8IpABSNjT59K8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -263,14 +263,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bVP5aGb+KgfiQSTBloUDX9TnEevxlP9FTY3v6ukbwD0=
+			A+GpZZZgvfwLqfRvVKYnQSOTz0rkWaQv2207h87tXdY=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nyxKIxbnJfQu7qRvJokpJq9ka+22NSJWRe+xMfSjJMA=
+			vJ0nDVOASyZh8Vigm9cTcBUaaWzbkksDwUkPVmXnhLo=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
