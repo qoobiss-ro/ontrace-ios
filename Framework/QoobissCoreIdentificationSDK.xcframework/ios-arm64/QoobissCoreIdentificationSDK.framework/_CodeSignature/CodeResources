@@ -58,11 +58,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H5xFYHuZAhMJqn+kXkHxJAGZTx8=
+		L0nq9TL99eATa3eG8cOl84YFBQo=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		POa2n4ejmYoRFbAMyOvvn3ZQw7Y=
+		gZ2IvOmUB1q3huLvYJ+5d0ict98=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		5+LeU3CXFYT5TtcFDjrt5JsgdPQ=
+		FeQgU3h07KA2X+c8VdvUnL4ZNe4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/coremldata.bin</key>
 		<data>
-		MZW++Gr581BJsvkAuK/50Tl3rXA=
+		kL6OFeHQsLkK7vUiVxc64ejotWU=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<data>
-		0aro4hZ1kepHt6afLtgVp2yxfAg=
+		G7rfFMDEEwTHVfb3z9vxEsfrN0g=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
 		<data>
@@ -214,7 +214,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0hU6tyo7a8NTJdb0O+G0SRyKEQbY/Xgp73UDVTdd5/k=
+			Vc9tHf1x+RKB+c1z4f54oOl/gBmNElS3rj3CLGo3bgE=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -242,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bpurG4zSyMBUeKOAhOxIxAh8vlYPW0l244EAfMNClKA=
+			DXA6aaTVILSTZ1JTuaIVNJZOk+PbRn4DobnWcouSuLk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -263,14 +263,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+GpZZZgvfwLqfRvVKYnQSOTz0rkWaQv2207h87tXdY=
+			WFChM6Qu/frAkwvGBIFcfNv8/hKXb7L3B2AS3RMhiL0=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nyxKIxbnJfQu7qRvJokpJq9ka+22NSJWRe+xMfSjJMA=
+			vJ0nDVOASyZh8Vigm9cTcBUaaWzbkksDwUkPVmXnhLo=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
