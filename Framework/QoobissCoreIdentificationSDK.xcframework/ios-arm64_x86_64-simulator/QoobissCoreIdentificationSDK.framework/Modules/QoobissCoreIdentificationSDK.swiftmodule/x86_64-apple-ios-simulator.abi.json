@@ -8913,8 +8913,50 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 174,
+      "length": 2,
+      "value": "37"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 177,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 192,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 203,
+      "length": 3,
+      "value": "130"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 207,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
       "kind": "BooleanLiteral",
-      "offset": 137,
+      "offset": 336,
       "length": 5,
       "value": "false"
     },
