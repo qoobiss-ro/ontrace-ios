@@ -1,9 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import CoreImage.CIFilterBuiltins
 import Combine
+import CoreGraphics
 import CoreImage
 import CoreML
 import CoreMedia
@@ -11,30 +13,88 @@ import CoreVideo
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
+import ImageIO
+import OSLog
 import Photos
 @_exported import QoobissCoreIdentificationSDK
 import Swift
 import SwiftUI
-import SwiftUICore
 import UIKit
 import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public protocol MLModelProvider {
+  func visionModel() async throws -> Vision.VNCoreMLModel
+}
+public protocol LoadModelUseCase {
+  func execute() async throws -> Vision.VNCoreMLModel
+}
+public actor CoreMLModelProvider : QoobissCoreIdentificationSDK.MLModelProvider {
+  public init(configuration: CoreML.MLModelConfiguration = {
+            let cfg = MLModelConfiguration()
+            cfg.computeUnits = .all
+            return cfg
+        }(), makeModel: @escaping (CoreML.MLModelConfiguration) throws -> CoreML.MLModel)
+  public func visionModel() async throws -> Vision.VNCoreMLModel
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
 public typealias StringCallback = (Swift.String) -> Swift.Void
 public typealias ResultCallback = (QoobissCoreIdentificationSDK.OntraceCompletionResult) -> Swift.Void
 public struct IdentificationFlow {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func startFlowNative(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onCompleteResult: QoobissCoreIdentificationSDK.ResultCallback? = nil) -> some SwiftUICore.View
   
+  #endif
   public static func startFlowCrossPlatform(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
   
+}
+public struct RomanianEIDData : Swift.Equatable {
+  public var surname: Swift.String?
+  public var givenNames: Swift.String?
+  public var sex: Swift.String?
+  public var personalNumber: Swift.String?
+  public var cnp: Swift.String?
+  public var country: Swift.String?
+  public var dateOfBirth: Swift.String?
+  public var placeOfBirth: Swift.String?
+  public var issuerCode: Swift.String?
+  public var issueDate: Swift.String?
+  public var expiryDate: Swift.String?
+  public var issuerName: Swift.String?
+  public var addressLine: Swift.String?
+  public var city: Swift.String?
+  public var sector: Swift.String?
+  public var temporaryAddressValidFrom: Swift.String?
+  public var temporaryAddressValidTo: Swift.String?
+  public var foreignAddressValidFrom: Swift.String?
+  public var foreignAddressValidTo: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(surname: Swift.String? = nil, givenNames: Swift.String? = nil, sex: Swift.String? = nil, personalNumber: Swift.String? = nil, cnp: Swift.String? = nil, country: Swift.String? = nil, dateOfBirth: Swift.String? = nil, placeOfBirth: Swift.String? = nil, issuerCode: Swift.String? = nil, issueDate: Swift.String? = nil, expiryDate: Swift.String? = nil, issuerName: Swift.String? = nil, addressLine: Swift.String? = nil, city: Swift.String? = nil, sector: Swift.String? = nil, temporaryAddressValidFrom: Swift.String? = nil, temporaryAddressValidTo: Swift.String? = nil, foreignAddressValidFrom: Swift.String? = nil, foreignAddressValidTo: Swift.String? = nil)
+  #endif
+  public static func == (a: QoobissCoreIdentificationSDK.RomanianEIDData, b: QoobissCoreIdentificationSDK.RomanianEIDData) -> Swift.Bool
+}
+extension Swift.Sequence where Self.Element : Swift.Hashable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func mostDominant() -> (element: Self.Element, count: Swift.Int)?
+  #endif
+}
+public struct DefaultLoadModelUseCase : QoobissCoreIdentificationSDK.LoadModelUseCase {
+  public init(provider: any QoobissCoreIdentificationSDK.MLModelProvider)
+  public func execute() async throws -> Vision.VNCoreMLModel
 }
 @objc public class OntraceCompletionResult : ObjectiveC.NSObject, Swift.Codable {
   public var requestId: Swift.String
   public var message: Swift.String?
   public var error: Swift.String?
   public var identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(requestId: Swift.String, message: Swift.String?, error: Swift.String?, identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -43,15 +103,26 @@ public enum IdentificationResult : Swift.Int, Swift.Codable {
   case success
   case failure
   case cancel
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
+extension CoreVideo.CVBuffer {
+  public func convertFaceObservationToImageCoordinates(_ face: Vision.VNFaceObservation) -> CoreFoundation.CGRect
+  public func convertObservationToImageCoordinates(_ obs: Vision.VNDetectedObjectObservation) -> CoreFoundation.CGRect
+  public func convertNormalizedRectToImageCoordinates(_ normalized: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+}
 public struct OntraceError : Swift.Error, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class DocumentAnalyzer {
+  public static func make(useCase: any QoobissCoreIdentificationSDK.LoadModelUseCase) async throws -> QoobissCoreIdentificationSDK.DocumentAnalyzer
+  @objc deinit
 }
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Equatable {}
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Hashable {}

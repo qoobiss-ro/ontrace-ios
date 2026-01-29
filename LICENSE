@@ -1,1 +1,38 @@
+Ontrace SDK License Agreement
+
 Copyright (c) 2025 Qoobiss. All rights reserved.
+
+IMPORTANT: READ THIS LICENSE CAREFULLY BEFORE USING THIS SOFTWARE.
+
+By installing, copying, or otherwise using the SDK (the "Software"), you agree to be bound by the terms of this license. If you do not agree to these terms, do not install or use the Software.
+
+1. GRANT OF LICENSE
+Subject to your compliance with this License Agreement and your continued possession of a valid API key, Qoobiss grants you a limited, non-exclusive, non-transferable, revocable license to use the Software solely to access and interact with the Qoobiss API for the purposes authorized in your agreement or documentation.
+
+2. RESTRICTIONS
+You may NOT:
+- Use the Software without a valid API key issued by Qoobiss.
+- Modify, reverse engineer, decompile, or disassemble the Software.
+- Distribute, sublicense, lease, rent, or otherwise make the Software available to any third party.
+- Use the Software to develop or distribute software that competes with Qoobiss's services or products.
+
+3. OWNERSHIP
+All title, ownership, and intellectual property rights in and to the Software are and shall remain with .
+
+4. API KEY AND ACCESS
+Use of the Software requires an API key provided by Qoobiss. Unauthorized use or distribution of API keys is strictly prohibited and may result in termination of access and legal action.
+
+5. TERMINATION
+This license is effective until terminated. It will terminate automatically without notice from Qoobiss if you fail to comply with any provision of this license. Upon termination, you must destroy all copies of the Software in your possession or control.
+
+6. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. Qoobiss DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+IN NO EVENT SHALL Qoobiss BE LIABLE FOR ANY DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF Qoobiss HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8. GOVERNING LAW
+This License shall be governed by and construed in accordance with the laws of Romania, without regard to its conflict of law principles.
+
+CONTACT
+If you have any questions about this license, please contact us at: sales@qoobiss.com

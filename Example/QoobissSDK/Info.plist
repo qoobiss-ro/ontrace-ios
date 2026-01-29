@@ -22,6 +22,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>We need to scan your ID</string>
 	<key>NSCameraUsageDescription</key>
 	<string>We need access to your camera to capture photos and videos.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -43,6 +45,13 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
+	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+	<array>
+		<string>A0000002471001</string>
+		<string>A0000002472001</string>
+		<string>00000000000000</string>
+		<string>A000000077030C60000000FE00000500</string>
 	</array>
 </dict>
 </plist>
