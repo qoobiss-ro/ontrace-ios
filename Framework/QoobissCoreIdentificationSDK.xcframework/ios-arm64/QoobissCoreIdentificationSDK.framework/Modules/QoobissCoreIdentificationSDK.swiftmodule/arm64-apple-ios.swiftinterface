@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
+import AVKit
 import CoreImage.CIFilterBuiltins
 import Combine
 import CoreGraphics
@@ -21,6 +22,7 @@ import Swift
 import SwiftUI
 import UIKit
 import Vision
+import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -116,6 +118,28 @@ extension CoreVideo.CVBuffer {
   public func convertObservationToImageCoordinates(_ obs: Vision.VNDetectedObjectObservation) -> CoreFoundation.CGRect
   public func convertNormalizedRectToImageCoordinates(_ normalized: CoreFoundation.CGRect) -> CoreFoundation.CGRect
 }
+public enum LiveResultLabel : Swift.String {
+  case driverLicense
+  case travelDocumentTypeOneFront
+  case travelDocumentTypeOneBack
+  case travelDocumentTypeTwo
+  case travelDocumentTypeThree
+  case none
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct RecogntionResult {
+  public let liveResultLabel: QoobissCoreIdentificationSDK.LiveResultLabel?
+  public let boundingBox: CoreFoundation.CGRect
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(liveResultLabel: QoobissCoreIdentificationSDK.LiveResultLabel?, boundingBox: CoreFoundation.CGRect)
+  #endif
+}
 public struct OntraceError : Swift.Error, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -127,3 +151,6 @@ public struct OntraceError : Swift.Error, Swift.Codable {
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Equatable {}
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Hashable {}
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.RawRepresentable {}
+extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.RawRepresentable {}

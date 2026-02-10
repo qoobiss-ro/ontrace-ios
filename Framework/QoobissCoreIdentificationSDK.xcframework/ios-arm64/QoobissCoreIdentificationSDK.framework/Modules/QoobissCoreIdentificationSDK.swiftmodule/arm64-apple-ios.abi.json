@@ -486,6 +486,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -542,6 +549,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CoreMedia",
         "printedName": "CoreMedia",
         "declKind": "Import",
@@ -572,6 +586,13 @@
         "kind": "Import",
         "name": "CoreMedia",
         "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -884,13 +905,6 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -3590,6 +3604,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -3799,6 +3820,27 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Vision",
         "printedName": "Vision",
         "declKind": "Import",
@@ -3943,6 +3985,27 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -5034,6 +5097,376 @@
         "moduleName": "QoobissCoreIdentificationSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "LiveResultLabel",
+        "printedName": "LiveResultLabel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driverLicense",
+            "printedName": "driverLicense",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO13driverLicenseyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO13driverLicenseyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "travelDocumentTypeOneFront",
+            "printedName": "travelDocumentTypeOneFront",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO26travelDocumentTypeOneFrontyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO26travelDocumentTypeOneFrontyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "travelDocumentTypeOneBack",
+            "printedName": "travelDocumentTypeOneBack",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO25travelDocumentTypeOneBackyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO25travelDocumentTypeOneBackyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "travelDocumentTypeTwo",
+            "printedName": "travelDocumentTypeTwo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO21travelDocumentTypeTwoyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO21travelDocumentTypeTwoyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "travelDocumentTypeThree",
+            "printedName": "travelDocumentTypeThree",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO23travelDocumentTypeThreeyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO23travelDocumentTypeThreeyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissCoreIdentificationSDK.LiveResultLabel.Type) -> QoobissCoreIdentificationSDK.LiveResultLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO4noneyA2CmF",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO4noneyA2CmF",
+            "moduleName": "QoobissCoreIdentificationSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueACSgSS_tcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueSSvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueSSvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueSSvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO8rawValueSSvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO",
+        "mangledName": "$s28QoobissCoreIdentificationSDK15LiveResultLabelO",
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CoreMedia",
         "printedName": "CoreMedia",
@@ -5124,6 +5557,13 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -5518,6 +5958,181 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecogntionResult",
+        "printedName": "RecogntionResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "liveResultLabel",
+            "printedName": "liveResultLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5LabelAA04LivefH0OSgvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5LabelAA04LivefH0OSgvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveResultLabel",
+                        "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                        "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5LabelAA04LivefH0OSgvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5LabelAA04LivefH0OSgvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boundingBox",
+            "printedName": "boundingBox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV11boundingBoxSo6CGRectVvp",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV11boundingBoxSo6CGRectVvp",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV11boundingBoxSo6CGRectVvg",
+                "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV11boundingBoxSo6CGRectVvg",
+                "moduleName": "QoobissCoreIdentificationSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(liveResultLabel:boundingBox:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecogntionResult",
+                "printedName": "QoobissCoreIdentificationSDK.RecogntionResult",
+                "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveResultLabel",
+                    "printedName": "QoobissCoreIdentificationSDK.LiveResultLabel",
+                    "usr": "s:28QoobissCoreIdentificationSDK15LiveResultLabelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5Label11boundingBoxAcA04LivefH0OSg_So6CGRectVtcfc",
+            "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV04liveF5Label11boundingBoxAcA04LivefH0OSg_So6CGRectVtcfc",
+            "moduleName": "QoobissCoreIdentificationSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:28QoobissCoreIdentificationSDK16RecogntionResultV",
+        "mangledName": "$s28QoobissCoreIdentificationSDK16RecogntionResultV",
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6422,28 +7037,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 2999,
+      "offset": 4255,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 3054,
+      "offset": 4310,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 3112,
+      "offset": 4368,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/View\/FaceView.swift",
       "kind": "FloatLiteral",
-      "offset": 3169,
+      "offset": 4425,
       "length": 4,
       "value": "0.85"
     },
@@ -6523,6 +7138,20 @@
       "offset": 276,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/FileManager+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/FileManager+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 6,
+      "value": "\"face\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Prelude\/CMSampleBuffer+Extensions.swift",
@@ -6695,58 +7324,37 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1108,
+      "offset": 1383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1344,
+      "offset": 1619,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1401,
+      "offset": 1676,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
       "kind": "IntegerLiteral",
-      "offset": 14937,
-      "length": 4,
-      "value": "-169"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14978,
-      "length": 3,
-      "value": "689"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
-      "kind": "FloatLiteral",
-      "offset": 15112,
-      "length": 3,
-      "value": "3.5"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/Domain\/FaceScanBufferAnalyzer.swift",
-      "kind": "FloatLiteral",
-      "offset": 15152,
-      "length": 5,
-      "value": "366.5"
+      "offset": 13931,
+      "length": 2,
+      "value": "75"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Error\/ErrorScreenStrings.swift",
@@ -6939,190 +7547,8 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 231,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 243,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 3,
-      "value": "130"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 261,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 299,
-      "length": 2,
-      "value": "82"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 302,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 314,
-      "length": 2,
-      "value": "82"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 317,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 328,
-      "length": 2,
-      "value": "82"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 331,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 373,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 376,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 388,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 391,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 402,
-      "length": 3,
-      "value": "130"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 406,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "FloatLiteral",
-      "offset": 419,
-      "length": 4,
-      "value": "0.74"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 468,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 471,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 483,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 486,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 497,
-      "length": 3,
-      "value": "130"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 501,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 513,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCView.swift",
       "kind": "BooleanLiteral",
-      "offset": 651,
+      "offset": 171,
       "length": 5,
       "value": "false"
     },
@@ -7139,6 +7565,69 @@
       "offset": 132,
       "length": 18,
       "value": "\"Îți mulțumim.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 14,
+      "value": "\"Session info\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 12,
+      "value": "\"ID capture\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 14,
+      "value": "\"Face capture\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 7,
+      "value": "\"Video\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 7,
+      "value": "\"Photo\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 18,
+      "value": "\"ID video preview\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 537,
+      "length": 20,
+      "value": "\"Face video preview\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 6,
+      "value": "\"Done\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 14,
+      "value": "\"Session info\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Design\/Molecules\/Buttons\/TextActionButton.swift",
@@ -7248,56 +7737,77 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1627,
+      "offset": 1679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1666,
+      "offset": 1718,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 1848,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8307,
+      "offset": 10774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16281,
+      "offset": 18972,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16398,
+      "offset": 19089,
       "length": 28,
       "value": "\"ec145 most dominant: \""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16425,
+      "offset": 19116,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16213,
+      "offset": 19930,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
+      "kind": "Array",
+      "offset": 19984,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18904,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/ViewModel\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 41377,
+      "offset": 48231,
       "length": 5,
       "value": "false"
     },
@@ -7346,49 +7856,49 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 4293,
+      "offset": 4427,
       "length": 26,
       "value": "\"MediaRecorder.FrameQueue\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 4378,
+      "offset": 4512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 4419,
+      "offset": 4553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 4460,
+      "offset": 4594,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 13358,
+      "offset": 16136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 13414,
+      "offset": 16192,
       "length": 12,
       "value": "\"videoQueue\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/MediaRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 21849,
+      "offset": 24671,
       "length": 1,
       "value": "0"
     },
@@ -7862,6 +8372,34 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 262,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/SessionDebugInfoModal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/SessionDebugInfoModal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 338,
+      "length": 3,
+      "value": "160"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/SessionDebugInfoModal.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7148,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CameraPreviewProxy.swift",
       "kind": "BooleanLiteral",
       "offset": 181,
@@ -8053,42 +8591,42 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 75,
+      "offset": 82,
       "length": 4,
       "value": "\"DL\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 145,
+      "offset": 152,
       "length": 11,
       "value": "\"TD1_FRONT\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 194,
+      "offset": 201,
       "length": 10,
       "value": "\"TD1_BACK\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 273,
+      "offset": 280,
       "length": 5,
       "value": "\"TD2\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 331,
+      "offset": 338,
       "length": 5,
       "value": "\"TD3\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/LiveResultLabel.swift",
       "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 360,
       "length": 6,
       "value": "\"None\""
     },
@@ -8298,35 +8836,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/ModelManager.swift",
       "kind": "Array",
-      "offset": 4224,
+      "offset": 4226,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/ModelManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4359,
+      "offset": 4361,
       "length": 3,
       "value": "320"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/ModelManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4372,
+      "offset": 4374,
       "length": 3,
       "value": "320"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/ModelManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4587,
+      "offset": 4589,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CoreMLModel\/ModelManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4593,
+      "offset": 4595,
       "length": 1,
       "value": "0"
     },
@@ -8354,44 +8892,51 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1444,
+      "offset": 1579,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1787,
+      "length": 3,
+      "value": "180"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11124,
+      "offset": 2068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16932,
+      "offset": 2114,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 2313,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 2492,
       "length": 4,
-      "value": "-130"
+      "value": "0.08"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16973,
-      "length": 3,
-      "value": "650"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17018,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/FaceViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17057,
-      "length": 3,
-      "value": "350"
+      "kind": "FloatLiteral",
+      "offset": 2632,
+      "length": 4,
+      "value": "0.08"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Design\/Atoms\/Color+Extensions.swift",
@@ -8829,50 +9374,134 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1266,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1709,
       "length": 26,
       "value": "\"MediaRecorder.FrameQueue\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1810,
       "length": 28,
       "value": "\"MediaRecorder.CaptureQueue\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1549,
+      "offset": 2134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1591,
+      "offset": 2176,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1624,
+      "offset": 2209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1665,
+      "offset": 2250,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 12294,
+      "offset": 2509,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 2564,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2623,
+      "length": 3,
+      "value": "160"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 2629,
+      "length": 3,
+      "value": "1.3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2688,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 2694,
+      "length": 3,
+      "value": "1.3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 2756,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3009,
+      "length": 3,
+      "value": "-10"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3146,
+      "length": 3,
+      "value": "-20"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 3330,
+      "length": 4,
+      "value": "0.52"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12790,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/SelfieMediaRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16921,
       "length": 1,
       "value": "0"
     },
@@ -8913,50 +9542,8 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 174,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 177,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 189,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 192,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 203,
-      "length": 3,
-      "value": "130"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 207,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/CountDown\/CountdownView.swift",
       "kind": "BooleanLiteral",
-      "offset": 336,
+      "offset": 137,
       "length": 5,
       "value": "false"
     },
@@ -9061,28 +9648,42 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 2992,
+      "offset": 3321,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3366,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4251,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 3046,
+      "offset": 4305,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 3104,
+      "offset": 4363,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/View\/IdCapturingView.swift",
       "kind": "FloatLiteral",
-      "offset": 3162,
+      "offset": 4421,
       "length": 3,
       "value": "0.9"
     },
@@ -9143,182 +9744,182 @@
       "value": "\"Apasă numărul\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/CoreMLGenerated\/QoobissIdImageClassifier\/QoobissIdImageClassifier.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/CoreMLGenerated\/QoobissIdImageClassifier\/QoobissIdImageClassifier.swift",
       "kind": "Array",
       "offset": 479,
       "length": 9,
       "value": "[\"image\"]"
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/CoreMLGenerated\/QoobissIdRecognizerFour\/QoobissIdRecognizerFour.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/CoreMLGenerated\/QoobissIdRecognizerFour\/QoobissIdRecognizerFour.swift",
       "kind": "Array",
       "offset": 676,
       "length": 47,
       "value": "[\"data\", \"iouThreshold\", \"confidenceThreshold\"]"
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 9,
       "value": "\"blurred\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 866,
       "length": 12,
       "value": "\"blurredTwo\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1010,
       "length": 13,
       "value": "\"cameraError\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 10,
       "value": "\"document\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1305,
       "length": 20,
       "value": "\"faceDetectionError\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1454,
       "length": 12,
       "value": "\"face_frame\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1586,
       "length": 7,
       "value": "\"filip\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1719,
       "length": 10,
       "value": "\"glareOne\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1855,
       "length": 10,
       "value": "\"glareTwo\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2005,
       "length": 17,
       "value": "\"glaredImageVlad\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2144,
       "length": 8,
       "value": "\"idCard\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2284,
       "length": 13,
       "value": "\"idCardError\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2429,
       "length": 13,
       "value": "\"idCardLarge\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2586,
       "length": 20,
       "value": "\"id_frame_rectangle\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2735,
       "length": 12,
       "value": "\"id_picture\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2865,
       "length": 6,
       "value": "\"info\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3017,
       "length": 20,
       "value": "\"invalidMobilePhone\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3169,
       "length": 13,
       "value": "\"mobilePhone\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3324,
       "length": 18,
       "value": "\"mobilePhoneLarge\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3466,
       "length": 9,
       "value": "\"ontrace\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3605,
       "length": 12,
       "value": "\"scrollDown\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3743,
       "length": 10,
       "value": "\"scrollUp\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3871,
       "length": 6,
       "value": "\"test\""
     },
     {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/QoobissCoreIdentificationSDK\/IntermediateBuildFilesPath\/QoobissCoreIdentificationSDK.build\/Release-iphoneos\/QoobissCoreIdentificationSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4001,
       "length": 9,
