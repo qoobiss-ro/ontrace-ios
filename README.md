@@ -25,7 +25,7 @@ end
    
 ## Requirements
 
-iOS 13.0+
+iOS 15.6+
 Swift 5.10+
 Xcode 16+
 
@@ -94,6 +94,28 @@ The response is of type OntraceCompletionResult. This response contains a reques
 Example:
 https://qoobiss.com/validation/identity/shortresult?orderId=`requestId`
 
-This will return an encrypted result.
+###Decrypting the short result in Swift
 
-Please make sure you always use the latest version.
+The short result endpoint returns an encrypted payload.
+The HTTP body is a Base64‑encoded AES‑CBC ciphertext, encrypted with:
+Algorithm: AES‑CBC with PKCS#7 padding
+IV: 16 zero bytes (0x00…00)
+Key: raw bytes of the decryption key string provided to you together with your API key
+You must decrypt this value on the client using the corresponding decryption key.
+
+```swift
+var request = URLRequest(url: URL(string: "https://apiontrace.id-kyc.com/validation/identity/resultlight?orderId="YOUR_SESSION_ORDER_ID"")!,timeoutInterval: Double.infinity)
+request.addValue("YOUR_API_KEY", forHTTPHeaderField: "ApiKey")
+
+request.httpMethod = "GET"
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+}
+
+task.resume()
+```

@@ -29,6 +29,24 @@ variant_for_slice()
   "Lottie.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "NFCSDK.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "NFCSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenSSL.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "OpenSSL.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
+    ;;
+  "OpenSSL.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenSSL.xcframework/macos-arm64_x86_64")
+    echo ""
+    ;;
   esac
 }
 
@@ -45,6 +63,24 @@ archs_for_slice()
     echo "arm64"
     ;;
   "Lottie.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "NFCSDK.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "NFCSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "OpenSSL.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenSSL.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
     ;;
   esac
@@ -131,4 +167,6 @@ install_xcframework() {
 
 install_xcframework "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../Framework/Lottie.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/NFCSDK.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/OpenSSL.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
 

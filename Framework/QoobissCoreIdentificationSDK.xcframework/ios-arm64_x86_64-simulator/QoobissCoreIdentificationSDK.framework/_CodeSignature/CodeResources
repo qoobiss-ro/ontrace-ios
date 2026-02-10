@@ -50,55 +50,55 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		BMjIp8YI0toCB+uYfX0SQstTH/E=
+		5C2wgvQ//rh+d1Jgv2pv9y+NlFc=
 		</data>
 		<key>Headers/QoobissCoreIdentificationSDK.h</key>
 		<data>
-		o2eBuMLSn3QeKQhmTB2STPY20Ug=
+		ICc+nSDHLOil5sXB0tAHJVKpjs4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		isiqicfJw7L4jtklwNFW48iZZ9w=
+		cv9csa9dGhgUbIM9THmMZB3+GM4=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fRwY7RpmdJS6MUwUP9HQbt9Ez4g=
+		jt2awhAqUUyAGeeS/9IWwhV22dI=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ySgxauxZ4N4Y537r7fLtGrs1/00=
+		6BqjkXEZvfpQ6TDbNhN3rvY6yVs=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QV90N6mP84W33OJfcWwlrLUUjyM=
+		cVoVTwgVAwEykT5voknsN+LTwtk=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ySgxauxZ4N4Y537r7fLtGrs1/00=
+		6BqjkXEZvfpQ6TDbNhN3rvY6yVs=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rnuV+wcSK/3KHTcAK7YfQN2xgcU=
+		T2+U3NGldXd3R/jRlZV4raThUDc=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fRwY7RpmdJS6MUwUP9HQbt9Ez4g=
+		jt2awhAqUUyAGeeS/9IWwhV22dI=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tA5GMSIAjJOkR1eU3oDMph6J5Xs=
+		V24rAD+jxuc+8ZVq9qQRbNh2V84=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		edwOQF/lxMzKowZpFfKqF3cdti4=
+		SXrF8Bs5Qn3aLuo1eNp3uFdlVHQ=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tA5GMSIAjJOkR1eU3oDMph6J5Xs=
+		V24rAD+jxuc+8ZVq9qQRbNh2V84=
 		</data>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hEiBRvkHVXtli+BoQfiqsDjfCiM=
+		0bTDQZGNUNkSCbVdmh4w/kRusxw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/coremldata.bin</key>
 		<data>
-		MZW++Gr581BJsvkAuK/50Tl3rXA=
+		f8kx0/xr7gqcyAlZwum/RXd02Mw=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<data>
-		G7rfFMDEEwTHVfb3z9vxEsfrN0g=
+		0aro4hZ1kepHt6afLtgVp2yxfAg=
 		</data>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
 		<data>
@@ -123,6 +123,50 @@
 		<key>QoobissIdImageClassifier.mlmodelc/model1/coremldata.bin</key>
 		<data>
 		vgOT2QAOuBS4Vtqz/W6hSWZnDek=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		3Lr5Np2O3WACr1NO33YFbJyg2s8=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/coremldata.bin</key>
+		<data>
+		DIv79R486i/scfMlLC2TANolD64=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/metadata.json</key>
+		<data>
+		4E5UrBM3gLw67XbL2OEWlgXJjYk=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/analytics/coremldata.bin</key>
+		<data>
+		hs99TdeVSEzTEzMTpS7Ee9rMbbE=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/coremldata.bin</key>
+		<data>
+		ovWrfMv+0pHrjR4ddMaflRjEcaU=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.net</key>
+		<data>
+		MKXAnrX9O/1D/Ln5twG9wNlnwtA=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.shape</key>
+		<data>
+		R6IZ8m3Aweh4P0N4B9vUNfAH1Xw=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.weights</key>
+		<data>
+		+U6dyKmkJXPRKdabS5GxK/83ktI=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model/coremldata.bin</key>
+		<data>
+		vrj8oIaeaQ2G0DyxbKHAdaFNANE=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/neural_network_optionals/coremldata.bin</key>
+		<data>
+		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		</data>
+		<key>QoobissIdRecognizerFour.mlmodelc/model1/coremldata.bin</key>
+		<data>
+		cK1Zs7oz3qNvkl7NQjXjcnSMgSw=
 		</data>
 		<key>Readme.md</key>
 		<data>
@@ -220,84 +264,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mbLj6rNQ2bwyXut4NRUArwlNoiso4yeTTjOsMoJDzLw=
+			lhy4gnbcL0u/f8t1FZEEBj1juwO7b/BIlHTV3snXXTA=
 			</data>
 		</dict>
 		<key>Headers/QoobissCoreIdentificationSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/K8PrR6eDHsmNpU/yCDQ8Bvk2vMcoa287guXbAfptlg=
+			sUlZoSd8SoQDQLfnlGEEbBlOiLbPtfUCzrZY3iYNEik=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1vf4SUSOfUkAzkzIxLaBGaao5JslUbLzEDJULjJp98=
+			6KJMTlZ9a7ipb9JkU4gklXi6OrJGscAbg7Ynk0rSQeU=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TGC25SRwZE9+0jOmxJLfGrh/s3G+HkI1YSUA04v5vmI=
+			DBKF2mprfFQYFRmDmEiK31RffyGfjQ75jV38MH7zaFQ=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AT/sbrbK0wr7Ys+E0xB8/8rOgqkXo3oWqzknGl+ojiU=
+			KQhzNiqAxw8wtQtw1LS421wvOwMdLO94w3d37KxcWS8=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TGC25SRwZE9+0jOmxJLfGrh/s3G+HkI1YSUA04v5vmI=
+			DBKF2mprfFQYFRmDmEiK31RffyGfjQ75jV38MH7zaFQ=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aqs4VeZvOKwaRJrAX5GjRkREmk6EcCXF4FtUQajhrd8=
+			JQnuln6ASMKmWFMnLObmHAHZ80mi7HrxjWnyRQkD2o0=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1vf4SUSOfUkAzkzIxLaBGaao5JslUbLzEDJULjJp98=
+			6KJMTlZ9a7ipb9JkU4gklXi6OrJGscAbg7Ynk0rSQeU=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jjAiBSzmZWlU6wqFMThz/91x4Njf1E2Qyja/fTh7+Y8=
+			GcoZYiJC8HIHoIkzXLWxKFNOCxp4owlqIEYSePJLmqc=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MI+QyzXc5hlhQqu2k4KLBDPyslBoB8iG8opKqEN+lnQ=
+			tIe2TfhUEzep2Ae/KbEYMPVvVM+WMorTp7V5n+7j/Lw=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jjAiBSzmZWlU6wqFMThz/91x4Njf1E2Qyja/fTh7+Y8=
+			GcoZYiJC8HIHoIkzXLWxKFNOCxp4owlqIEYSePJLmqc=
 			</data>
 		</dict>
 		<key>Modules/QoobissCoreIdentificationSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hzQmuSnd4udssnJCK8KEGQz/Uo+yWFa+kvzwa3bTWZ4=
+			WpvYPTVha3Jvm5i8/xegNqDsKK5KH4q25HAOmGCaOBg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -318,14 +362,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+GpZZZgvfwLqfRvVKYnQSOTz0rkWaQv2207h87tXdY=
+			Kd4oRzvukArAOFEcsNea7KuzkdbZ4vO5nYvkzZ0j8P8=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJ0nDVOASyZh8Vigm9cTcBUaaWzbkksDwUkPVmXnhLo=
+			nyxKIxbnJfQu7qRvJokpJq9ka+22NSJWRe+xMfSjJMA=
 			</data>
 		</dict>
 		<key>QoobissIdImageClassifier.mlmodelc/model0/coremldata.bin</key>
@@ -340,6 +384,83 @@
 			<key>hash2</key>
 			<data>
 			DABtoZG9Q3sdopr/rGl2IyhnDYYrxojRqqIkOn3XVlA=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkGTow8DFehCGwSHS1BzPf/i97yBr7dTrhenKjrBzKc=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7YB9ZG0qLpcZKSPTUpYK9qtHuNy6HgpGds2fsOtnW5U=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZcJj5e63XwJDI7XM0x2Rs7Ks3nCvKz+bR+o+b1eBOpY=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3zJLBfU2zRVw1OXDKsYc4XZGJ5pIXg/gr1yn2EsH9Mg=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vhlzAd4G5ajN7kV9uMJZtIRD/9J/lcCElIlQyn4PFlM=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p78vv3n4m0yDCRHIu9058TI9+wSi7RwWDf4LuxZ74Ds=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pRreaMHJN7jXAmmXtqWOOOibI/8A1LfnXn9IpSUKujQ=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bPw7S0WNXFr0m86MptcI8k71x5SMWWT/AuB7Cp6myNI=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			keRkTRQp2YbxMZ/zHz0YaKENPkrpsTsFrqniELGU3/8=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model0/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			</data>
+		</dict>
+		<key>QoobissIdRecognizerFour.mlmodelc/model1/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KK1nG0WXwGVJp9JCvFcYXuvpEzNkzQksROzL/T1xakE=
 			</data>
 		</dict>
 		<key>Readme.md</key>

@@ -1,0 +1,4 @@
+framework module NFCSDK {
+  header "NFCSDK-Swift.h"
+  requires objc
+}
