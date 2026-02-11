@@ -52,6 +52,43 @@ Here’s a step-by-step breakdown:
 <key>NSCameraUsageDescription</key>
 <string>This app requires access to the camera for scanning documents.</string> 
 
+### NFC setup (optional, for identity document chip reading)
+
+To support reading identity document chips via NFC (e.g. Romanian eID), configure the following.
+
+**1. NFC usage description (Info.plist)**
+
+Add a usage description so the system can show a prompt when starting an NFC session:
+
+```xml
+<key>NFCReaderUsageDescription</key>
+<string>We need to scan your ID document chip to verify your identity.</string>
+```
+
+**2. NFC capability in Xcode**
+
+1. Open your project in Xcode and select your app target.
+2. Go to **Signing & Capabilities**.
+3. Click **+ Capability** and add **Near Field Communication Tag Reading**.
+4. Xcode will add the required entries to your entitlements file.
+
+**3. ISO7816 select identifiers (for eID / passport reading)**
+
+Reading identity document chips requires the ISO7816 entitlement with the application identifiers (AIDs) used by the chip. Add this to your **entitlements file** (e.g. `YourApp.entitlements`), **only if your App ID has this capability enabled** by Apple:
+
+```xml
+<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+<array>
+    <string>A0000002471001</string>
+    <string>A0000002472001</string>
+    <string>00000000000000</string>
+    <string>A000000077030C60000000FE00000500</string>
+</array>
+```
+
+- If you see *"com.apple.developer.nfc.readersession.iso7816.select-identifiers not found and could not be included in profile"*, your current App ID does not have this entitlement. Remove the key and array above from the entitlements file to fix signing. NFC chip reading will not work until Apple enables the ISO7816 / identity document capability for your App ID (contact your Apple account representative or follow your partner program instructions).
+- NFC chip reading works only on **physical devices** with NFC; it is not available in the simulator.
+
 ### Code Example 
 
 ```swift
@@ -79,7 +116,7 @@ struct ContentView: View {
 
 ### Running on devices and simulators
 
-The SDK is made to build together with the client app for both physical devices and simulators but the user is able to complete the flow only on a real device due to hardware limitations for camera usage. 
+The SDK is made to build together with the client app for both physical devices and simulators but the user is able to complete the flow only on a real device due to hardware limitations for camera usage. NFC chip reading (when configured) also requires a physical device with NFC; it is not available in the simulator. 
 ### Results
 
 The `onMessage` callback will be called every time there is a new state to transition to represented by a screen.
