@@ -6,35 +6,35 @@
 	<dict>
 		<key>Headers/NFCSDK-Swift.h</key>
 		<data>
-		vE6MHOms0/vXpJ76dkd7/FrFsqE=
+		Lwh5teH8r1rNSk1jiml6AAvtevw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u1ZVYr+0RP/HAzf/3mMT5wIhWr4=
+		miUQU0peAYal6K8XDZ7Afz9OXng=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		LExkv6VjLdMair4yY+fSvwij0DY=
+		UPdgsBgKUaGcwAXGQ8YyENgDO+Q=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		QznOwpxDpuR5AT+/MC7EhsJyDZo=
+		mcLsgxGGfNdLMveT6Sic438uAPE=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		REwAaENUC/Up+Ww/uCRVv5pHE8Q=
+		BzujGCUnGSE+w92nfIcKa/7q8u0=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		94Qj5bfBpur0EzKuBIU8nUh49GA=
+		HHgWa2BltMsuhYpOBVVZ9KZ5TWw=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		REwAaENUC/Up+Ww/uCRVv5pHE8Q=
+		BzujGCUnGSE+w92nfIcKa/7q8u0=
 		</data>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		E6VN6zAxeGX8gugkl8RFiWjQEn0=
+		jvx1FCMvSprAc6432pSsniql7po=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,77 +47,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vE6MHOms0/vXpJ76dkd7/FrFsqE=
+			Lwh5teH8r1rNSk1jiml6AAvtevw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3zZzjKImwSBwCyI4JnA1rB8OhglaLF2FDLL62WR8wn0=
+			qd+Lmrlli5kkfxCVMn0aLG5SIQiPJHumMnWqLhgN0v8=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LExkv6VjLdMair4yY+fSvwij0DY=
+			UPdgsBgKUaGcwAXGQ8YyENgDO+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			/HVfI26PkmNhsMVY0zJzdW8eplC8/AvNSSLv3to6vyU=
+			a6DBLFfxkE1ZvtrJ0dv+wK3/kH9T9sMYe3aC3sw8YLM=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QznOwpxDpuR5AT+/MC7EhsJyDZo=
+			mcLsgxGGfNdLMveT6Sic438uAPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ALYUzWvCvrRaa5nw2yeFe2ycP6CLpGdzXZi83JP2Sbc=
+			CKdlhIBHYmRqXMwyFp3nBclBc2o2BfGEzSwh66cvOHI=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			REwAaENUC/Up+Ww/uCRVv5pHE8Q=
+			BzujGCUnGSE+w92nfIcKa/7q8u0=
 			</data>
 			<key>hash2</key>
 			<data>
-			iivzVkbj7nmu7KA2f83s10NyL3o/lNXdYNaBTk1WqQs=
+			Y0O8kvupx9dQe1chYEaKD9/QXLKnQUi+AshW4OP8vSU=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			94Qj5bfBpur0EzKuBIU8nUh49GA=
+			HHgWa2BltMsuhYpOBVVZ9KZ5TWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ma+hSnVa3KsNp2aCnvkyqP994Fv4OzQxV9XhDX6pz2o=
+			E91wcGX81a+e/+jLQwXlppAcSCWV+x0FLFlf1TLfSp0=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			REwAaENUC/Up+Ww/uCRVv5pHE8Q=
+			BzujGCUnGSE+w92nfIcKa/7q8u0=
 			</data>
 			<key>hash2</key>
 			<data>
-			iivzVkbj7nmu7KA2f83s10NyL3o/lNXdYNaBTk1WqQs=
+			Y0O8kvupx9dQe1chYEaKD9/QXLKnQUi+AshW4OP8vSU=
 			</data>
 		</dict>
 		<key>Modules/NFCSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E6VN6zAxeGX8gugkl8RFiWjQEn0=
+			jvx1FCMvSprAc6432pSsniql7po=
 			</data>
 			<key>hash2</key>
 			<data>
-			56X8V+aSXLbgvOxZBsxIqHtR/RQkXA4iEmCFH6hrvTA=
+			D5R8zt0rcz0FrcUi5xdMsq8AcJnbnQWxf4I2zJzszPc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
