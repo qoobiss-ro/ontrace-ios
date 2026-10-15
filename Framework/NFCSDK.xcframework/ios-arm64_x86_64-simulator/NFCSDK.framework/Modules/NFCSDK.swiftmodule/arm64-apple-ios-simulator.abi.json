@@ -14071,6 +14071,63 @@
           },
           {
             "kind": "Var",
+            "name": "WrongPinCode",
+            "printedName": "WrongPinCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCPassportReaderError.Type) -> (Swift.Int) -> NFCSDK.NFCPassportReaderError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> NFCSDK.NFCPassportReaderError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCPassportReaderError",
+                        "printedName": "NFCSDK.NFCPassportReaderError",
+                        "usr": "s:6NFCSDK22NFCPassportReaderErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(attemptsLeft: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCPassportReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCPassportReaderError",
+                        "printedName": "NFCSDK.NFCPassportReaderError",
+                        "usr": "s:6NFCSDK22NFCPassportReaderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK22NFCPassportReaderErrorO12WrongPinCodeyACSi_tcACmF",
+            "mangledName": "$s6NFCSDK22NFCPassportReaderErrorO12WrongPinCodeyACSi_tcACmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Var",
             "name": "errorDescription",
             "printedName": "errorDescription",
             "children": [
@@ -14991,13 +15048,124 @@
         "moduleName": "NFCSDK"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
+        "kind": "TypeDecl",
+        "name": "NFCSDKLogging",
+        "printedName": "NFCSDKLogging",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvpZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvpZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvgZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvgZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvsZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvsZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvMZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvMZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6NFCSDK13NFCSDKLoggingO",
+        "mangledName": "$s6NFCSDK13NFCSDKLoggingO",
         "moduleName": "NFCSDK",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -17450,6 +17618,28 @@
           },
           {
             "kind": "Function",
+            "name": "formattedBasicFields",
+            "printedName": "formattedBasicFields()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK16NFCPassportModelC20formattedBasicFieldsSSyF",
+            "mangledName": "$s6NFCSDK16NFCPassportModelC20formattedBasicFieldsSSyF",
+            "moduleName": "NFCSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getHashesForDatagroups",
             "printedName": "getHashesForDatagroups(hashAlgorythm:)",
             "children": [
@@ -19592,17 +19782,32 @@
           {
             "kind": "Function",
             "name": "invalidateNFCSession",
-            "printedName": "invalidateNFCSession()",
+            "printedName": "invalidateNFCSession(error:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NFCSDK.NFCPassportReaderError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCPassportReaderError",
+                    "printedName": "NFCSDK.NFCPassportReaderError",
+                    "usr": "s:6NFCSDK22NFCPassportReaderErrorO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6NFCSDK14PassportReaderC20invalidateNFCSessionyyF",
-            "mangledName": "$s6NFCSDK14PassportReaderC20invalidateNFCSessionyyF",
+            "usr": "s:6NFCSDK14PassportReaderC20invalidateNFCSession5erroryAA011NFCPassportC5ErrorOSg_tF",
+            "mangledName": "$s6NFCSDK14PassportReaderC20invalidateNFCSession5erroryAA011NFCPassportC5ErrorOSg_tF",
             "moduleName": "NFCSDK",
             "declAttributes": [
               "AccessControl",
@@ -20967,8 +21172,8 @@
           },
           {
             "kind": "Function",
-            "name": "verifyPINWithRetry",
-            "printedName": "verifyPINWithRetry(pin:)",
+            "name": "verifyPIN",
+            "printedName": "verifyPIN(pin:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20984,8 +21189,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6NFCSDK9TagReaderC18verifyPINWithRetry3pinAA12ResponseAPDUVSS_tYaKF",
-            "mangledName": "$s6NFCSDK9TagReaderC18verifyPINWithRetry3pinAA12ResponseAPDUVSS_tYaKF",
+            "usr": "s:6NFCSDK9TagReaderC9verifyPIN3pinAA12ResponseAPDUVSS_tYaKF",
+            "mangledName": "$s6NFCSDK9TagReaderC9verifyPIN3pinAA12ResponseAPDUVSS_tYaKF",
             "moduleName": "NFCSDK",
             "declAttributes": [
               "AccessControl",
@@ -24726,14 +24931,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/AES_3DES_DESEncryption.swift",
       "kind": "IntegerLiteral",
-      "offset": 9398,
+      "offset": 9428,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/AES_3DES_DESEncryption.swift",
       "kind": "IntegerLiteral",
-      "offset": 11192,
+      "offset": 11228,
       "length": 1,
       "value": "0"
     },
@@ -24844,330 +25049,358 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 386,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 484,
+      "length": 8,
+      "value": "\"NFCSDK\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "StringLiteral",
+      "offset": 1282,
       "length": 16,
       "value": "\"passportReader\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 1372,
       "length": 11,
       "value": "\"tagReader\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 656,
+      "offset": 1463,
       "length": 17,
       "value": "\"secureMessaging\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 740,
+      "offset": 1552,
       "length": 9,
       "value": "\"openSSL\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 812,
+      "offset": 1629,
       "length": 5,
       "value": "\"BAC\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 1707,
       "length": 20,
       "value": "\"chipAuthentication\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 1796,
       "length": 6,
       "value": "\"PACE\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 429,
+      "offset": 292,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 310,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 419,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 436,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 674,
+      "offset": 537,
       "length": 4,
       "value": "\"5A\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 683,
+      "offset": 546,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 713,
+      "offset": 576,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 724,
+      "offset": 587,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 825,
+      "offset": 688,
       "length": 6,
       "value": "\"5F28\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 836,
+      "offset": 699,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 801,
       "length": 4,
       "value": "\"59\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 947,
+      "offset": 810,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 905,
       "length": 6,
       "value": "\"5F57\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1053,
+      "offset": 916,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1006,
       "length": 6,
       "value": "\"5F35\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1154,
+      "offset": 1017,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1249,
+      "offset": 1112,
       "length": 6,
       "value": "\"5F2C\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1260,
+      "offset": 1123,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1349,
+      "offset": 1212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1377,
+      "offset": 1240,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1251,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1345,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1502,
+      "offset": 1365,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1577,
+      "offset": 1440,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1588,
+      "offset": 1451,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1679,
+      "offset": 1542,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1736,
       "length": 6,
       "value": "\"5F1F\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 1747,
       "length": 11,
       "value": "\"NOT FOUND\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 1985,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2165,
+      "offset": 2028,
       "length": 4,
       "value": "\"5B\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 2037,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2203,
+      "offset": 2066,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 3254,
+      "offset": 3117,
       "length": 4,
       "value": "\"53\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 3263,
+      "offset": 3126,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 3293,
+      "offset": 3156,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 3304,
+      "offset": 3167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 4024,
+      "offset": 3887,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 4214,
+      "offset": 4077,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Dictionary",
-      "offset": 4437,
+      "offset": 4300,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4894,
+      "offset": 4757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4835,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4902,
       "length": 5,
       "value": "false"
     },
@@ -25180,57 +25413,43 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5039,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5109,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 5185,
+      "offset": 5048,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 5258,
+      "offset": 5121,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 5320,
+      "offset": 5183,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Dictionary",
-      "offset": 6888,
+      "offset": 6751,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9047,
+      "offset": 8916,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11575,
+      "offset": 12032,
       "length": 5,
       "value": "false"
     },
@@ -25244,7 +25463,7 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/OpenSSLUtils.swift",
       "kind": "StringLiteral",
-      "offset": 17249,
+      "offset": 17267,
       "length": 2,
       "value": "\"\""
     },
@@ -25349,7 +25568,7 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/PACEHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 5037,
+      "offset": 5109,
       "length": 5,
       "value": "false"
     },
@@ -25587,14 +25806,21 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 18281,
+      "offset": 18972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 27254,
+      "offset": 28048,
+      "length": 4,
+      "value": "0xC1"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28110,
       "length": 4,
       "value": "0x03"
     },

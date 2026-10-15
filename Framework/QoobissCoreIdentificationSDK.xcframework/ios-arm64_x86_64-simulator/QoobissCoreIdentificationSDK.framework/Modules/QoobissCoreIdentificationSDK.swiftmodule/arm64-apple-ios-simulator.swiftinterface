@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVFoundation
 import AVKit
 import CoreImage.CIFilterBuiltins
@@ -55,7 +55,7 @@ public struct IdentificationFlow {
   public static func startFlowCrossPlatform(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
   
 }
-public struct RomanianEIDData : Swift.Equatable {
+public struct RomanianEIDData : Swift.Equatable, Swift.CustomStringConvertible {
   public var surname: Swift.String?
   public var givenNames: Swift.String?
   public var sex: Swift.String?
@@ -78,6 +78,12 @@ public struct RomanianEIDData : Swift.Equatable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(surname: Swift.String? = nil, givenNames: Swift.String? = nil, sex: Swift.String? = nil, personalNumber: Swift.String? = nil, cnp: Swift.String? = nil, country: Swift.String? = nil, dateOfBirth: Swift.String? = nil, placeOfBirth: Swift.String? = nil, issuerCode: Swift.String? = nil, issueDate: Swift.String? = nil, expiryDate: Swift.String? = nil, issuerName: Swift.String? = nil, addressLine: Swift.String? = nil, city: Swift.String? = nil, sector: Swift.String? = nil, temporaryAddressValidFrom: Swift.String? = nil, temporaryAddressValidTo: Swift.String? = nil, foreignAddressValidFrom: Swift.String? = nil, foreignAddressValidTo: Swift.String? = nil)
   #endif
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
   public static func == (a: QoobissCoreIdentificationSDK.RomanianEIDData, b: QoobissCoreIdentificationSDK.RomanianEIDData) -> Swift.Bool
 }
 extension Swift.Sequence where Self.Element : Swift.Hashable {

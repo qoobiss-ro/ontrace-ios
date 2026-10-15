@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NFCSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CommonCrypto
 import CoreNFC
 import CryptoKit
@@ -614,6 +614,7 @@ public enum NFCPassportReaderError : Swift.Error {
   case NotYetSupported(Swift.String)
   case Unknown(any Swift.Error)
   case InvalidCAN
+  case WrongPinCode(attemptsLeft: Swift.Int)
 }
 @available(iOS 13, macOS 10.15, *)
 extension NFCSDK.NFCPassportReaderError : Foundation.LocalizedError {
@@ -653,6 +654,9 @@ extension NFCSDK.PassiveAuthenticationError : Foundation.LocalizedError {
     get
   }
   #endif
+}
+public enum NFCSDKLogging {
+  public static var verbose: Swift.Bool
 }
 public enum PassportAuthenticationStatus {
   case notDone
@@ -808,6 +812,7 @@ public class NFCPassportModel {
   public func getDataGroup(_ id: NFCSDK.DataGroupId) -> NFCSDK.DataGroup?
   #endif
   public func dumpPassportData(selectedDataGroups: [NFCSDK.DataGroupId], includeActiveAuthenticationData: Swift.Bool = false) -> [Swift.String : Swift.String]
+  public func formattedBasicFields() -> Swift.String
   public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [NFCSDK.DataGroupId : [Swift.UInt8]]
   #if compiler(>=5.3) && $NonescapableTypes
   public func verifyPassport(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
@@ -899,7 +904,9 @@ extension NFCSDK.PassportReader {
   #if compiler(>=5.3) && $NonescapableTypes
   public func performPACEAndGetTagReaderForICAO(can: Swift.String, customDisplayMessage: ((NFCSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil) async throws -> (NFCSDK.NFCPassportModel, NFCSDK.TagReader)
   #endif
-  public func invalidateNFCSession()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invalidateNFCSession(error: NFCSDK.NFCPassportReaderError? = nil)
+  #endif
 }
 @available(iOS 13, *)
 public struct ResponseAPDU {
@@ -948,7 +955,7 @@ public class TagReader {
   public func selectPassportApplication() async throws -> NFCSDK.ResponseAPDU
   public func selectRomanianNationalAID() async throws -> NFCSDK.ResponseAPDU
   public func selectEDATAAID(edataAID: Foundation.Data) async throws -> NFCSDK.ResponseAPDU
-  public func verifyPINWithRetry(pin: Swift.String) async throws -> NFCSDK.ResponseAPDU
+  public func verifyPIN(pin: Swift.String) async throws -> NFCSDK.ResponseAPDU
   public func readEFFile(fid: Swift.String) async throws -> Foundation.Data
   public func readEFFileBytes(fid: Swift.String) async throws -> [Swift.UInt8]
   @objc deinit
