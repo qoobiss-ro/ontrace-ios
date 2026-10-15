@@ -1352,17 +1352,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5616,17 +5616,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6042,17 +6042,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -7807,17 +7807,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -8316,17 +8316,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -8603,17 +8603,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -9186,17 +9186,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -9769,17 +9769,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -10130,17 +10130,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -10380,17 +10380,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -10852,17 +10852,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -10946,17 +10946,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -14200,6 +14200,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -14207,17 +14214,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -14232,13 +14239,6 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
@@ -14721,6 +14721,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -14728,17 +14735,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -14753,13 +14760,6 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
@@ -14988,6 +14988,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -14995,17 +15002,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -15020,13 +15027,6 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
@@ -15041,17 +15041,452 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "NFCSDK"
+        "kind": "TypeDecl",
+        "name": "NFCSDKLogLevel",
+        "printedName": "NFCSDKLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCSDKLogLevel.Type) -> NFCSDK.NFCSDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCSDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCSDKLogLevel",
+                        "printedName": "NFCSDK.NFCSDKLogLevel",
+                        "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO4noneyA2CmF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO4noneyA2CmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCSDKLogLevel.Type) -> NFCSDK.NFCSDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCSDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCSDKLogLevel",
+                        "printedName": "NFCSDK.NFCSDKLogLevel",
+                        "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO5debugyA2CmF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO5debugyA2CmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCSDKLogLevel.Type) -> NFCSDK.NFCSDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCSDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCSDKLogLevel",
+                        "printedName": "NFCSDK.NFCSDKLogLevel",
+                        "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO5erroryA2CmF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO5erroryA2CmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCSDKLogLevel.Type) -> NFCSDK.NFCSDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCSDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCSDKLogLevel",
+                        "printedName": "NFCSDK.NFCSDKLogLevel",
+                        "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO4infoyA2CmF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO4infoyA2CmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NFCSDK.NFCSDKLogLevel.Type) -> NFCSDK.NFCSDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NFCSDK.NFCSDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCSDKLogLevel",
+                        "printedName": "NFCSDK.NFCSDKLogLevel",
+                        "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO7verboseyA2CmF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO7verboseyA2CmF",
+            "moduleName": "NFCSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldLog",
+            "printedName": "shouldLog(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NFCSDKLogLevel",
+                "printedName": "NFCSDK.NFCSDKLogLevel",
+                "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO9shouldLogySbACF",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO9shouldLogySbACF",
+            "moduleName": "NFCSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NFCSDK.NFCSDKLogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO8rawValueACSgSi_tcfc",
+            "moduleName": "NFCSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NFCSDK14NFCSDKLogLevelO8rawValueSivp",
+            "mangledName": "$s6NFCSDK14NFCSDKLogLevelO8rawValueSivp",
+            "moduleName": "NFCSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK14NFCSDKLogLevelO8rawValueSivg",
+                "mangledName": "$s6NFCSDK14NFCSDKLogLevelO8rawValueSivg",
+                "moduleName": "NFCSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6NFCSDK14NFCSDKLogLevelO",
+        "mangledName": "$s6NFCSDK14NFCSDKLogLevelO",
+        "moduleName": "NFCSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
         "name": "NFCSDKLogging",
         "printedName": "NFCSDKLogging",
         "children": [
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NFCSDKLogLevel",
+                "printedName": "NFCSDK.NFCSDKLogLevel",
+                "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvpZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvpZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvgZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvgZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCSDKLogLevel",
+                    "printedName": "NFCSDK.NFCSDKLogLevel",
+                    "usr": "s:6NFCSDK14NFCSDKLogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvsZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvsZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvMZ",
+                "mangledName": "$s6NFCSDK13NFCSDKLoggingO5levelAA14NFCSDKLogLevelOvMZ",
+                "moduleName": "NFCSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "verbose",
@@ -15070,11 +15505,9 @@
             "moduleName": "NFCSDK",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -15093,54 +15526,216 @@
                 "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvgZ",
                 "moduleName": "NFCSDK",
                 "static": true,
-                "implicit": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvsZ",
-                "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvsZ",
-                "moduleName": "NFCSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseSbvMZ",
-                "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseSbvMZ",
-                "moduleName": "NFCSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "setLogFileURL",
+            "printedName": "setLogFileURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO13setLogFileURLyy10Foundation0F0VSgFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO13setLogFileURLyy10Foundation0F0VSgFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendLogFileLine",
+            "printedName": "appendLogFileLine(level:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO17appendLogFileLine5level_ySS_SStFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO17appendLogFileLine5level_ySS_SStFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO5debugyySSFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO5debugyySSFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO4infoyySSFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO4infoyySSFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO7warningyySSFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO7warningyySSFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO5erroryySSFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO5erroryySSFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK13NFCSDKLoggingO7verboseyySSFZ",
+            "mangledName": "$s6NFCSDK13NFCSDKLoggingO7verboseyySSFZ",
+            "moduleName": "NFCSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -15412,17 +16007,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -18679,17 +19274,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19781,6 +20376,56 @@
           },
           {
             "kind": "Function",
+            "name": "readICAODataGroupsOnOpenSession",
+            "printedName": "readICAODataGroupsOnOpenSession(passport:tagReader:tags:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NFCPassportModel",
+                "printedName": "NFCSDK.NFCPassportModel",
+                "usr": "s:6NFCSDK16NFCPassportModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TagReader",
+                "printedName": "NFCSDK.TagReader",
+                "usr": "s:6NFCSDK9TagReaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NFCSDK.DataGroupId]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataGroupId",
+                    "printedName": "NFCSDK.DataGroupId",
+                    "usr": "s:6NFCSDK11DataGroupIdO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NFCSDK14PassportReaderC31readICAODataGroupsOnOpenSession8passport03tagC04tagsyAA16NFCPassportModelC_AA03TagC0CSayAA11DataGroupIdOGtYaKF",
+            "mangledName": "$s6NFCSDK14PassportReaderC31readICAODataGroupsOnOpenSession8passport03tagC04tagsyAA16NFCPassportModelC_AA03TagC0CSayAA11DataGroupIdOGtYaKF",
+            "moduleName": "NFCSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "invalidateNFCSession",
             "printedName": "invalidateNFCSession(error:)",
             "children": [
@@ -19834,45 +20479,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+            "name": "NFCTagReaderSessionDelegate",
+            "printedName": "NFCTagReaderSessionDelegate",
+            "usr": "s:7CoreNFC27NFCTagReaderSessionDelegateP",
+            "mangledName": "$s7CoreNFC27NFCTagReaderSessionDelegateP"
           },
           {
             "kind": "Conformance",
@@ -19883,10 +20493,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -19897,10 +20521,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "NFCTagReaderSessionDelegate",
-            "printedName": "NFCTagReaderSessionDelegate",
-            "usr": "s:7CoreNFC27NFCTagReaderSessionDelegateP",
-            "mangledName": "$s7CoreNFC27NFCTagReaderSessionDelegateP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -20484,17 +21129,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20799,17 +21444,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "CustomDebugStringConvertible",
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -22896,17 +23541,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -23313,17 +23958,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -25049,66 +25694,45 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 386,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 381,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 419,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 437,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 458,
+      "length": 1,
+      "value": "4"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 484,
-      "length": 8,
-      "value": "\"NFCSDK\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1282,
-      "length": 16,
-      "value": "\"passportReader\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1372,
-      "length": 11,
-      "value": "\"tagReader\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1463,
-      "length": 17,
-      "value": "\"secureMessaging\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1552,
-      "length": 9,
-      "value": "\"openSSL\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1629,
-      "length": 5,
-      "value": "\"BAC\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1707,
-      "length": 20,
-      "value": "\"chipAuthentication\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/Logging.swift",
-      "kind": "StringLiteral",
-      "offset": 1796,
+      "offset": 1520,
       "length": 6,
-      "value": "\"PACE\""
+      "value": "\"INFO\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/NFCPassportModel.swift",
@@ -25799,28 +26423,42 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 5419,
+      "offset": 775,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 823,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5675,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 18972,
+      "offset": 20924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28048,
+      "offset": 30002,
       "length": 4,
-      "value": "0xC1"
+      "value": "0xC3"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/NFCSDK\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28110,
+      "offset": 30064,
       "length": 4,
       "value": "0x03"
     },

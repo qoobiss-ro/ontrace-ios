@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NFCSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NFCSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CommonCrypto
 import CoreNFC
 import CryptoKit
@@ -19,9 +19,7 @@ import _SwiftConcurrencyShims
 public class ActiveAuthenticationInfo : NFCSDK.SecurityInfo {
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSignatureAlgorithmOIDString() -> Swift.String?
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
@@ -85,9 +83,7 @@ public enum DocTypeEnum : Swift.String {
   case TD1
   case TD2
   case OTHER
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -310,9 +306,7 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   case Unknown
   public func getName() -> Swift.String
   public static func getIDFromName(name: Swift.String) -> NFCSDK.DataGroupId
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias AllCases = [NFCSDK.DataGroupId]
   @available(iOS 13, macOS 10.15, *)
@@ -360,9 +354,7 @@ public class PACEInfo : NFCSDK.SecurityInfo {
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
   public func getVersion() -> Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getParameterId() -> Swift.Int?
-  #endif
   public func getParameterSpec() throws -> Swift.Int32
   public func getMappingType() throws -> NFCSDK.PACEMappingType
   public func getKeyAgreementAlgorithm() throws -> Swift.String
@@ -394,12 +386,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case eyesLookingAway
     case squinting
     case frowning
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.Expression?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -415,12 +403,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case multiColored
     case pink
     case unknown
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.EyeColor?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -430,12 +414,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case basic
     case fullFrontal
     case tokenFrontal
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.FaceImageType?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -453,12 +433,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case rightEyePath
     case darkGlasses
     case distortingMedicalCondition
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.Features?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -476,12 +452,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case green
     case blue
     case unknown
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.HairColor?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -493,12 +465,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case yuv422
     case gray8
     case other
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.ImageColorSpace?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -507,12 +475,8 @@ public struct FaceImageInfo : Swift.Equatable {
   public enum ImageDataType : Swift.Int {
     case jpeg
     case jpeg2000
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.ImageDataType?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -527,12 +491,8 @@ public struct FaceImageInfo : Swift.Equatable {
     case videoFrameAnalogCam
     case videoFrameDigitalCam
     case unknown
-    #if compiler(>=5.3) && $NonescapableTypes
     public static func from(_ code: Swift.Int) -> NFCSDK.FaceImageInfo.SourceType?
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -618,11 +578,9 @@ public enum NFCPassportReaderError : Swift.Error {
 }
 @available(iOS 13, macOS 10.15, *)
 extension NFCSDK.NFCPassportReaderError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 @available(iOS 13, macOS 10.15, *)
 public enum OpenSSLError : Swift.Error {
@@ -637,11 +595,9 @@ public enum OpenSSLError : Swift.Error {
 }
 @available(iOS 13, macOS 10.15, *)
 extension NFCSDK.OpenSSLError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public enum PassiveAuthenticationError : Swift.Error {
   case UnableToParseSODHashes(Swift.String)
@@ -649,14 +605,35 @@ public enum PassiveAuthenticationError : Swift.Error {
   case SODMissing(Swift.String)
 }
 extension NFCSDK.PassiveAuthenticationError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
+}
+public enum NFCSDKLogLevel : Swift.Int {
+  case none
+  case debug
+  case error
+  case info
+  case verbose
+  public func shouldLog(_ messageLevel: NFCSDK.NFCSDKLogLevel) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum NFCSDKLogging {
-  public static var verbose: Swift.Bool
+  public static var level: NFCSDK.NFCSDKLogLevel
+  public static var verbose: Swift.Bool {
+    get
+  }
+  public static func setLogFileURL(_ url: Foundation.URL?)
+  public static func appendLogFileLine(level: Swift.String = "INFO", _ message: Swift.String)
+  public static func debug(_ message: Swift.String)
+  public static func info(_ message: Swift.String)
+  public static func warning(_ message: Swift.String)
+  public static func error(_ message: Swift.String)
+  public static func verbose(_ message: Swift.String)
 }
 public enum PassportAuthenticationStatus {
   case notDone
@@ -703,41 +680,27 @@ public class NFCPassportModel {
   public var passportMRZ: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var placeOfBirth: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var residenceAddress: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var phoneNumber: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var personalNumber: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var faceImageInfo: NFCSDK.FaceImageInfo? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var documentSigningCertificate: NFCSDK.X509Wrapper? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var countrySigningCertificate: NFCSDK.X509Wrapper? {
     get
   }
-  #endif
   public var LDSVersion: Swift.String {
     get
   }
@@ -792,31 +755,23 @@ public class NFCPassportModel {
   public var isChipAuthenticationSupported: Swift.Bool {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var passportImage: UIKit.UIImage? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var signatureImage: UIKit.UIImage? {
     get
   }
-  #endif
   public var activeAuthenticationSupported: Swift.Bool {
     get
   }
   public init()
   public init(from dump: [Swift.String : Swift.String])
   public func addDataGroup(_ id: NFCSDK.DataGroupId, dataGroup: NFCSDK.DataGroup)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDataGroup(_ id: NFCSDK.DataGroupId) -> NFCSDK.DataGroup?
-  #endif
   public func dumpPassportData(selectedDataGroups: [NFCSDK.DataGroupId], includeActiveAuthenticationData: Swift.Bool = false) -> [Swift.String : Swift.String]
   public func formattedBasicFields() -> Swift.String
   public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [NFCSDK.DataGroupId : [Swift.UInt8]]
-  #if compiler(>=5.3) && $NonescapableTypes
   public func verifyPassport(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
-  #endif
   public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
   @objc deinit
 }
@@ -839,14 +794,10 @@ extension NFCSDK.NFCViewDisplayMessage {
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class OpenSSLUtils {
   public static func getOpenSSLError() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, *)
   public static func getPublicKeyData(from key: Swift.OpaquePointer) -> [Swift.UInt8]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, *)
   public static func decodePublicKeyFromBytes(pubKeyData: [Swift.UInt8], params: Swift.OpaquePointer) -> Swift.OpaquePointer?
-  #endif
   public static func computeSharedSecret(privateKeyPair: Swift.OpaquePointer, publicKey: Swift.OpaquePointer) -> [Swift.UInt8]
   @objc deinit
 }
@@ -880,14 +831,10 @@ public protocol PassportReaderTrackingDelegate : AnyObject {
 public class PassportReader : ObjectiveC.NSObject {
   weak public var trackingDelegate: (any NFCSDK.PassportReaderTrackingDelegate)?
   public var passiveAuthenticationUsesOpenSSL: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(masterListURL: Foundation.URL? = nil)
-  #endif
   public func setMasterListURL(_ masterListURL: Foundation.URL)
   public func overrideNFCDataAmountToRead(amount: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func readPassport(mrzKey: Swift.String? = nil, can: Swift.String? = nil, tags: [NFCSDK.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, skipDataGroups: Swift.Bool = false, useExtendedMode: Swift.Bool = false, customDisplayMessage: ((NFCSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil) async throws -> NFCSDK.NFCPassportModel
-  #endif
   @objc deinit
 }
 @available(iOS 15, *)
@@ -898,15 +845,10 @@ extension NFCSDK.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
 }
 @available(iOS 15, *)
 extension NFCSDK.PassportReader {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performPACEAndGetTagReader(mrzKey: Swift.String? = nil, can: Swift.String? = nil, customDisplayMessage: ((NFCSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil) async throws -> (NFCSDK.NFCPassportModel, NFCSDK.TagReader)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performPACEAndGetTagReaderForICAO(can: Swift.String, customDisplayMessage: ((NFCSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil) async throws -> (NFCSDK.NFCPassportModel, NFCSDK.TagReader)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public func readICAODataGroupsOnOpenSession(passport: NFCSDK.NFCPassportModel, tagReader: NFCSDK.TagReader, tags: [NFCSDK.DataGroupId] = [.SOD, .DG1, .DG2, .DG7]) async throws
   public func invalidateNFCSession(error: NFCSDK.NFCPassportReaderError? = nil)
-  #endif
 }
 @available(iOS 13, *)
 public struct ResponseAPDU {
@@ -932,9 +874,7 @@ public class SecureMessaging {
 @available(iOS 13, macOS 10.15, *)
 public class ASN1Item : Swift.CustomDebugStringConvertible {
   public init(line: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getChild(_ child: Swift.Int) -> NFCSDK.ASN1Item?
-  #endif
   public func getNumberOfChildren() -> Swift.Int
   public var debugDescription: Swift.String {
     get
@@ -1025,9 +965,7 @@ public enum CertificateItem : Swift.String {
   case publicKeyAlgorithm
   case notBefore
   case notAfter
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1037,35 +975,17 @@ public enum CertificateItem : Swift.String {
 @available(iOS 13, macOS 10.15, *)
 public class X509Wrapper {
   final public let cert: Swift.OpaquePointer
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with cert: Swift.OpaquePointer?)
-  #endif
   public func getItemsAsDict() -> [NFCSDK.CertificateItem : Swift.String]
   public func certToPEM() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getFingerprint() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getNotBeforeDate() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getNotAfterDate() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSerialNumber() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSignatureAlgorithm() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getPublicKeyAlgorithm() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getIssuerName() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSubjectName() -> Swift.String?
-  #endif
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)
@@ -1106,6 +1026,9 @@ extension NFCSDK.FaceImageInfo.ImageDataType : Swift.RawRepresentable {}
 extension NFCSDK.FaceImageInfo.SourceType : Swift.Equatable {}
 extension NFCSDK.FaceImageInfo.SourceType : Swift.Hashable {}
 extension NFCSDK.FaceImageInfo.SourceType : Swift.RawRepresentable {}
+extension NFCSDK.NFCSDKLogLevel : Swift.Equatable {}
+extension NFCSDK.NFCSDKLogLevel : Swift.Hashable {}
+extension NFCSDK.NFCSDKLogLevel : Swift.RawRepresentable {}
 extension NFCSDK.PassportAuthenticationStatus : Swift.Equatable {}
 extension NFCSDK.PassportAuthenticationStatus : Swift.Hashable {}
 extension NFCSDK.PACEPasswordType : Swift.Equatable {}
