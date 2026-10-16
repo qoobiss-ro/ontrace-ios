@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QoobissCoreIdentificationSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFoundation
 import AVKit
 import CoreImage.CIFilterBuiltins
@@ -10,12 +10,14 @@ import CoreGraphics
 import CoreImage
 import CoreML
 import CoreMedia
+import CoreNFC
+import CoreText
 import CoreVideo
-import CryptoKit
+import Darwin
 import DeveloperToolsSupport
 import Foundation
 import ImageIO
-import OSLog
+import MachO
 import Photos
 @_exported import QoobissCoreIdentificationSDK
 import Swift
@@ -48,12 +50,19 @@ public actor CoreMLModelProvider : QoobissCoreIdentificationSDK.MLModelProvider 
 public typealias StringCallback = (Swift.String) -> Swift.Void
 public typealias ResultCallback = (QoobissCoreIdentificationSDK.OntraceCompletionResult) -> Swift.Void
 public struct IdentificationFlow {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func startFlowNative(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onCompleteResult: QoobissCoreIdentificationSDK.ResultCallback? = nil) -> some SwiftUICore.View
+  public static func startFlowNative(apiKey: Swift.String, isOpenTelemetryExportEnabled: Swift.Bool = true, theme: QoobissCoreIdentificationSDK.IdentificationTheme = .resolvedDefault, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onCompleteResult: QoobissCoreIdentificationSDK.ResultCallback? = nil) -> some SwiftUICore.View
   
-  #endif
-  public static func startFlowCrossPlatform(apiKey: Swift.String, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
+  public static func startFlowCrossPlatform(apiKey: Swift.String, isOpenTelemetryExportEnabled: Swift.Bool = true, theme: QoobissCoreIdentificationSDK.IdentificationTheme = .resolvedDefault, onMessage: @escaping QoobissCoreIdentificationSDK.StringCallback, onComplete: @escaping QoobissCoreIdentificationSDK.StringCallback) -> some SwiftUICore.View
   
+}
+public enum EIDRedirectURL {
+  public static func resolve(_ queryValue: Swift.String) -> Swift.String?
+  public static func urlString(_ base: Swift.String, appendingTransferCode transferCode: Swift.String) -> Swift.String?
+  @discardableResult
+  public static func open(_ urlString: Swift.String?) -> Swift.Bool
+}
+public enum EIDSessionToken {
+  public static func requestId(from token: Swift.String) -> Swift.String?
 }
 public struct RomanianEIDData : Swift.Equatable, Swift.CustomStringConvertible {
   public var surname: Swift.String?
@@ -75,9 +84,7 @@ public struct RomanianEIDData : Swift.Equatable, Swift.CustomStringConvertible {
   public var temporaryAddressValidTo: Swift.String?
   public var foreignAddressValidFrom: Swift.String?
   public var foreignAddressValidTo: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(surname: Swift.String? = nil, givenNames: Swift.String? = nil, sex: Swift.String? = nil, personalNumber: Swift.String? = nil, cnp: Swift.String? = nil, country: Swift.String? = nil, dateOfBirth: Swift.String? = nil, placeOfBirth: Swift.String? = nil, issuerCode: Swift.String? = nil, issueDate: Swift.String? = nil, expiryDate: Swift.String? = nil, issuerName: Swift.String? = nil, addressLine: Swift.String? = nil, city: Swift.String? = nil, sector: Swift.String? = nil, temporaryAddressValidFrom: Swift.String? = nil, temporaryAddressValidTo: Swift.String? = nil, foreignAddressValidFrom: Swift.String? = nil, foreignAddressValidTo: Swift.String? = nil)
-  #endif
   public var isEmpty: Swift.Bool {
     get
   }
@@ -86,10 +93,30 @@ public struct RomanianEIDData : Swift.Equatable, Swift.CustomStringConvertible {
   }
   public static func == (a: QoobissCoreIdentificationSDK.RomanianEIDData, b: QoobissCoreIdentificationSDK.RomanianEIDData) -> Swift.Bool
 }
+public enum EIDDemoSimulation {
+  public static let demoCAN: Swift.String
+  public static let demoPIN: Swift.String
+  public static var sampleEIDData: QoobissCoreIdentificationSDK.RomanianEIDData {
+    get
+  }
+}
+extension CoreFoundation.CGFloat {
+  public static let zero: Swift.Double
+  public static let one: Swift.Double
+  public static let nano: Swift.Double
+  public static let micro: Swift.Double
+  public static let xxs: Swift.Double
+  public static let xs: Swift.Double
+  public static let sm: Swift.Double
+  public static let md: Swift.Double
+  public static let lg: Swift.Double
+  public static let xl: Swift.Double
+  public static let xxl: Swift.Double
+  public static let xxxl: Swift.Double
+  public static let lm: Swift.Double
+}
 extension Swift.Sequence where Self.Element : Swift.Hashable {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func mostDominant() -> (element: Self.Element, count: Swift.Int)?
-  #endif
 }
 public struct DefaultLoadModelUseCase : QoobissCoreIdentificationSDK.LoadModelUseCase {
   public init(provider: any QoobissCoreIdentificationSDK.MLModelProvider)
@@ -100,9 +127,7 @@ public struct DefaultLoadModelUseCase : QoobissCoreIdentificationSDK.LoadModelUs
   public var message: Swift.String?
   public var error: Swift.String?
   public var identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(requestId: Swift.String, message: Swift.String?, error: Swift.String?, identificationResult: QoobissCoreIdentificationSDK.IdentificationResult?)
-  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -111,9 +136,7 @@ public enum IdentificationResult : Swift.Int, Swift.Codable {
   case success
   case failure
   case cancel
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -123,6 +146,9 @@ extension CoreVideo.CVBuffer {
   public func convertFaceObservationToImageCoordinates(_ face: Vision.VNFaceObservation) -> CoreFoundation.CGRect
   public func convertObservationToImageCoordinates(_ obs: Vision.VNDetectedObjectObservation) -> CoreFoundation.CGRect
   public func convertNormalizedRectToImageCoordinates(_ normalized: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  public func visionScaledCopy(maxLongestSide: CoreFoundation.CGFloat) -> CoreVideo.CVPixelBuffer
+  public func calculateDarkness() -> Swift.Float?
+  public func toUIImage(exifOrientation: ImageIO.CGImagePropertyOrientation) -> UIKit.UIImage?
 }
 public enum LiveResultLabel : Swift.String {
   case driverLicense
@@ -131,28 +157,286 @@ public enum LiveResultLabel : Swift.String {
   case travelDocumentTypeTwo
   case travelDocumentTypeThree
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+public struct QoobissColorPrimitive : Swift.Equatable, Swift.Sendable {
+  public let hex: Swift.UInt
+  public let opacity: Swift.Double
+  public init(hex: Swift.UInt, opacity: Swift.Double = 1)
+  public var color: SwiftUICore.Color {
+    get
+  }
+  public static func == (a: QoobissCoreIdentificationSDK.QoobissColorPrimitive, b: QoobissCoreIdentificationSDK.QoobissColorPrimitive) -> Swift.Bool
+}
+public struct IdentificationButtonChrome : Swift.Equatable, Swift.Sendable {
+  public var cornerRadius: CoreFoundation.CGFloat
+  public var height: QoobissCoreIdentificationSDK.IdentificationButtonHeight
+  public var minHeight: CoreFoundation.CGFloat?
+  public var backgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor?
+  public var disabledBackgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor?
+  public var borderWidth: CoreFoundation.CGFloat?
+  public var borderColor: QoobissCoreIdentificationSDK.IdentificationThemeColor?
+  public init(cornerRadius: CoreFoundation.CGFloat = IdentificationButtonLayout.defaultCornerRadius, height: QoobissCoreIdentificationSDK.IdentificationButtonHeight = .standard, minHeight: CoreFoundation.CGFloat? = nil, backgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor? = nil, disabledBackgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil, borderColor: QoobissCoreIdentificationSDK.IdentificationThemeColor? = nil)
+  public func resolvedMinHeight(for role: QoobissCoreIdentificationSDK.IdentificationButtonRole, baseline: CoreFoundation.CGFloat? = nil) -> CoreFoundation.CGFloat
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonChrome, b: QoobissCoreIdentificationSDK.IdentificationButtonChrome) -> Swift.Bool
+}
+public enum IdentificationButtonHeight : Swift.Equatable, Swift.Sendable {
+  case smaller
+  case standard
+  case bigger
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonHeight, b: QoobissCoreIdentificationSDK.IdentificationButtonHeight) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum IdentificationButtonLayout {
+  public static let defaultCornerRadius: CoreFoundation.CGFloat
+  public static let reskinCornerRadius: CoreFoundation.CGFloat
+  public static let primaryBaseline: CoreFoundation.CGFloat
+  public static let secondaryBaseline: CoreFoundation.CGFloat
+  public static let destructiveBaseline: CoreFoundation.CGFloat
+  public static let iconBaseline: CoreFoundation.CGFloat
+  public static let heightStep: CoreFoundation.CGFloat
+  public static func baseline(for role: QoobissCoreIdentificationSDK.IdentificationButtonRole) -> CoreFoundation.CGFloat
+}
+extension QoobissCoreIdentificationSDK.IdentificationButtonHeight {
+  public func resolvedMinHeight(baseline: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+public enum IdentificationButtonRole : Swift.Sendable {
+  case primary
+  case secondary
+  case destructive
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonRole, b: QoobissCoreIdentificationSDK.IdentificationButtonRole) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct IdentificationButtonShape : Swift.Equatable, Swift.Sendable {
+  public var primary: QoobissCoreIdentificationSDK.IdentificationButtonChrome
+  public var secondary: QoobissCoreIdentificationSDK.IdentificationButtonChrome
+  public var destructive: QoobissCoreIdentificationSDK.IdentificationButtonChrome
+  public init(primary: QoobissCoreIdentificationSDK.IdentificationButtonChrome = IdentificationButtonChrome(), secondary: QoobissCoreIdentificationSDK.IdentificationButtonChrome = IdentificationButtonChrome(), destructive: QoobissCoreIdentificationSDK.IdentificationButtonChrome = IdentificationButtonChrome())
+  public static let `default`: QoobissCoreIdentificationSDK.IdentificationButtonShape
+  public static let reskin: QoobissCoreIdentificationSDK.IdentificationButtonShape
+  public func chrome(for role: QoobissCoreIdentificationSDK.IdentificationButtonRole) -> QoobissCoreIdentificationSDK.IdentificationButtonChrome
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonShape, b: QoobissCoreIdentificationSDK.IdentificationButtonShape) -> Swift.Bool
+}
+public struct IdentificationButtonTypography : Swift.Equatable, Swift.Sendable {
+  public var primary: QoobissCoreIdentificationSDK.IdentificationTextStyle
+  public var secondary: QoobissCoreIdentificationSDK.IdentificationTextStyle
+  public var destructive: QoobissCoreIdentificationSDK.IdentificationTextStyle
+  public init(primary: QoobissCoreIdentificationSDK.IdentificationTextStyle = .mediumPlusBold, secondary: QoobissCoreIdentificationSDK.IdentificationTextStyle = .mediumBold, destructive: QoobissCoreIdentificationSDK.IdentificationTextStyle = .medium)
+  public static let `default`: QoobissCoreIdentificationSDK.IdentificationButtonTypography
+  public func style(for role: QoobissCoreIdentificationSDK.IdentificationButtonRole) -> QoobissCoreIdentificationSDK.IdentificationTextStyle
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonTypography, b: QoobissCoreIdentificationSDK.IdentificationButtonTypography) -> Swift.Bool
+}
+public typealias IdentificationThemeColor = QoobissCoreIdentificationSDK.QoobissColorPrimitive
+public struct IdentificationColorScheme : Swift.Equatable, Swift.Sendable {
+  public var title: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var text: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var active: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var buttonBackground: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var inactive: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var error: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var blur: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var screenBackground: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var shadow: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var white: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var progressFill: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var checked: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var fail: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var arrow: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var buttonPrimaryText: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var buttonSecondaryText: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var buttonDestructiveText: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var captureGuide: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var captureGuideActive: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public static let `default`: QoobissCoreIdentificationSDK.IdentificationColorScheme
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationColorScheme, b: QoobissCoreIdentificationSDK.IdentificationColorScheme) -> Swift.Bool
+}
+public struct IdentificationTheme : Swift.Equatable, Swift.Sendable {
+  public var colors: QoobissCoreIdentificationSDK.IdentificationColorScheme
+  public var typography: QoobissCoreIdentificationSDK.IdentificationTypography
+  public var buttonTypography: QoobissCoreIdentificationSDK.IdentificationButtonTypography
+  public var buttonShape: QoobissCoreIdentificationSDK.IdentificationButtonShape
+  public var logoURL: Foundation.URL?
+  public var headingAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance?
+  public var bodyAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance?
+  public var hintAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance?
+  public var primaryButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance?
+  public var secondaryButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance?
+  public var destructiveButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance?
+  public var inputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome?
+  public var mediumInputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome?
+  public var largeInputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome?
+  public var surfaceCornerRadius: CoreFoundation.CGFloat?
+  public var largeCornerRadius: CoreFoundation.CGFloat?
+  public var smallCornerRadius: CoreFoundation.CGFloat?
+  public init(colors: QoobissCoreIdentificationSDK.IdentificationColorScheme = .default, typography: QoobissCoreIdentificationSDK.IdentificationTypography = .default, buttonTypography: QoobissCoreIdentificationSDK.IdentificationButtonTypography = .default, buttonShape: QoobissCoreIdentificationSDK.IdentificationButtonShape = .default, logoURL: Foundation.URL? = nil, headingAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance? = nil, bodyAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance? = nil, hintAppearance: QoobissCoreIdentificationSDK.IdentificationTextAppearance? = nil, primaryButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance? = nil, secondaryButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance? = nil, destructiveButtonAppearance: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance? = nil, inputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome? = nil, mediumInputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome? = nil, largeInputChrome: QoobissCoreIdentificationSDK.IdentificationInputChrome? = nil, surfaceCornerRadius: CoreFoundation.CGFloat? = nil, largeCornerRadius: CoreFoundation.CGFloat? = nil, smallCornerRadius: CoreFoundation.CGFloat? = nil)
+  public static let `default`: QoobissCoreIdentificationSDK.IdentificationTheme
+  public static let reskin: QoobissCoreIdentificationSDK.IdentificationTheme
+  public static var resolvedDefault: QoobissCoreIdentificationSDK.IdentificationTheme {
+    get
+  }
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationTheme, b: QoobissCoreIdentificationSDK.IdentificationTheme) -> Swift.Bool
+}
+extension SwiftUICore.EnvironmentValues {
+  public var identificationTheme: QoobissCoreIdentificationSDK.IdentificationTheme {
+    get
+    set
+  }
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func identificationTheme(_ theme: QoobissCoreIdentificationSDK.IdentificationTheme) -> some SwiftUICore.View
+  
+}
+public struct IdentificationTextAppearance : Swift.Equatable, Swift.Sendable {
+  public var color: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var fontFamily: Swift.String
+  public var fontSize: CoreFoundation.CGFloat
+  public var fontWeight: QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight
+  public init(color: QoobissCoreIdentificationSDK.IdentificationThemeColor, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, fontWeight: QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight)
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationTextAppearance, b: QoobissCoreIdentificationSDK.IdentificationTextAppearance) -> Swift.Bool
+}
+public struct IdentificationButtonTextAppearance : Swift.Equatable, Swift.Sendable {
+  public var color: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var fontFamily: Swift.String
+  public var fontSize: CoreFoundation.CGFloat
+  public var fontWeight: QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight
+  public init(color: QoobissCoreIdentificationSDK.IdentificationThemeColor, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, fontWeight: QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight)
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance, b: QoobissCoreIdentificationSDK.IdentificationButtonTextAppearance) -> Swift.Bool
+}
+public struct IdentificationInputChrome : Swift.Equatable, Swift.Sendable {
+  public var borderColor: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var borderWidth: CoreFoundation.CGFloat
+  public var backgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor
+  public var fontFamily: Swift.String
+  public init(borderColor: QoobissCoreIdentificationSDK.IdentificationThemeColor, borderWidth: CoreFoundation.CGFloat, backgroundColor: QoobissCoreIdentificationSDK.IdentificationThemeColor, fontFamily: Swift.String)
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationInputChrome, b: QoobissCoreIdentificationSDK.IdentificationInputChrome) -> Swift.Bool
+}
+public enum IdentificationInputSize : Swift.Sendable {
+  case standard
+  case medium
+  case large
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationInputSize, b: QoobissCoreIdentificationSDK.IdentificationInputSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension QoobissCoreIdentificationSDK.IdentificationTheme {
+  public static let demo: QoobissCoreIdentificationSDK.IdentificationTheme
+  public static let demoAlt: QoobissCoreIdentificationSDK.IdentificationTheme
+}
+public enum IdentificationColorToken : Swift.Sendable {
+  case title, text, active, buttonBackground, inactive, error, blur, screenBackground, shadow, white
+  case progressFill
+  case checked, fail, arrow
+  case buttonPrimaryText, buttonSecondaryText, buttonDestructiveText
+  case captureGuide, captureGuideActive
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationColorToken, b: QoobissCoreIdentificationSDK.IdentificationColorToken) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias IdentificationTextStyle = QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style
+public struct IdentificationTypography : Swift.Equatable, Swift.Sendable {
+  public var regularFace: Swift.String
+  public var boldFace: Swift.String
+  public var bodyRegularFace: Swift.String
+  public var bodyBoldFace: Swift.String
+  public var minFontSize: CoreFoundation.CGFloat?
+  public var maxFontSize: CoreFoundation.CGFloat?
+  public init(regularFace: Swift.String = QoobissFontPrimitives.robotoRegular, boldFace: Swift.String = QoobissFontPrimitives.robotoBold, bodyRegularFace: Swift.String? = nil, bodyBoldFace: Swift.String? = nil, minFontSize: CoreFoundation.CGFloat? = nil, maxFontSize: CoreFoundation.CGFloat? = nil)
+  public static let `default`: QoobissCoreIdentificationSDK.IdentificationTypography
+  public static let reskin: QoobissCoreIdentificationSDK.IdentificationTypography
+  public func font(_ style: QoobissCoreIdentificationSDK.IdentificationTextStyle) -> SwiftUICore.Font
+  public func bodyFont(_ style: QoobissCoreIdentificationSDK.IdentificationTextStyle, weight: QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight = .regular) -> SwiftUICore.Font
+  public static func == (a: QoobissCoreIdentificationSDK.IdentificationTypography, b: QoobissCoreIdentificationSDK.IdentificationTypography) -> Swift.Bool
+}
+public enum QoobissFontPrimitives {
+  public enum Style : Swift.CaseIterable, Swift.Sendable {
+    case extraSmall
+    case extraSmallBold
+    case extraSmallPlus
+    case extraSmallPlusBold
+    case small
+    case smallBold
+    case medium
+    case mediumBold
+    case mediumPlus
+    case mediumPlusBold
+    case large
+    case largeBold
+    case extraLarge
+    case extraLargeBold
+    case extraLargePlus
+    case extraLargePlusBold
+    public static func == (a: QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style, b: QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style) -> Swift.Bool
+    public typealias AllCases = [QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style]
+    nonisolated public static var allCases: [QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style] {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum FontWeight : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+    case thin
+    case extraLight
+    case light
+    case regular
+    case medium
+    case semibold
+    case bold
+    case extraBold
+    case black
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static let boldFaceThreshold: Swift.Int
+  public static let robotoRegular: Swift.String
+  public static let robotoBold: Swift.String
+  public static let figtreeRegular: Swift.String
+  public static let figtreeBold: Swift.String
+  public static let soraRegular: Swift.String
+  public static let soraBold: Swift.String
+  public static func defaultWeight(for style: QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style) -> QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight
+}
+public enum QoobissFontLibrary {
+  public typealias FontWeight = QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight
+  public static let supportedWeights: [QoobissCoreIdentificationSDK.QoobissFontLibrary.FontWeight]
+  public static func registerFontsIfNeeded()
+  public static func font(family: Swift.String, size: CoreFoundation.CGFloat, weight: QoobissCoreIdentificationSDK.QoobissFontLibrary.FontWeight) -> SwiftUICore.Font
+  public static func font(family: Swift.String, size: CoreFoundation.CGFloat, weightRaw: Swift.String) -> SwiftUICore.Font
+  public static func uiFont(family: Swift.String, size: CoreFoundation.CGFloat, weight: QoobissCoreIdentificationSDK.QoobissFontLibrary.FontWeight) -> UIKit.UIFont
+  public static func uiFont(family: Swift.String, size: CoreFoundation.CGFloat, weightRaw: Swift.String) -> UIKit.UIFont
+  public static func parseWeight(_ raw: Swift.String) -> QoobissCoreIdentificationSDK.QoobissFontLibrary.FontWeight
+  public static func availableFamilyNames() -> [Swift.String]
+}
 public struct RecogntionResult {
   public let liveResultLabel: QoobissCoreIdentificationSDK.LiveResultLabel?
   public let boundingBox: CoreFoundation.CGRect
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(liveResultLabel: QoobissCoreIdentificationSDK.LiveResultLabel?, boundingBox: CoreFoundation.CGRect)
-  #endif
 }
 public struct OntraceError : Swift.Error, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers final public class DocumentAnalyzer {
-  public static func make(useCase: any QoobissCoreIdentificationSDK.LoadModelUseCase) async throws -> QoobissCoreIdentificationSDK.DocumentAnalyzer
-  @objc deinit
 }
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Equatable {}
 extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.Hashable {}
@@ -160,3 +444,15 @@ extension QoobissCoreIdentificationSDK.IdentificationResult : Swift.RawRepresent
 extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.Equatable {}
 extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.Hashable {}
 extension QoobissCoreIdentificationSDK.LiveResultLabel : Swift.RawRepresentable {}
+extension QoobissCoreIdentificationSDK.IdentificationButtonHeight : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.IdentificationButtonRole : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.IdentificationButtonRole : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.IdentificationInputSize : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.IdentificationInputSize : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.QoobissFontPrimitives.FontWeight : Swift.RawRepresentable {}
+extension QoobissCoreIdentificationSDK.IdentificationColorToken : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.IdentificationColorToken : Swift.Hashable {}
+extension QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style : Swift.Equatable {}
+extension QoobissCoreIdentificationSDK.QoobissFontPrimitives.Style : Swift.Hashable {}

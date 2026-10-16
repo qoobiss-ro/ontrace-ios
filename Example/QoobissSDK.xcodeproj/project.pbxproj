@@ -400,6 +400,9 @@
 				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json",
 				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json",
 				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/14_pin_code.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/15_nfc_id_tutorial.json",
+				"${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/16_nfc_passport_tutorial.json",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -414,6 +417,9 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/10_selfie_tilt_front.json",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/11_selfie_tilt_back.json",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/13_process_complete.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/14_pin_code.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/15_nfc_id_tutorial.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/16_nfc_passport_tutorial.json",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -430,12 +436,22 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework/QoobissCoreIdentificationSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/Lottie.framework/Lottie",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryApi.framework/OpenTelemetryApi",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetrySdk.framework/OpenTelemetrySdk",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterCommon.framework/OpenTelemetryProtocolExporterCommon",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterHttp.framework/OpenTelemetryProtocolExporterHttp",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/SwiftProtobuf.framework/SwiftProtobuf",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QoobissCoreIdentificationSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenTelemetryApi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenTelemetrySdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenTelemetryProtocolExporterCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenTelemetryProtocolExporterHttp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

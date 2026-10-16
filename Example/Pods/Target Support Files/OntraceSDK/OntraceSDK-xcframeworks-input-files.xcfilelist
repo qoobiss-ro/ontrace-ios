@@ -1,5 +1,10 @@
 ${PODS_ROOT}/Target Support Files/OntraceSDK/OntraceSDK-xcframeworks.sh
 ${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework
-${PODS_ROOT}/../../Framework/Lottie.xcframework
 ${PODS_ROOT}/../../Framework/NFCSDK.xcframework
+${PODS_ROOT}/../../Framework/Lottie.xcframework
 ${PODS_ROOT}/../../Framework/OpenSSL.xcframework
+${PODS_ROOT}/../../Framework/OpenTelemetryApi.xcframework
+${PODS_ROOT}/../../Framework/OpenTelemetrySdk.xcframework
+${PODS_ROOT}/../../Framework/OpenTelemetryProtocolExporterCommon.xcframework
+${PODS_ROOT}/../../Framework/OpenTelemetryProtocolExporterHttp.xcframework
+${PODS_ROOT}/../../Framework/SwiftProtobuf.xcframework

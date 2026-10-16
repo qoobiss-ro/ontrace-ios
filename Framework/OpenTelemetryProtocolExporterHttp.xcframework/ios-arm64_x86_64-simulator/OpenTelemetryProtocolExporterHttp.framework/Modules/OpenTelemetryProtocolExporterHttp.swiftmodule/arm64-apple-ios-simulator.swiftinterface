@@ -1,0 +1,78 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OpenTelemetryProtocolExporterHttp -package-name opentelemetry_swift_exporter_http
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Compression
+import Darwin
+import Foundation
+import OpenTelemetryApi
+import OpenTelemetryProtocolExporterCommon
+@_exported import OpenTelemetryProtocolExporterHttp
+import OpenTelemetrySdk
+import Swift
+import SwiftProtobuf
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Crc32 : Swift.CustomStringConvertible {
+  public init()
+  public var checksum: Swift.UInt32
+  public mutating func advance(withChunk chunk: Foundation.Data)
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol HTTPClient {
+  func send(request: Foundation.URLRequest, completion: @escaping (Swift.Result<Foundation.HTTPURLResponse, any Swift.Error>) -> Swift.Void)
+}
+final public class BaseHTTPClient : OpenTelemetryProtocolExporterHttp.HTTPClient {
+  convenience public init()
+  public init(session: Foundation.URLSession)
+  final public func send(request: Foundation.URLRequest, completion: @escaping (Swift.Result<Foundation.HTTPURLResponse, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+@available(*, deprecated, renamed: "OtlpHttpExporterBase")
+public typealias StableOtlpHTTPExporterBase = OpenTelemetryProtocolExporterHttp.OtlpHttpExporterBase
+public class OtlpHttpExporterBase {
+  public init(endpoint: Foundation.URL, config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  @available(*, deprecated, message: "Use init(endpoint:config:httpClient:envVarHeaders:) instead")
+  public init(endpoint: Foundation.URL, config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), useSession: Foundation.URLSession? = nil, envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  public func createRequest(body: any SwiftProtobuf.Message, endpoint: Foundation.URL) -> Foundation.URLRequest
+  public func shutdown(explicitTimeout: Foundation.TimeInterval? = nil)
+  @objc deinit
+}
+public func defaultOltpHttpLoggingEndpoint() -> Foundation.URL
+public class OtlpHttpLogExporter : OpenTelemetryProtocolExporterHttp.OtlpHttpExporterBase, OpenTelemetrySdk.LogRecordExporter {
+  override public init(endpoint: Foundation.URL = defaultOltpHttpLoggingEndpoint(), config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  convenience public init(endpoint: Foundation.URL = defaultOltpHttpLoggingEndpoint(), config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), meterProvider: any OpenTelemetryApi.MeterProvider, httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  public func export(logRecords: [OpenTelemetrySdk.ReadableLogRecord], explicitTimeout: Foundation.TimeInterval? = nil) -> OpenTelemetrySdk.ExportResult
+  public func forceFlush(explicitTimeout: Foundation.TimeInterval? = nil) -> OpenTelemetrySdk.ExportResult
+  public func flush(explicitTimeout: Foundation.TimeInterval? = nil) -> OpenTelemetrySdk.ExportResult
+  @objc deinit
+}
+public func defaultOtlpHttpMetricsEndpoint() -> Foundation.URL
+@available(*, deprecated, renamed: "defaultOtlpHttpMetricsEndpoint")
+public func defaultStableOtlpHTTPMetricsEndpoint() -> Foundation.URL
+@available(*, deprecated, renamed: "OtlpHttpMetricExporter")
+public typealias StableOtlpHTTPMetricExporter = OpenTelemetryProtocolExporterHttp.OtlpHttpMetricExporter
+@available(*, deprecated, renamed: "OtlpHttpMetricExporter")
+public typealias OtlpHTTPMetricExporter = OpenTelemetryProtocolExporterHttp.OtlpHttpMetricExporter
+public class OtlpHttpMetricExporter : OpenTelemetryProtocolExporterHttp.OtlpHttpExporterBase, OpenTelemetrySdk.MetricExporter {
+  public init(endpoint: Foundation.URL, config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), aggregationTemporalitySelector: OpenTelemetrySdk.AggregationTemporalitySelector = AggregationTemporality.alwaysCumulative(), defaultAggregationSelector: any OpenTelemetrySdk.DefaultAggregationSelector = AggregationSelector.instance, httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  convenience public init(endpoint: Foundation.URL, config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), meterProvider: any OpenTelemetryApi.MeterProvider, aggregationTemporalitySelector: OpenTelemetrySdk.AggregationTemporalitySelector = AggregationTemporality.alwaysCumulative(), defaultAggregationSelector: any OpenTelemetrySdk.DefaultAggregationSelector = AggregationSelector
+                            .instance, httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  public func export(metrics: [OpenTelemetrySdk.MetricData]) -> OpenTelemetrySdk.ExportResult
+  public func flush() -> OpenTelemetrySdk.ExportResult
+  public func shutdown() -> OpenTelemetrySdk.ExportResult
+  public func getAggregationTemporality(for instrument: OpenTelemetrySdk.InstrumentType) -> OpenTelemetrySdk.AggregationTemporality
+  public func getDefaultAggregation(for instrument: OpenTelemetrySdk.InstrumentType) -> any OpenTelemetrySdk.Aggregation
+  @objc deinit
+}
+public func defaultOltpHttpTracesEndpoint() -> Foundation.URL
+public class OtlpHttpTraceExporter : OpenTelemetryProtocolExporterHttp.OtlpHttpExporterBase, OpenTelemetrySdk.SpanExporter {
+  override public init(endpoint: Foundation.URL = defaultOltpHttpTracesEndpoint(), config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration = OtlpConfiguration(), httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  convenience public init(endpoint: Foundation.URL, config: OpenTelemetryProtocolExporterCommon.OtlpConfiguration, meterProvider: any OpenTelemetryApi.MeterProvider, httpClient: any OpenTelemetryProtocolExporterHttp.HTTPClient = BaseHTTPClient(), envVarHeaders: [(Swift.String, Swift.String)]? = EnvVarHeaders.attributes)
+  public func export(spans: [OpenTelemetrySdk.SpanData], explicitTimeout: Foundation.TimeInterval? = nil) -> OpenTelemetrySdk.SpanExporterResultCode
+  public func flush(explicitTimeout: Foundation.TimeInterval? = nil) -> OpenTelemetrySdk.SpanExporterResultCode
+  @objc deinit
+}
