@@ -8,7 +8,20 @@ Pod::Spec.new do |spec|
     spec.author       = { 'Qoobiss' => 'vlad.buhaescu@qoobiss.com' }
     spec.platform     = :ios, '15.6'
     spec.source       = { :git => 'https://github.com/qoobiss-ro/ontrace-ios.git', :tag => spec.version }
-    spec.vendored_frameworks = ['**/Framework/QoobissCoreIdentificationSDK.xcframework', '**/Framework/Lottie.xcframework', '**/Framework/NFCSDK.xcframework','**/Framework/OpenSSL.xcframework']
+    # All dynamic deps of QoobissCoreIdentificationSDK must be the binaries produced
+    # by framework_script.sh in the same build — do not use OpenTelemetry pod deps
+    # (Swift ABI mismatch / dyld Symbol not found).
+    spec.vendored_frameworks = [
+      '**/Framework/QoobissCoreIdentificationSDK.xcframework',
+      '**/Framework/NFCSDK.xcframework',
+      '**/Framework/Lottie.xcframework',
+      '**/Framework/OpenSSL.xcframework',
+      '**/Framework/OpenTelemetryApi.xcframework',
+      '**/Framework/OpenTelemetrySdk.xcframework',
+      '**/Framework/OpenTelemetryProtocolExporterCommon.xcframework',
+      '**/Framework/OpenTelemetryProtocolExporterHttp.xcframework',
+      '**/Framework/SwiftProtobuf.xcframework',
+    ]
     spec.swift_versions = '6.0.3'
     spec.resources = ['**/Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/*.{json, car, ttf, md, mlmodelc}' ]
     spec.frameworks = 'UIKit'

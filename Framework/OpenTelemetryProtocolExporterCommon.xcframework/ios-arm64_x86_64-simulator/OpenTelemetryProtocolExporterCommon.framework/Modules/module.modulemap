@@ -1,0 +1,10 @@
+framework module OpenTelemetryProtocolExporterCommon {
+  umbrella header "OpenTelemetry-Swift-Protocol-Exporter-Common-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module OpenTelemetryProtocolExporterCommon.Swift {
+  header "OpenTelemetryProtocolExporterCommon-Swift.h"
+}

@@ -179,11 +179,21 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/Lottie.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenSSL.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryApi.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetrySdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterCommon.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterHttp.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/SwiftProtobuf.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/QoobissCoreIdentificationSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/Lottie.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenSSL.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryApi.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetrySdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterCommon.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/OpenTelemetryProtocolExporterHttp.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OntraceSDK/SwiftProtobuf.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

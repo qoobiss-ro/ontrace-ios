@@ -18,10 +18,6 @@ import DeveloperToolsSupport
 import Foundation
 import ImageIO
 import MachO
-import OpenTelemetryApi
-import OpenTelemetryProtocolExporterCommon
-import OpenTelemetryProtocolExporterHttp
-import OpenTelemetrySdk
 import Photos
 @_exported import QoobissCoreIdentificationSDK
 import Swift

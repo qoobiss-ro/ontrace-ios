@@ -23,16 +23,16 @@ variant_for_slice()
   "QoobissCoreIdentificationSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "Lottie.xcframework/ios-arm64")
-    echo ""
-    ;;
-  "Lottie.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "NFCSDK.xcframework/ios-arm64")
     echo ""
     ;;
   "NFCSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "Lottie.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "Lottie.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "OpenSSL.xcframework/ios-arm64")
@@ -47,6 +47,36 @@ variant_for_slice()
   "OpenSSL.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
+  "OpenTelemetryApi.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "OpenTelemetryApi.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenTelemetrySdk.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "OpenTelemetrySdk.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenTelemetryProtocolExporterCommon.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "OpenTelemetryProtocolExporterCommon.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "OpenTelemetryProtocolExporterHttp.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "OpenTelemetryProtocolExporterHttp.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "SwiftProtobuf.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "SwiftProtobuf.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -59,16 +89,16 @@ archs_for_slice()
   "QoobissCoreIdentificationSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "Lottie.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
-  "Lottie.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "NFCSDK.xcframework/ios-arm64")
     echo "arm64"
     ;;
   "NFCSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "Lottie.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "Lottie.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "OpenSSL.xcframework/ios-arm64")
@@ -81,6 +111,36 @@ archs_for_slice()
     echo "arm64 x86_64"
     ;;
   "OpenSSL.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
+    ;;
+  "OpenTelemetryApi.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "OpenTelemetryApi.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenTelemetrySdk.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "OpenTelemetrySdk.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenTelemetryProtocolExporterCommon.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "OpenTelemetryProtocolExporterCommon.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "OpenTelemetryProtocolExporterHttp.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "OpenTelemetryProtocolExporterHttp.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "SwiftProtobuf.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "SwiftProtobuf.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -166,7 +226,12 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../Framework/Lottie.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../Framework/NFCSDK.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/Lottie.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../Framework/OpenSSL.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/OpenTelemetryApi.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/OpenTelemetrySdk.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/OpenTelemetryProtocolExporterCommon.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/OpenTelemetryProtocolExporterHttp.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../Framework/SwiftProtobuf.xcframework" "OntraceSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

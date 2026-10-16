@@ -349,28 +349,40 @@
         "name": "OpenTelemetryApi",
         "printedName": "OpenTelemetryApi",
         "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "OpenTelemetrySdk",
         "printedName": "OpenTelemetrySdk",
         "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "OpenTelemetryProtocolExporterHttp",
         "printedName": "OpenTelemetryProtocolExporterHttp",
         "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "OpenTelemetryProtocolExporterCommon",
         "printedName": "OpenTelemetryProtocolExporterCommon",
         "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
+        "moduleName": "QoobissCoreIdentificationSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -22594,35 +22606,35 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Domain\/TelemetryService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2662,
+      "offset": 2698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Domain\/TelemetryService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9226,
+      "offset": 9262,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Domain\/TelemetryService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9364,
+      "offset": 9400,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Domain\/TelemetryService.swift",
       "kind": "StringLiteral",
-      "offset": 9407,
+      "offset": 9443,
       "length": 45,
       "value": "\"https:\/\/telemetry.id-kyc.com\/otlp\/v1\/traces\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Domain\/TelemetryService.swift",
       "kind": "StringLiteral",
-      "offset": 9487,
+      "offset": 9523,
       "length": 22,
       "value": "\"telemetry.id-kyc.com\""
     },

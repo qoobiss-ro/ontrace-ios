@@ -108,6 +108,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json"
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json"
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/14_pin_code.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/15_nfc_id_tutorial.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/16_nfc_passport_tutorial.json"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/01_id_front.json"
@@ -121,6 +124,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/10_selfie_tilt_front.json"
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/11_selfie_tilt_back.json"
   install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/13_process_complete.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/14_pin_code.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/15_nfc_id_tutorial.json"
+  install_resource "${PODS_ROOT}/../../Framework/QoobissCoreIdentificationSDK.xcframework/ios-arm64/QoobissCoreIdentificationSDK.framework/16_nfc_passport_tutorial.json"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

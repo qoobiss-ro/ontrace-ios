@@ -1,0 +1,1654 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OpenTelemetryProtocolExporterCommon -package-name opentelemetry_swift_exporter_common
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Foundation
+import OpenTelemetryApi
+@_exported import OpenTelemetryProtocolExporterCommon
+import OpenTelemetrySdk
+import Swift
+import SwiftProtobuf
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Opentelemetry_Proto_Common_V1_AnyValue : @unchecked Swift.Sendable {
+  public var value: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue.OneOf_Value?
+  public var stringValue: Swift.String {
+    get
+    set
+  }
+  public var boolValue: Swift.Bool {
+    get
+    set
+  }
+  public var intValue: Swift.Int64 {
+    get
+    set
+  }
+  public var doubleValue: Swift.Double {
+    get
+    set
+  }
+  public var arrayValue: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_ArrayValue {
+    get
+    set
+  }
+  public var kvlistValue: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValueList {
+    get
+    set
+  }
+  public var bytesValue: Foundation.Data {
+    get
+    set
+  }
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum OneOf_Value : Swift.Equatable, @unchecked Swift.Sendable {
+    case stringValue(Swift.String)
+    case boolValue(Swift.Bool)
+    case intValue(Swift.Int64)
+    case doubleValue(Swift.Double)
+    case arrayValue(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_ArrayValue)
+    case kvlistValue(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValueList)
+    case bytesValue(Foundation.Data)
+    public static func == (a: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue.OneOf_Value, b: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue.OneOf_Value) -> Swift.Bool
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Common_V1_ArrayValue : Swift.Sendable {
+  public var values: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Common_V1_KeyValueList : Swift.Sendable {
+  public var values: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Common_V1_KeyValue : Swift.Sendable {
+  public var key: Swift.String
+  public var value: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue {
+    get
+    set
+  }
+  public var hasValue: Swift.Bool {
+    get
+  }
+  public mutating func clearValue()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Common_V1_InstrumentationScope : Swift.Sendable {
+  public var name: Swift.String
+  public var version: Swift.String
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var droppedAttributesCount: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_ArrayValue : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_ArrayValue, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_ArrayValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValueList : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValueList, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValueList) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CommonAdapter {
+  public static func toProtoAttribute(key: Swift.String, attributeValue: OpenTelemetryApi.AttributeValue) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue
+  public static func toProtoAnyValue(attributeValue: OpenTelemetryApi.AttributeValue) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue
+  public static func toProtoInstrumentationScope(instrumentationScopeInfo: OpenTelemetrySdk.InstrumentationScopeInfo) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope
+}
+public enum Constants {
+  public enum OTLP {
+    public static let version: Swift.String
+  }
+  public enum HTTP {
+    public static let userAgent: Swift.String
+  }
+}
+public struct EnvVarHeaders {
+  public static let attributes: [(Swift.String, Swift.String)]?
+  public static func attributes(for rawEnvAttributes: Swift.String? = ProcessInfo.processInfo.environment["OTEL_EXPORTER_OTLP_HEADERS"]) -> [(Swift.String, Swift.String)]?
+}
+public class ExporterMetrics {
+  public enum TransporterType : Swift.String {
+    case grpc
+    case protoBuf
+    case httpJson
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static let ATTRIBUTE_KEY_TYPE: Swift.String
+  public static let ATTRIBUTE_KEY_SUCCESS: Swift.String
+  public init(type: Swift.String, meterProvider: any OpenTelemetryApi.MeterProvider, exporterName: Swift.String, transportName: OpenTelemetryProtocolExporterCommon.ExporterMetrics.TransporterType)
+  public func addSeen(value: Swift.Int)
+  public func addSuccess(value: Swift.Int)
+  public func addFailed(value: Swift.Int)
+  public static func makeExporterMetric(type: Swift.String, meterProvider: any OpenTelemetryApi.MeterProvider, exporterName: Swift.String, transportName: OpenTelemetryProtocolExporterCommon.ExporterMetrics.TransporterType) -> OpenTelemetryProtocolExporterCommon.ExporterMetrics
+  @objc deinit
+}
+public enum Headers {
+  public static func getUserAgentHeader() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class LogRecordAdapter {
+  public static func toProtoResourceRecordLog(logRecordList: [OpenTelemetrySdk.ReadableLogRecord]) -> [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs]
+  @objc deinit
+}
+public enum Opentelemetry_Proto_Logs_V1_SeverityNumber : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case unspecified
+  case trace
+  case trace2
+  case trace3
+  case trace4
+  case debug
+  case debug2
+  case debug3
+  case debug4
+  case info
+  case info2
+  case info3
+  case info4
+  case warn
+  case warn2
+  case warn3
+  case warn4
+  case error
+  case error2
+  case error3
+  case error4
+  case fatal
+  case fatal2
+  case fatal3
+  case fatal4
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_SeverityNumber]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_SeverityNumber]
+}
+public enum Opentelemetry_Proto_Logs_V1_LogRecordFlags : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case doNotUse
+  case traceFlagsMask
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecordFlags]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecordFlags]
+}
+public struct Opentelemetry_Proto_Logs_V1_LogsData : Swift.Sendable {
+  public var resourceLogs: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Logs_V1_ResourceLogs : Swift.Sendable {
+  public var resource: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource {
+    get
+    set
+  }
+  public var hasResource: Swift.Bool {
+    get
+  }
+  public mutating func clearResource()
+  public var scopeLogs: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ScopeLogs]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Logs_V1_ScopeLogs : Swift.Sendable {
+  public var scope: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope {
+    get
+    set
+  }
+  public var hasScope: Swift.Bool {
+    get
+  }
+  public mutating func clearScope()
+  public var logRecords: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecord]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Logs_V1_LogRecord : @unchecked Swift.Sendable {
+  public var timeUnixNano: Swift.UInt64
+  public var observedTimeUnixNano: Swift.UInt64
+  public var severityNumber: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_SeverityNumber
+  public var severityText: Swift.String
+  public var body: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_AnyValue {
+    get
+    set
+  }
+  public var hasBody: Swift.Bool {
+    get
+  }
+  public mutating func clearBody()
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var droppedAttributesCount: Swift.UInt32
+  public var flags: Swift.UInt32
+  public var traceID: Foundation.Data
+  public var spanID: Foundation.Data
+  public var eventName: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_SeverityNumber : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecordFlags : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogsData : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogsData, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogsData) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ScopeLogs : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ScopeLogs, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ScopeLogs) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecord : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecord, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_LogRecord) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceRequest : Swift.Sendable {
+  public var resourceLogs: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Logs_V1_ResourceLogs]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceResponse : Swift.Sendable {
+  public var partialSuccess: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsPartialSuccess {
+    get
+    set
+  }
+  public var hasPartialSuccess: Swift.Bool {
+    get
+  }
+  public mutating func clearPartialSuccess()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Logs_V1_ExportLogsPartialSuccess : Swift.Sendable {
+  public var rejectedLogRecords: Swift.Int64
+  public var errorMessage: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceRequest, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceResponse, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsServiceResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsPartialSuccess : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsPartialSuccess, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Logs_V1_ExportLogsPartialSuccess) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Opentelemetry_Proto_Metrics_V1_AggregationTemporality : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case unspecified
+  case delta
+  case cumulative
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality]
+}
+public enum Opentelemetry_Proto_Metrics_V1_DataPointFlags : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case doNotUse
+  case noRecordedValueMask
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_DataPointFlags]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_DataPointFlags]
+}
+public struct Opentelemetry_Proto_Metrics_V1_MetricsData : Swift.Sendable {
+  public var resourceMetrics: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_ResourceMetrics : Swift.Sendable {
+  public var resource: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource {
+    get
+    set
+  }
+  public var hasResource: Swift.Bool {
+    get
+  }
+  public mutating func clearResource()
+  public var scopeMetrics: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ScopeMetrics]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_ScopeMetrics : Swift.Sendable {
+  public var scope: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope {
+    get
+    set
+  }
+  public var hasScope: Swift.Bool {
+    get
+  }
+  public mutating func clearScope()
+  public var metrics: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Metric : Swift.Sendable {
+  public var name: Swift.String
+  public var description_p: Swift.String
+  public var unit: Swift.String
+  public var data: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric.OneOf_Data?
+  public var gauge: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Gauge {
+    get
+    set
+  }
+  public var sum: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Sum {
+    get
+    set
+  }
+  public var histogram: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Histogram {
+    get
+    set
+  }
+  public var exponentialHistogram: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogram {
+    get
+    set
+  }
+  public var summary: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Summary {
+    get
+    set
+  }
+  public var metadata: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum OneOf_Data : Swift.Equatable, Swift.Sendable {
+    case gauge(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Gauge)
+    case sum(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Sum)
+    case histogram(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Histogram)
+    case exponentialHistogram(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogram)
+    case summary(OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Summary)
+    public static func == (a: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric.OneOf_Data, b: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric.OneOf_Data) -> Swift.Bool
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Gauge : Swift.Sendable {
+  public var dataPoints: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Sum : Swift.Sendable {
+  public var dataPoints: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint]
+  public var aggregationTemporality: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality
+  public var isMonotonic: Swift.Bool
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Histogram : Swift.Sendable {
+  public var dataPoints: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_HistogramDataPoint]
+  public var aggregationTemporality: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_ExponentialHistogram : Swift.Sendable {
+  public var dataPoints: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint]
+  public var aggregationTemporality: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Summary : Swift.Sendable {
+  public var dataPoints: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_NumberDataPoint : Swift.Sendable {
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var startTimeUnixNano: Swift.UInt64
+  public var timeUnixNano: Swift.UInt64
+  public var value: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint.OneOf_Value?
+  public var asDouble: Swift.Double {
+    get
+    set
+  }
+  public var asInt: Swift.Int64 {
+    get
+    set
+  }
+  public var exemplars: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar]
+  public var flags: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum OneOf_Value : Swift.Equatable, Swift.Sendable {
+    case asDouble(Swift.Double)
+    case asInt(Swift.Int64)
+    public static func == (a: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint.OneOf_Value, b: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint.OneOf_Value) -> Swift.Bool
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_HistogramDataPoint : Swift.Sendable {
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var startTimeUnixNano: Swift.UInt64
+  public var timeUnixNano: Swift.UInt64
+  public var count: Swift.UInt64
+  public var sum: Swift.Double {
+    get
+    set
+  }
+  public var hasSum: Swift.Bool {
+    get
+  }
+  public mutating func clearSum()
+  public var bucketCounts: [Swift.UInt64]
+  public var explicitBounds: [Swift.Double]
+  public var exemplars: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar]
+  public var flags: Swift.UInt32
+  public var min: Swift.Double {
+    get
+    set
+  }
+  public var hasMin: Swift.Bool {
+    get
+  }
+  public mutating func clearMin()
+  public var max: Swift.Double {
+    get
+    set
+  }
+  public var hasMax: Swift.Bool {
+    get
+  }
+  public mutating func clearMax()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint : Swift.Sendable {
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var startTimeUnixNano: Swift.UInt64
+  public var timeUnixNano: Swift.UInt64
+  public var count: Swift.UInt64
+  public var sum: Swift.Double {
+    get
+    set
+  }
+  public var hasSum: Swift.Bool {
+    get
+  }
+  public mutating func clearSum()
+  public var scale: Swift.Int32
+  public var zeroCount: Swift.UInt64
+  public var positive: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint.Buckets {
+    get
+    set
+  }
+  public var hasPositive: Swift.Bool {
+    get
+  }
+  public mutating func clearPositive()
+  public var negative: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint.Buckets {
+    get
+    set
+  }
+  public var hasNegative: Swift.Bool {
+    get
+  }
+  public mutating func clearNegative()
+  public var flags: Swift.UInt32
+  public var exemplars: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar]
+  public var min: Swift.Double {
+    get
+    set
+  }
+  public var hasMin: Swift.Bool {
+    get
+  }
+  public mutating func clearMin()
+  public var max: Swift.Double {
+    get
+    set
+  }
+  public var hasMax: Swift.Bool {
+    get
+  }
+  public mutating func clearMax()
+  public var zeroThreshold: Swift.Double
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public struct Buckets : Swift.Sendable {
+    public var offset: Swift.Int32
+    public var bucketCounts: [Swift.UInt64]
+    public var unknownFields: SwiftProtobuf.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_SummaryDataPoint : Swift.Sendable {
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var startTimeUnixNano: Swift.UInt64
+  public var timeUnixNano: Swift.UInt64
+  public var count: Swift.UInt64
+  public var sum: Swift.Double
+  public var quantileValues: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint.ValueAtQuantile]
+  public var flags: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public struct ValueAtQuantile : Swift.Sendable {
+    public var quantile: Swift.Double
+    public var value: Swift.Double
+    public var unknownFields: SwiftProtobuf.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Metrics_V1_Exemplar : @unchecked Swift.Sendable {
+  public var filteredAttributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var timeUnixNano: Swift.UInt64
+  public var value: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar.OneOf_Value?
+  public var asDouble: Swift.Double {
+    get
+    set
+  }
+  public var asInt: Swift.Int64 {
+    get
+    set
+  }
+  public var spanID: Foundation.Data
+  public var traceID: Foundation.Data
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum OneOf_Value : Swift.Equatable, Swift.Sendable {
+    case asDouble(Swift.Double)
+    case asInt(Swift.Int64)
+    public static func == (a: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar.OneOf_Value, b: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar.OneOf_Value) -> Swift.Bool
+  }
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_AggregationTemporality : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_DataPointFlags : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_MetricsData : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_MetricsData, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_MetricsData) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ScopeMetrics : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ScopeMetrics, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ScopeMetrics) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Gauge : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Gauge, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Gauge) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Sum : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Sum, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Sum) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Histogram : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Histogram, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Histogram) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogram : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogram, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogram) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Summary : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Summary, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Summary) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_NumberDataPoint) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_HistogramDataPoint : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_HistogramDataPoint, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_HistogramDataPoint) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint.Buckets : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint.Buckets, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ExponentialHistogramDataPoint.Buckets) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint.ValueAtQuantile : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint.ValueAtQuantile, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_SummaryDataPoint.ValueAtQuantile) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Exemplar) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceRequest : Swift.Sendable {
+  public var resourceMetrics: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceResponse : Swift.Sendable {
+  public var partialSuccess: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsPartialSuccess {
+    get
+    set
+  }
+  public var hasPartialSuccess: Swift.Bool {
+    get
+  }
+  public mutating func clearPartialSuccess()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsPartialSuccess : Swift.Sendable {
+  public var rejectedDataPoints: Swift.Int64
+  public var errorMessage: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceRequest, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceResponse, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsServiceResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsPartialSuccess : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsPartialSuccess, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Metrics_V1_ExportMetricsPartialSuccess) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum MetricsAdapter {
+  public static func toProtoResourceMetrics(metricData: [OpenTelemetrySdk.MetricData]) -> [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_ResourceMetrics]
+  public static func toProtoMetric(metricData: OpenTelemetrySdk.MetricData) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Metrics_V1_Metric?
+}
+public enum CompressionType {
+  case gzip
+  case deflate
+  case none
+  public static func == (a: OpenTelemetryProtocolExporterCommon.CompressionType, b: OpenTelemetryProtocolExporterCommon.CompressionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OtlpConfiguration {
+  public static let DefaultTimeoutInterval: Foundation.TimeInterval
+  public let headers: [(Swift.String, Swift.String)]?
+  public let timeout: Foundation.TimeInterval
+  public let compression: OpenTelemetryProtocolExporterCommon.CompressionType
+  public let exportAsJson: Swift.Bool
+  public init(timeout: Foundation.TimeInterval = OtlpConfiguration.DefaultTimeoutInterval, compression: OpenTelemetryProtocolExporterCommon.CompressionType = .gzip, headers: [(Swift.String, Swift.String)]? = nil, exportAsJson: Swift.Bool = true)
+}
+public struct OtlpSpan : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Attribute : Swift.Codable {
+  public struct Value : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Opentelemetry_Proto_Profiles_V1development_AggregationTemporality : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case unspecified
+  case delta
+  case cumulative
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AggregationTemporality]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AggregationTemporality]
+}
+public struct Opentelemetry_Proto_Profiles_V1development_ProfilesData : Swift.Sendable {
+  public var resourceProfiles: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ResourceProfiles]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_ResourceProfiles : Swift.Sendable {
+  public var resource: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource {
+    get
+    set
+  }
+  public var hasResource: Swift.Bool {
+    get
+  }
+  public mutating func clearResource()
+  public var scopeProfiles: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ScopeProfiles]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_ScopeProfiles : Swift.Sendable {
+  public var scope: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope {
+    get
+    set
+  }
+  public var hasScope: Swift.Bool {
+    get
+  }
+  public mutating func clearScope()
+  public var profiles: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Profile]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Profile : @unchecked Swift.Sendable {
+  public var sampleType: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ValueType] {
+    get
+    set
+  }
+  public var sample: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Sample] {
+    get
+    set
+  }
+  public var mappingTable: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Mapping] {
+    get
+    set
+  }
+  public var locationTable: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Location] {
+    get
+    set
+  }
+  public var locationIndices: [Swift.Int32] {
+    get
+    set
+  }
+  public var functionTable: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Function] {
+    get
+    set
+  }
+  public var attributeTable: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue] {
+    get
+    set
+  }
+  public var attributeUnits: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AttributeUnit] {
+    get
+    set
+  }
+  public var linkTable: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Link] {
+    get
+    set
+  }
+  public var stringTable: [Swift.String] {
+    get
+    set
+  }
+  public var timeNanos: Swift.Int64 {
+    get
+    set
+  }
+  public var durationNanos: Swift.Int64 {
+    get
+    set
+  }
+  public var periodType: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ValueType {
+    get
+    set
+  }
+  public var hasPeriodType: Swift.Bool {
+    get
+  }
+  public mutating func clearPeriodType()
+  public var period: Swift.Int64 {
+    get
+    set
+  }
+  public var commentStrindices: [Swift.Int32] {
+    get
+    set
+  }
+  public var defaultSampleTypeStrindex: Swift.Int32 {
+    get
+    set
+  }
+  public var profileID: Foundation.Data {
+    get
+    set
+  }
+  public var droppedAttributesCount: Swift.UInt32 {
+    get
+    set
+  }
+  public var originalPayloadFormat: Swift.String {
+    get
+    set
+  }
+  public var originalPayload: Foundation.Data {
+    get
+    set
+  }
+  public var attributeIndices: [Swift.Int32] {
+    get
+    set
+  }
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_AttributeUnit : Swift.Sendable {
+  public var attributeKeyStrindex: Swift.Int32
+  public var unitStrindex: Swift.Int32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Link : @unchecked Swift.Sendable {
+  public var traceID: Foundation.Data
+  public var spanID: Foundation.Data
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_ValueType : Swift.Sendable {
+  public var typeStrindex: Swift.Int32
+  public var unitStrindex: Swift.Int32
+  public var aggregationTemporality: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AggregationTemporality
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Sample : Swift.Sendable {
+  public var locationsStartIndex: Swift.Int32
+  public var locationsLength: Swift.Int32
+  public var value: [Swift.Int64]
+  public var attributeIndices: [Swift.Int32]
+  public var linkIndex: Swift.Int32 {
+    get
+    set
+  }
+  public var hasLinkIndex: Swift.Bool {
+    get
+  }
+  public mutating func clearLinkIndex()
+  public var timestampsUnixNano: [Swift.UInt64]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Mapping : Swift.Sendable {
+  public var memoryStart: Swift.UInt64
+  public var memoryLimit: Swift.UInt64
+  public var fileOffset: Swift.UInt64
+  public var filenameStrindex: Swift.Int32
+  public var attributeIndices: [Swift.Int32]
+  public var hasFunctions_p: Swift.Bool
+  public var hasFilenames_p: Swift.Bool
+  public var hasLineNumbers_p: Swift.Bool
+  public var hasInlineFrames_p: Swift.Bool
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Location : Swift.Sendable {
+  public var mappingIndex: Swift.Int32 {
+    get
+    set
+  }
+  public var hasMappingIndex: Swift.Bool {
+    get
+  }
+  public mutating func clearMappingIndex()
+  public var address: Swift.UInt64
+  public var line: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Line]
+  public var isFolded: Swift.Bool
+  public var attributeIndices: [Swift.Int32]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Line : Swift.Sendable {
+  public var functionIndex: Swift.Int32
+  public var line: Swift.Int64
+  public var column: Swift.Int64
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Profiles_V1development_Function : Swift.Sendable {
+  public var nameStrindex: Swift.Int32
+  public var systemNameStrindex: Swift.Int32
+  public var filenameStrindex: Swift.Int32
+  public var startLine: Swift.Int64
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AggregationTemporality : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ProfilesData : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ProfilesData, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ProfilesData) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ResourceProfiles : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ResourceProfiles, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ResourceProfiles) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ScopeProfiles : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ScopeProfiles, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ScopeProfiles) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Profile : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Profile, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Profile) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AttributeUnit : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AttributeUnit, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_AttributeUnit) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Link : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Link, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Link) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ValueType : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ValueType, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ValueType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Sample : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Sample, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Sample) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Mapping : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Mapping, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Mapping) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Location : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Location, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Location) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Line : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Line, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Line) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Function : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Function, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_Function) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceRequest : Swift.Sendable {
+  public var resourceProfiles: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Profiles_V1development_ResourceProfiles]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceResponse : Swift.Sendable {
+  public var partialSuccess: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesPartialSuccess {
+    get
+    set
+  }
+  public var hasPartialSuccess: Swift.Bool {
+    get
+  }
+  public mutating func clearPartialSuccess()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesPartialSuccess : Swift.Sendable {
+  public var rejectedProfiles: Swift.Int64
+  public var errorMessage: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceRequest, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceResponse, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesServiceResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesPartialSuccess : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesPartialSuccess, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Profiles_V1development_ExportProfilesPartialSuccess) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Opentelemetry_Proto_Resource_V1_Resource : Swift.Sendable {
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+  public var droppedAttributesCount: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ResourceAdapter {
+  public static func toProtoResource(resource: OpenTelemetrySdk.Resource) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource
+}
+public enum SpanAdapter {
+  public static func toProtoResourceSpans(spanDataList: [OpenTelemetrySdk.SpanData]) -> [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans]
+  public static func toProtoSpan(spanData: OpenTelemetrySdk.SpanData) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span
+  public static func toProtoSpanKind(kind: OpenTelemetryApi.SpanKind) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.SpanKind
+  public static func toProtoSpanEvent(event: OpenTelemetrySdk.SpanData.Event) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Event
+  public static func toProtoSpanLink(link: OpenTelemetrySdk.SpanData.Link) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Link
+  public static func toStatusProto(status: OpenTelemetryApi.Status) -> OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status
+}
+public enum Opentelemetry_Proto_Trace_V1_SpanFlags : SwiftProtobuf.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case doNotUse
+  case traceFlagsMask
+  case contextHasIsRemoteMask
+  case contextIsRemoteMask
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_SpanFlags]
+  public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_SpanFlags]
+}
+public struct Opentelemetry_Proto_Trace_V1_TracesData : Swift.Sendable {
+  public var resourceSpans: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Trace_V1_ResourceSpans : Swift.Sendable {
+  public var resource: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Resource_V1_Resource {
+    get
+    set
+  }
+  public var hasResource: Swift.Bool {
+    get
+  }
+  public mutating func clearResource()
+  public var scopeSpans: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ScopeSpans]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Trace_V1_ScopeSpans : Swift.Sendable {
+  public var scope: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_InstrumentationScope {
+    get
+    set
+  }
+  public var hasScope: Swift.Bool {
+    get
+  }
+  public mutating func clearScope()
+  public var spans: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span]
+  public var schemaURL: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Trace_V1_Span : @unchecked Swift.Sendable {
+  public var traceID: Foundation.Data {
+    get
+    set
+  }
+  public var spanID: Foundation.Data {
+    get
+    set
+  }
+  public var traceState: Swift.String {
+    get
+    set
+  }
+  public var parentSpanID: Foundation.Data {
+    get
+    set
+  }
+  public var flags: Swift.UInt32 {
+    get
+    set
+  }
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var kind: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.SpanKind {
+    get
+    set
+  }
+  public var startTimeUnixNano: Swift.UInt64 {
+    get
+    set
+  }
+  public var endTimeUnixNano: Swift.UInt64 {
+    get
+    set
+  }
+  public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue] {
+    get
+    set
+  }
+  public var droppedAttributesCount: Swift.UInt32 {
+    get
+    set
+  }
+  public var events: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Event] {
+    get
+    set
+  }
+  public var droppedEventsCount: Swift.UInt32 {
+    get
+    set
+  }
+  public var links: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Link] {
+    get
+    set
+  }
+  public var droppedLinksCount: Swift.UInt32 {
+    get
+    set
+  }
+  public var status: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status {
+    get
+    set
+  }
+  public var hasStatus: Swift.Bool {
+    get
+  }
+  public mutating func clearStatus()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum SpanKind : SwiftProtobuf.Enum, Swift.CaseIterable {
+    public typealias RawValue = Swift.Int
+    case unspecified
+    case `internal`
+    case server
+    case client
+    case producer
+    case consumer
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+    public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.SpanKind]
+    public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.SpanKind]
+  }
+  public struct Event : Swift.Sendable {
+    public var timeUnixNano: Swift.UInt64
+    public var name: Swift.String
+    public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+    public var droppedAttributesCount: Swift.UInt32
+    public var unknownFields: SwiftProtobuf.UnknownStorage
+    public init()
+  }
+  public struct Link : @unchecked Swift.Sendable {
+    public var traceID: Foundation.Data
+    public var spanID: Foundation.Data
+    public var traceState: Swift.String
+    public var attributes: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Common_V1_KeyValue]
+    public var droppedAttributesCount: Swift.UInt32
+    public var flags: Swift.UInt32
+    public var unknownFields: SwiftProtobuf.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Opentelemetry_Proto_Trace_V1_Status : Swift.Sendable {
+  public var message: Swift.String
+  public var code: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status.StatusCode
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum StatusCode : SwiftProtobuf.Enum, Swift.CaseIterable {
+    public typealias RawValue = Swift.Int
+    case unset
+    case ok
+    case error
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+    public static let allCases: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status.StatusCode]
+    public typealias AllCases = [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status.StatusCode]
+  }
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_SpanFlags : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_TracesData : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_TracesData, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_TracesData) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ScopeSpans : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ScopeSpans, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ScopeSpans) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.SpanKind : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Event : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Event, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Event) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Link : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Link, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Span.Link) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_Status.StatusCode : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+public struct Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceRequest : Swift.Sendable {
+  public var resourceSpans: [OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Trace_V1_ResourceSpans]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceResponse : Swift.Sendable {
+  public var partialSuccess: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTracePartialSuccess {
+    get
+    set
+  }
+  public var hasPartialSuccess: Swift.Bool {
+    get
+  }
+  public mutating func clearPartialSuccess()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Opentelemetry_Proto_Collector_Trace_V1_ExportTracePartialSuccess : Swift.Sendable {
+  public var rejectedSpans: Swift.Int64
+  public var errorMessage: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceRequest, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceResponse, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTraceServiceResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTracePartialSuccess : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTracePartialSuccess, rhs: OpenTelemetryProtocolExporterCommon.Opentelemetry_Proto_Collector_Trace_V1_ExportTracePartialSuccess) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OpenTelemetryProtocolExporterCommon.ExporterMetrics.TransporterType : Swift.Equatable {}
+extension OpenTelemetryProtocolExporterCommon.ExporterMetrics.TransporterType : Swift.Hashable {}
+extension OpenTelemetryProtocolExporterCommon.ExporterMetrics.TransporterType : Swift.RawRepresentable {}
+extension OpenTelemetryProtocolExporterCommon.CompressionType : Swift.Equatable {}
+extension OpenTelemetryProtocolExporterCommon.CompressionType : Swift.Hashable {}
