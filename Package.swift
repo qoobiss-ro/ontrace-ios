@@ -2,7 +2,7 @@
 import PackageDescription
 
 // Local binary package for the frameworks in Framework/.
-// The published version is the git tag (for example 0.0.30), not the release branch name.
+// The published version is the git tag 0.1.0, not the release branch name.
 // The binaries themselves require iOS 15.6. Swift tools 5.9 can only declare iOS 15.
 let package = Package(
     name: "OntraceSDK",
