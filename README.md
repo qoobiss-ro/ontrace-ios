@@ -8,7 +8,7 @@ Ontrace SDK provides a set of screens and functionalities that enable applicatio
 
 ### Swift Package Manager
 
-The published version is the git tag, for example `0.0.30`. Release branches such as `releases/release-0.0.30` are not package versions.
+The published version is the git tag `0.1.0`. The release branch `releases/release-0.1.0` is not the package version.
 
 In Xcode, choose File → Add Package Dependencies and enter:
 
@@ -17,7 +17,7 @@ In Xcode, choose File → Add Package Dependencies and enter:
 Select the `OntraceSDK` product. Or add this to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/qoobiss-ro/ontrace-ios.git", from: "0.0.30")
+.package(url: "https://github.com/qoobiss-ro/ontrace-ios.git", from: "0.1.0")
 ```
 
 Then depend on the `OntraceSDK` product and `import OntraceSDK`.
