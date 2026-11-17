@@ -1,0 +1,633 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CaptureCommon
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import Accelerate
+@_exported import CaptureCommon
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import CoreVideo
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol CVImageBufferConvertable {
+  func convert(imageBuffer: CoreVideo.CVImageBuffer) throws -> CaptureCommon.Rgb888ImageData
+}
+@_hasMissingDesignatedInitializers final public class CaptureController<Result> : CaptureCommon.CaptureControllerProtocol, CaptureCommon.VideoCaptureServiceDelegate where Result : CaptureCommon.ObjectDetectionResult {
+  final public let detector: any CaptureCommon.ObjectDetectionProtocol<Result>
+  final public let videoPreview: any CaptureCommon.PreviewViewProtocol
+  final public var behavior: CaptureCommon.CaptureBehavior
+  final public var captureMode: CaptureCommon.PhotoCaptureMode
+  final public var state: CaptureCommon.CaptureState {
+    get
+  }
+  final public var isVisible: Swift.Bool {
+    get
+  }
+  final public var runInBackground: Swift.Bool {
+    get
+  }
+  final public var cameraPosition: AVFoundation.AVCaptureDevice.Position {
+    get
+  }
+  weak final public var delegate: (any CaptureCommon.CaptureControllerDelegate<Result>)?
+  final public var isMirrored: Swift.Bool {
+    get
+  }
+  final public var debugMode: Swift.Bool {
+    get
+    set
+  }
+  final public var debugInfo: [Swift.String : Swift.String] {
+    get
+  }
+  final public var isCapturing: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init(videoPreview: (any CaptureCommon.PreviewViewProtocol)? = nil, captureService: any CaptureCommon.VideoCaptureServiceProtocol, processor: any CaptureCommon.ImageProcessorProtocol, detector: any CaptureCommon.ObjectDetectionProtocol<Result>, state: CaptureCommon.CaptureState = .idle, captureMode: CaptureCommon.PhotoCaptureMode = .auto_and_manual, behavior: CaptureCommon.CaptureBehavior = .stopAfterCapture, isVisible: Swift.Bool = false, runInBackground: Swift.Bool = false, debugMode: Swift.Bool = false)
+  #endif
+  @_Concurrency.MainActor final public func startRunning()
+  @_Concurrency.MainActor final public func stopRunning()
+  @_Concurrency.MainActor final public func prepareForCapture()
+  @_Concurrency.MainActor final public func viewDidLoad()
+  @_Concurrency.MainActor final public func didPressCaptureButton()
+  @_Concurrency.MainActor final public func didPressRetakeButton()
+  @_Concurrency.MainActor final public func toggleCameraPosition()
+  @_Concurrency.MainActor @preconcurrency final public func videoCaptureServiceIsReady(_ service: any CaptureCommon.VideoCaptureServiceProtocol, with session: AVFoundation.AVCaptureSession)
+  final public func videoCaptureService(_ service: any CaptureCommon.VideoCaptureServiceProtocol, didCaptureImage image: CaptureCommon.IDImage)
+  @_Concurrency.MainActor @preconcurrency final public func videoCaptureService(_ service: any CaptureCommon.VideoCaptureServiceProtocol, didEncounterError error: any Swift.Error)
+  @objc deinit
+}
+extension CaptureCommon.VideoCaptureView {
+  @_Concurrency.MainActor @preconcurrency public func update(with state: CaptureCommon.CaptureState)
+}
+public protocol PreviewViewProtocol : UIKit.UIView {
+  func configurePreviewLayer(session: AVFoundation.AVCaptureSession)
+  var boundingMaskView: CaptureCommon.BoundingMaskView { get }
+  var detectionBoxView: CaptureCommon.DetectionBoxView { get }
+  func draw(detectionBoxes: [CaptureCommon.NormalizedBoundingBox])
+}
+public protocol CaptureControllerProtocol<Result> : AnyObject {
+  associatedtype Result : CaptureCommon.ObjectDetectionResult
+  var videoPreview: any CaptureCommon.PreviewViewProtocol { get }
+  var detector: any CaptureCommon.ObjectDetectionProtocol<Self.Result> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any CaptureCommon.CaptureControllerDelegate<Self.Result>)? { get set }
+  #endif
+  var behavior: CaptureCommon.CaptureBehavior { get set }
+  var captureMode: CaptureCommon.PhotoCaptureMode { get set }
+  var isCapturing: Swift.Bool { get }
+  var state: CaptureCommon.CaptureState { get }
+  var cameraPosition: AVFoundation.AVCaptureDevice.Position { get }
+  var isMirrored: Swift.Bool { get }
+  var debugMode: Swift.Bool { get set }
+  var debugInfo: [Swift.String : Swift.String] { get }
+  @_Concurrency.MainActor func prepareForCapture()
+  @_Concurrency.MainActor func startRunning()
+  @_Concurrency.MainActor func stopRunning()
+  @_Concurrency.MainActor func toggleCameraPosition()
+  @_Concurrency.MainActor func viewDidLoad()
+  @_Concurrency.MainActor func didPressCaptureButton()
+  @_Concurrency.MainActor func didPressRetakeButton()
+}
+@objc @_inheritsConvenienceInitializers public class BoundingBoxLayer : QuartzCore.CAShapeLayer {
+  public func draw(boxes: [CaptureCommon.NormalizedBoundingBox])
+  @objc override dynamic public init()
+  @objc override dynamic public init(layer: Any)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+extension CaptureCommon.BoundingBoxLayer {
+  public func draw(_ detection: CaptureCommon.NormalizedBoundingBox)
+}
+public struct Rgb888ImageData {
+  public let rgbData: Foundation.Data
+  public let imageWidth: Swift.Int
+  public let imageHeight: Swift.Int
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class DetectionBoxView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var boxLayer: CaptureCommon.BoundingBoxLayer {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var isMirrored: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func draw(boxes: [CaptureCommon.NormalizedBoundingBox])
+  @_Concurrency.MainActor @preconcurrency public func draw(_ box: CaptureCommon.NormalizedBoundingBox)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
+extension CoreFoundation.CGRect {
+  public func denormalizeTo(rect: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  public func normalizedTo(imageSize: CoreFoundation.CGSize) -> CoreFoundation.CGRect
+}
+public enum PhotoCaptureMode : Swift.String {
+  case auto, manual, auto_and_manual
+  public var canCaptureManually: Swift.Bool {
+    get
+  }
+  public var canCaptureAuto: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension CaptureCommon.IDImage {
+  public enum DocumentType {
+    case unknown
+    public static func == (a: CaptureCommon.IDImage.DocumentType, b: CaptureCommon.IDImage.DocumentType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct NormalizedBoundingBox {
+  public let frame: CoreFoundation.CGRect
+  public init(frame: CoreFoundation.CGRect)
+}
+extension CaptureCommon.VideoCaptureService {
+  public class var defaultVideoOutputQueue: Dispatch.DispatchQueue {
+    get
+  }
+  public class var defaultCaptureSessionQueue: Dispatch.DispatchQueue {
+    get
+  }
+}
+extension CaptureCommon.CapturePanelView {
+  @_Concurrency.MainActor @preconcurrency public func update(with state: CaptureCommon.CaptureState)
+}
+extension CaptureCommon.VideoCaptureService {
+  public class func defaultCaptureService(preset: AVFoundation.AVCaptureSession.Preset = .hd1920x1080, camera: AVFoundation.AVCaptureDevice.Position = .front, outputController: any CaptureCommon.AVCaptureOutputControllerProtocol, ciContext: CoreImage.CIContext = CIContext(), videoOutputQueue: Dispatch.DispatchQueue = VideoCaptureService.defaultVideoOutputQueue) -> any CaptureCommon.VideoCaptureServiceProtocol
+}
+extension UIKit.UIScreen {
+  @_Concurrency.MainActor @preconcurrency public static var isTablet: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isCompactPhone: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isFullScreenPhone: Swift.Bool {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class VideoCaptureView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var previewView: (any CaptureCommon.PreviewViewProtocol)?
+  @_Concurrency.MainActor @preconcurrency public var videoPreviewContainer: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var capturePanelView: CaptureCommon.CapturePanelView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var messageView: CaptureCommon.TextMessageView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var capturedImageView: UIKit.UIImageView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var debugLogLabel: UIKit.UILabel {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func updateWith(isDebugModeEnabled: Swift.Bool)
+  @objc deinit
+}
+extension CoreMedia.CMSampleBuffer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func exifData() -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var ISORating: Swift.Double? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var brightness: Swift.Double? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var estimatedLuminosity: Swift.Double? {
+    get
+  }
+  #endif
+}
+final public class BgraToRGBImageBufferConverter : CaptureCommon.CVImageBufferConvertable {
+  public enum ConversionError : Swift.Error {
+    case invalidPixelFormat
+    case bufferLockError
+    case invalidImageBuffer
+    case BGRA8888toRGB888Conversion
+    public static func == (a: CaptureCommon.BgraToRGBImageBufferConverter.ConversionError, b: CaptureCommon.BgraToRGBImageBufferConverter.ConversionError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  final public func convert(imageBuffer: CoreVideo.CVImageBuffer) throws -> CaptureCommon.Rgb888ImageData
+  @objc deinit
+}
+public protocol CaptureStoppableError : Swift.Error {
+}
+public protocol VideoCaptureServiceDelegate : AnyObject {
+  func videoCaptureService(_ service: any CaptureCommon.VideoCaptureServiceProtocol, didCaptureImage image: CaptureCommon.IDImage)
+  func videoCaptureServiceIsReady(_ service: any CaptureCommon.VideoCaptureServiceProtocol, with session: AVFoundation.AVCaptureSession)
+  func videoCaptureService(_ service: any CaptureCommon.VideoCaptureServiceProtocol, didEncounterError error: any Swift.Error)
+}
+@_Concurrency.MainActor public protocol CaptureControllerDelegate<DetectionResult> : AnyObject {
+  associatedtype DetectionResult : CaptureCommon.ObjectDetectionResult
+  @_Concurrency.MainActor func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didCaptureImage image: UIKit.UIImage)
+  @_Concurrency.MainActor func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateDetectionResult result: Self.DetectionResult, image: UIKit.UIImage)
+  @_Concurrency.MainActor func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didEncounterError error: any Swift.Error)
+  @_Concurrency.MainActor func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateLiveImage image: UIKit.UIImage)
+  @_Concurrency.MainActor func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateCaptureState state: CaptureCommon.CaptureState)
+}
+public enum CaptureBehavior {
+  case previewAndRetake
+  case stopAfterCapture
+  case continuousCapturing
+  public static func == (a: CaptureCommon.CaptureBehavior, b: CaptureCommon.CaptureBehavior) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ObjectDetectionResult {
+  associatedtype QualityWarning : Swift.Hashable
+  var qualityWarnings: Swift.Set<Self.QualityWarning> { get }
+  var detections: [CaptureCommon.NormalizedBoundingBox] { get }
+  var isValid: Swift.Bool { get }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class PreviewView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var videoPreviewLayer: AVFoundation.AVCaptureVideoPreviewLayer {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var boundingMaskView: CaptureCommon.BoundingMaskView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var detectionBoxView: CaptureCommon.DetectionBoxView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect = .zero, boundingBox: CaptureCommon.NormalizedBoundingBox)
+  @objc deinit
+}
+extension CaptureCommon.PreviewView : CaptureCommon.PreviewViewProtocol {
+  @_Concurrency.MainActor @preconcurrency final public func configurePreviewLayer(session: AVFoundation.AVCaptureSession)
+  @_Concurrency.MainActor @preconcurrency final public func draw(detectionBoxes: [CaptureCommon.NormalizedBoundingBox])
+}
+public struct CaptureSessionRuntimeError : Foundation.LocalizedError, CaptureCommon.CaptureStoppableError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var failureReason: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var helpAnchor: Swift.String? {
+    get
+  }
+  #endif
+}
+@objc public class VideoCaptureService : ObjectiveC.NSObject {
+  weak public var delegate: (any CaptureCommon.VideoCaptureServiceDelegate)?
+  public enum State {
+    case uninitialized, idle, busy, running, error
+    public static func == (a: CaptureCommon.VideoCaptureService.State, b: CaptureCommon.VideoCaptureService.State) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var state: CaptureCommon.VideoCaptureService.State {
+    get
+  }
+  public var finalState: CaptureCommon.VideoCaptureService.State {
+    get
+  }
+  public var sessionIsRunning: Swift.Bool {
+    get
+  }
+  final public let resolutionPreset: AVFoundation.AVCaptureSession.Preset
+  public var cameraPosition: AVFoundation.AVCaptureDevice.Position {
+    get
+    set
+  }
+  public var cachedVideoPreviewLayer: AVFoundation.AVCaptureVideoPreviewLayer? {
+    get
+  }
+  public var dontInitCamera: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var cameraDevice: AVFoundation.AVCaptureDevice? {
+    get
+  }
+  #endif
+  public var videoFrameSize: CoreFoundation.CGSize {
+    get
+  }
+  public init(preset: AVFoundation.AVCaptureSession.Preset = .hd1920x1080, camera: AVFoundation.AVCaptureDevice.Position = .front, outputController: any CaptureCommon.AVCaptureOutputControllerProtocol, captureSessionQueue: Dispatch.DispatchQueue = VideoCaptureService.defaultCaptureSessionQueue, videoOutputQueue: Dispatch.DispatchQueue = VideoCaptureService.defaultVideoOutputQueue, dontInitCamera: Swift.Bool = false, pixelBufferFormat: Darwin.OSType = kCVPixelFormatType_32BGRA, ciContext: CoreImage.CIContext = CIContext())
+  @objc deinit
+  public static var authorizationStatus: AVFoundation.AVAuthorizationStatus {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func requestAccess(completionHandler handler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  public func prepareForCapture()
+  public func startRunning()
+  public func stopRunning()
+  public func toggleCameraPosition()
+  public func videoPreviewLayer() throws -> AVFoundation.AVCaptureVideoPreviewLayer
+  public var cameraDebugInfo: [Swift.String : Swift.String] {
+    get
+  }
+}
+extension CaptureCommon.VideoCaptureService : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+extension CaptureCommon.VideoCaptureService {
+  public enum Error : Swift.Error {
+    case permissionDenied
+    case captureSessionIsMissing
+    case captureSessionNotRunning
+    case inputsAreInvalid
+    case noCamerasAvailable
+    case captureSessionRuntimeError
+    case unknown
+    public static func == (a: CaptureCommon.VideoCaptureService.Error, b: CaptureCommon.VideoCaptureService.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public protocol ImageProcessorProtocol : AnyObject {
+  func isReady(for image: CaptureCommon.IDImage, completion: @escaping (Swift.Bool) -> Swift.Void)
+  func reset()
+}
+public protocol ObjectDetectionProtocol<DetectionResult> : AnyObject {
+  associatedtype DetectionResult : CaptureCommon.ObjectDetectionResult
+  var boundingBox: CaptureCommon.NormalizedBoundingBox { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func detectObject(buffer: CoreVideo.CVImageBuffer, completion: @escaping (Swift.Result<Self.DetectionResult, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TextMessageView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var textLabel: UIKit.UILabel {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func setup()
+  @objc deinit
+}
+public protocol VideoCaptureServiceProtocol : AnyObject {
+  var cameraPosition: AVFoundation.AVCaptureDevice.Position { get set }
+  var sessionIsRunning: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any CaptureCommon.VideoCaptureServiceDelegate)? { get set }
+  #endif
+  var cameraDebugInfo: [Swift.String : Swift.String] { get }
+  var videoFrameSize: CoreFoundation.CGSize { get }
+  func prepareForCapture()
+  func startRunning()
+  func stopRunning()
+  func videoPreviewLayer() throws -> AVFoundation.AVCaptureVideoPreviewLayer
+  func toggleCameraPosition()
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func requestAccess(completionHandler handler: ((Swift.Bool) -> Swift.Void)?)
+  #endif
+}
+extension CaptureCommon.VideoCaptureService : CaptureCommon.VideoCaptureServiceProtocol {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CapturePanelView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var captureButtonContainer: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var captureButton: UIKit.UIButton {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var captureButtonOutline: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var rightActionButton: UIKit.UIButton {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var leftActionButton: UIKit.UIButton {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var effectView: UIKit.UIVisualEffectView {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func setup()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BoundingMaskView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var boundingBox: CaptureCommon.NormalizedBoundingBox {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var maskLayer: QuartzCore.CAShapeLayer {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var overlayLayer: QuartzCore.CAShapeLayer {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func animateMaskBackground()
+  @objc deinit
+}
+public class SimulatedVideoCaptureService : CaptureCommon.VideoCaptureServiceProtocol {
+  public var cameraPosition: AVFoundation.AVCaptureDevice.Position
+  public var videoFrameSize: CoreFoundation.CGSize
+  public var lastImage: CaptureCommon.IDImage?
+  public var captureSession: AVFoundation.AVCaptureSession
+  public var sessionIsRunning: Swift.Bool {
+    get
+  }
+  weak public var delegate: (any CaptureCommon.VideoCaptureServiceDelegate)?
+  public var dontInitCamera: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(videoFrameSize: CoreFoundation.CGSize = .zero, cameraPosition: AVFoundation.AVCaptureDevice.Position = .front, outputController: any CaptureCommon.AVCaptureOutputControllerProtocol, delegate: (any CaptureCommon.VideoCaptureServiceDelegate)? = nil, timeInterval: Foundation.TimeInterval = 1, images: [UIKit.UIImage], processingQueue: Dispatch.DispatchQueue = DispatchQueue(label: "com.simulated.photoCaptureService"), sessionIsRunning: Swift.Bool = false)
+  #endif
+  @objc deinit
+  public func prepareForCapture()
+  public func startRunning()
+  public func toggleCameraPosition()
+  public func handleIDImage(_ image: CaptureCommon.IDImage)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func requestAccess(completionHandler handler: ((Swift.Bool) -> Swift.Void)?)
+  #endif
+  public func stopRunning()
+  public func videoPreviewLayer() throws -> AVFoundation.AVCaptureVideoPreviewLayer
+  public var cameraDebugInfo: [Swift.String : Swift.String] {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class IDImage : ObjectiveC.NSObject {
+  public var timestamp: Foundation.Date
+  public var timestampFromSessionStart: Foundation.TimeInterval?
+  public var photoIndex: Swift.Int
+  public var mirrored: Swift.Bool
+  final public let dimensions: CoreFoundation.CGSize
+  public var detectedFaceBoundingBox: CoreFoundation.CGRect?
+  public var detectedFaceCenter: CoreFoundation.CGPoint?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var size: CoreFoundation.CGSize? {
+    get
+  }
+  #endif
+  public var isReadyToCapture: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var pixelBufferFormat: Darwin.OSType? {
+    get
+  }
+  #endif
+  final public let documentType: CaptureCommon.IDImage.DocumentType
+  final public let documentCorners: Swift.Array<CoreFoundation.CGPoint>
+  @available(*, deprecated, message: "Use init with CMSampleBuffer or UIImage instead")
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(dimensions: CoreFoundation.CGSize, ciContext: CoreImage.CIContext = CIContext(), sampleBuffer: CoreMedia.CMSampleBuffer? = nil)
+  #endif
+  public init(_ image: UIKit.UIImage, dimensions: CoreFoundation.CGSize, ciContext: CoreImage.CIContext = CIContext())
+  public var hasData: Swift.Bool {
+    get
+  }
+  public var hasPixelBuffer: Swift.Bool {
+    get
+  }
+  public func copyInstance() -> CaptureCommon.IDImage
+  public var sampleBuffer: CoreMedia.CMSampleBuffer? {
+    get
+  }
+  public func releaseSampleBuffer()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var cvPixelBuffer: CoreVideo.CVPixelBuffer? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var uiImage: UIKit.UIImage? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var ciImage: CoreImage.CIImage? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var jpegData: Foundation.Data? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func jpegData(compressionQuality: Swift.Float = 1.0) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var pngData: Foundation.Data? {
+    get
+  }
+  #endif
+  public func clearCache()
+  @objc deinit
+}
+extension CaptureCommon.IDImage {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+public protocol AVCaptureOutputControllerProtocol {
+  func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+public enum CaptureState : Swift.Equatable {
+  case idle
+  case capture
+  case readyToSend
+  public static func == (a: CaptureCommon.CaptureState, b: CaptureCommon.CaptureState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CaptureCommon.CaptureController {
+  public enum CaptureError : Swift.Error {
+    case photoCaptureError
+    public static func == (a: CaptureCommon.CaptureController<Result>.CaptureError, b: CaptureCommon.CaptureController<Result>.CaptureError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension CaptureCommon.PhotoCaptureMode : Swift.Equatable {}
+extension CaptureCommon.PhotoCaptureMode : Swift.Hashable {}
+extension CaptureCommon.PhotoCaptureMode : Swift.RawRepresentable {}
+extension CaptureCommon.IDImage.DocumentType : Swift.Equatable {}
+extension CaptureCommon.IDImage.DocumentType : Swift.Hashable {}
+extension CaptureCommon.BgraToRGBImageBufferConverter.ConversionError : Swift.Equatable {}
+extension CaptureCommon.BgraToRGBImageBufferConverter.ConversionError : Swift.Hashable {}
+extension CaptureCommon.CaptureBehavior : Swift.Equatable {}
+extension CaptureCommon.CaptureBehavior : Swift.Hashable {}
+extension CaptureCommon.VideoCaptureService.State : Swift.Equatable {}
+extension CaptureCommon.VideoCaptureService.State : Swift.Hashable {}
+extension CaptureCommon.VideoCaptureService.Error : Swift.Equatable {}
+extension CaptureCommon.VideoCaptureService.Error : Swift.Hashable {}
+extension CaptureCommon.CaptureState : Swift.Hashable {}
+extension CaptureCommon.CaptureController.CaptureError : Swift.Equatable {}
+extension CaptureCommon.CaptureController.CaptureError : Swift.Hashable {}

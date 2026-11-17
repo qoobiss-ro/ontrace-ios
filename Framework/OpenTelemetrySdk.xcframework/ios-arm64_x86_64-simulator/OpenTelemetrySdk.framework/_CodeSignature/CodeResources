@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/OpenTelemetrySdk-Swift.h</key>
 		<data>
-		IEMJRIC1amnjYHvdUTGVSWTPRZ4=
+		rmmGgU/+MAMIMsAEwfhNux72HsY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cljGogGXwo3jZeqgbVRm4obNGi0=
+		1fB6QBUyHUl5nyX0ukNbpP68aE8=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		d+6SUhPeW6PN6Eb0kO02hMD2V2g=
+		DfNUj2OpOfVyVjiXBMz1yphbwRg=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xN43+uLDjsNRDCfb2OqQeAxrMCQ=
+		i5oH6QsndrerT/ffb5tDBYYdZoM=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		d+6SUhPeW6PN6Eb0kO02hMD2V2g=
+		DfNUj2OpOfVyVjiXBMz1yphbwRg=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+ntIb4enmcLXVHrBke6jcQULhvc=
+		cOETz8U3Bb8nXReJdjigjGFU5oM=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Pgs/XS/kAll2qstFDmQLWB5KpTI=
+		PX6ICB/0Popzd5TvaQ+6OMOkF8E=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IS2GPiCOW9A6dtSRLpxsuPEsbXE=
+		hMYKCo20c0FqnMlrt6i/W8rxaUg=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pgs/XS/kAll2qstFDmQLWB5KpTI=
+		PX6ICB/0Popzd5TvaQ+6OMOkF8E=
 		</data>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q0G7QLiMSsQ2KOZJqL4yiOfeYBM=
+		Y3XRH2X3Cl/gBBGcEFqsOBWxlPY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkTamRcxiH6B184idgYfiDbzths4DStybIVu4Xe5X14=
+			2+7FjreH1kiv1zr6yAZHs9bax7be9p0yod/hcXp9C3g=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -88,28 +88,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DlAAPu4UUNRqsEoSAgvqraBzpLsiYtS5dHu9dN4jzgc=
+			PxqFI8E5uvClEk8YquC9gukx8HV/2IpiSqbpBx9tzmU=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J7ui6/Avp6Aba4I/IdQXkHxHU5lJtA/I8I0qXImYqKU=
+			UiP6qN7im1BjcC7dtNC1yhwPyxqAYkby4GsJ1N9YtUU=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DlAAPu4UUNRqsEoSAgvqraBzpLsiYtS5dHu9dN4jzgc=
+			PxqFI8E5uvClEk8YquC9gukx8HV/2IpiSqbpBx9tzmU=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NYN6W8lvS3KG5+Op4cZ3pz2LlYAiN+j0pSoFThijUC4=
+			kOcFqUgeFzS/aqpBI20MtstMv2JG6nzQNh8hZVjj/Do=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -123,28 +123,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wN/WQLdBMNkbakZcFFNZa+j7J8xzwS3ApnKywQLhSpM=
+			C+cwKDPj6dSYRF6PmvgoyOf9YGUiOUVyowS2Q9+9mfE=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			871BdmLYTd86oBtWF91lLBwCKpXMdJXTXo5XpYNCLmg=
+			y6jdNLrYM6cvOOx2P09QpQQall/cMdmGdDOwYrtRU5o=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wN/WQLdBMNkbakZcFFNZa+j7J8xzwS3ApnKywQLhSpM=
+			C+cwKDPj6dSYRF6PmvgoyOf9YGUiOUVyowS2Q9+9mfE=
 			</data>
 		</dict>
 		<key>Modules/OpenTelemetrySdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6V/6z8AvkVdH8xajQ2wE7UjOPDqQWFymQGP5QXdyEtw=
+			tMEBUH1VAibJHlKO+AuwKnGjgUAIVtS4OwCP8BuspOY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

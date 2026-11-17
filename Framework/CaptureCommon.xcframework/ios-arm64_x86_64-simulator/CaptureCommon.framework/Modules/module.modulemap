@@ -1,0 +1,6 @@
+framework module CaptureCommon {
+  umbrella header "CaptureCommon.h"
+  export *
+
+  module * { export * }
+}

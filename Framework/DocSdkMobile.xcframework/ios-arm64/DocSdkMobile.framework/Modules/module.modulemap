@@ -1,0 +1,5 @@
+framework module DocSdkMobile {   
+    
+    header "objc_api.h"
+    export *
+}

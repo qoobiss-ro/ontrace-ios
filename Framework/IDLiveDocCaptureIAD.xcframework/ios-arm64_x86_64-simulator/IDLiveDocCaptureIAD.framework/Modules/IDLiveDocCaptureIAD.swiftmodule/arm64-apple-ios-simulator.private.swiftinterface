@@ -1,0 +1,347 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IDLiveDocCaptureIAD
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import CaptureCommon
+import CoreGraphics
+import CoreImage
+import DeveloperToolsSupport
+import DocSdkMobile
+import Foundation
+import IADCommon
+@_exported import IDLiveDocCaptureIAD
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension CaptureCommon.IDImage : IADCommon.DocumentImageProtocol {
+  public var type: IADCommon.DocumentType {
+    get
+  }
+  public var corners: Swift.Array<CoreFoundation.CGPoint> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func pngData() -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func jpegData(compressionQuality: Swift.Float = 1.0) -> Foundation.Data?
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class DocCaptureController : IDLiveDocCaptureIAD.DocCaptureControllerProtocol {
+  public typealias Result = IDLiveDocCaptureIAD.DocumentDetectionResult
+  final public var videoPreview: any CaptureCommon.PreviewViewProtocol {
+    get
+  }
+  final public var detector: any CaptureCommon.ObjectDetectionProtocol<IDLiveDocCaptureIAD.DocCaptureController.Result> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  weak final public var delegate: (any CaptureCommon.CaptureControllerDelegate<IDLiveDocCaptureIAD.DocCaptureController.Result>)? {
+    get
+    set
+  }
+  #endif
+  final public var behavior: CaptureCommon.CaptureBehavior {
+    get
+    set
+  }
+  final public var captureMode: CaptureCommon.PhotoCaptureMode {
+    get
+    set
+  }
+  final public var state: CaptureCommon.CaptureState {
+    get
+  }
+  final public var isCapturing: Swift.Bool {
+    get
+  }
+  final public var isMirrored: Swift.Bool {
+    get
+  }
+  final public var debugMode: Swift.Bool {
+    get
+    set
+  }
+  final public var debugInfo: [Swift.String : Swift.String] {
+    get
+  }
+  @_Concurrency.MainActor final public func prepareForCapture()
+  @_Concurrency.MainActor final public func startRunning()
+  @_Concurrency.MainActor final public func stopRunning()
+  @_Concurrency.MainActor final public func viewDidLoad()
+  @_Concurrency.MainActor final public func didPressCaptureButton()
+  @_Concurrency.MainActor final public func didPressRetakeButton()
+  @_Concurrency.MainActor final public func toggleCameraPosition()
+  final public var cameraPosition: AVFoundation.AVCaptureDevice.Position {
+    get
+  }
+  @objc deinit
+}
+extension IDLiveDocCaptureIAD.DocCaptureController {
+  public static var iadAvailable: Swift.Bool {
+    get
+  }
+}
+extension IDLiveDocCaptureIAD.DocCaptureController {
+  convenience public init(detector: any CaptureCommon.ObjectDetectionProtocol<IDLiveDocCaptureIAD.DocCaptureController.Result>, cameraPosition: AVFoundation.AVCaptureDevice.Position = .back, ciContext: CoreImage.CIContext = CIContext())
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init(imageBoundingBox: CaptureCommon.NormalizedBoundingBox? = nil, cameraPosition: AVFoundation.AVCaptureDevice.Position = .back, ciContext: CoreImage.CIContext = CIContext())
+  #endif
+}
+extension IDLiveDocCaptureIAD.DocCaptureController {
+  final public func createIADBundle() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  final public func createIADBundle() async throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+public protocol DocCaptureControllerProtocol : CaptureCommon.CaptureControllerProtocol where Self.Result == IDLiveDocCaptureIAD.DocumentDetectionResult {
+  func createIADBundle() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?) throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize, key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?) throws -> Foundation.Data
+  #endif
+  func createIADBundle() async throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize, key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize, key: Foundation.Data?, keyId: Swift.String?, externalMeta: Swift.String?, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+extension IADCommon.DocIADController : CaptureCommon.ImageProcessorProtocol {
+  final public func isReady(for image: CaptureCommon.IDImage, completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+extension IADCommon.DocIADController : CaptureCommon.AVCaptureOutputControllerProtocol {
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  @_Concurrency.MainActor @preconcurrency public func update(with result: IDLiveDocCaptureIAD.DocumentDetectionResult)
+}
+extension IDLiveDocCaptureIAD.DocumentDetector.LicenseError : CaptureCommon.CaptureStoppableError {
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  @_Concurrency.MainActor @preconcurrency public var debugMode: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var debugInfo: [Swift.String : Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public var debugMessage: Swift.String? {
+    get
+  }
+  #endif
+}
+extension CaptureCommon.NormalizedBoundingBox {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(_ detection: DocSdkMobile.IDLDQuadrilateral, imageWidth: Swift.Int, imageHeight: Swift.Int)
+  #endif
+}
+extension IDLiveDocCaptureIAD.DocumentDetector {
+  public static let captureImageSize: CoreFoundation.CGSize
+  final public class func standartIDCardBoundingBox() -> CaptureCommon.NormalizedBoundingBox
+  final public class func passportBoundingBox() -> CaptureCommon.NormalizedBoundingBox
+  final public class func squareBoundingBox() -> CaptureCommon.NormalizedBoundingBox
+  final public class func a4DocumentBoundingBox() -> CaptureCommon.NormalizedBoundingBox
+}
+extension IDLiveDocCaptureIAD.IDCameraController : CaptureCommon.CaptureControllerDelegate {
+  @_Concurrency.MainActor public func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateLiveImage image: UIKit.UIImage)
+  @_Concurrency.MainActor public func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didCaptureImage image: UIKit.UIImage)
+  @_Concurrency.MainActor public func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateDetectionResult result: IDLiveDocCaptureIAD.DocumentDetectionResult, image: UIKit.UIImage)
+  @_Concurrency.MainActor public func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didEncounterError error: any Swift.Error)
+  @_Concurrency.MainActor public func captureController(_ controller: any CaptureCommon.CaptureControllerProtocol, didUpdateCaptureState state: CaptureCommon.CaptureState)
+  public typealias DetectionResult = IDLiveDocCaptureIAD.DocumentDetectionResult
+}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_Concurrency.MainActor @preconcurrency public class IDCameraController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency final public let controller: any IDLiveDocCaptureIAD.DocCaptureControllerProtocol
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any IDLiveDocCaptureIAD.IDCameraControllerDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var behavior: CaptureCommon.CaptureBehavior {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var captureMode: CaptureCommon.PhotoCaptureMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var captureView: CaptureCommon.VideoCaptureView {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var cancelButton: UIKit.UIButton {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var retakeButton: UIKit.UIButton {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(controller: any IDLiveDocCaptureIAD.DocCaptureControllerProtocol)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init?(controller: any IDLiveDocCaptureIAD.DocCaptureControllerProtocol, coder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var prefersHomeIndicatorAutoHidden: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+extension UIKit.UIScreen {
+  @_Concurrency.MainActor @preconcurrency public static var isTablet: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isCompactPhone: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isFullScreenPhone: Swift.Bool {
+    get
+  }
+}
+public protocol IDCameraControllerDelegate : AnyObject {
+  func cameraController(_ controller: IDLiveDocCaptureIAD.IDCameraController, didCaptureImage image: UIKit.UIImage)
+  func cameraController(_ controller: IDLiveDocCaptureIAD.IDCameraController, didUpdateDetectionResult result: IDLiveDocCaptureIAD.DocumentDetectionResult, image: UIKit.UIImage)
+  func cameraController(_ controller: IDLiveDocCaptureIAD.IDCameraController, didEncounterError error: any Swift.Error)
+  func cameraController(_ controller: IDLiveDocCaptureIAD.IDCameraController, didUpdateLiveImage image: UIKit.UIImage)
+  func cameraController(_ controller: IDLiveDocCaptureIAD.IDCameraController, didUpdateViewMode viewMode: IDLiveDocCaptureIAD.ViewMode)
+}
+public enum PayloadSize {
+  case normal
+  case small
+  public static func == (a: IDLiveDocCaptureIAD.PayloadSize, b: IDLiveDocCaptureIAD.PayloadSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  @_Concurrency.MainActor @preconcurrency public class func instantiate() -> IDLiveDocCaptureIAD.IDCameraController
+}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult : CaptureCommon.ObjectDetectionResult {
+  public var isValid: Swift.Bool {
+    get
+  }
+}
+public struct DocumentDetectionResult {
+  public let detections: [CaptureCommon.NormalizedBoundingBox]
+  public let qualityWarnings: Swift.Set<IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning>
+  public init(detections: [CaptureCommon.NormalizedBoundingBox], qualityWarnings: Swift.Set<IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning>)
+}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult {
+  public enum QualityWarning : Swift.Int {
+    case notFound
+    case sizeLowerThan10Percent
+    case bordersOutsideOfFrame
+    case multipleDocumentsInFrame
+    case tooCloseToBorder
+    case outsideOfImageMask
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  @_Concurrency.MainActor @preconcurrency public static var authorizationStatus: AVFoundation.AVAuthorizationStatus {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public static func requestAccess(completionHandler handler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+}
+extension IDLiveDocCaptureIAD.DocumentDetector {
+  public struct LicenseError : Swift.Error, Foundation.LocalizedError {
+    public let errorDescription: Swift.String?
+  }
+}
+public enum ViewMode : Swift.Equatable {
+  case idle
+  case capture
+  case readyToSend
+  public static func == (a: IDLiveDocCaptureIAD.ViewMode, b: IDLiveDocCaptureIAD.ViewMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class DocumentDetector : CaptureCommon.ObjectDetectionProtocol {
+  public typealias DetectionResult = IDLiveDocCaptureIAD.DocumentDetectionResult
+  final public let boundingBox: CaptureCommon.NormalizedBoundingBox
+  convenience public init(boundingBox: CaptureCommon.NormalizedBoundingBox = NormalizedBoundingBox(frame: .zero), dispatchQueue: Dispatch.DispatchQueue = DocumentDetector.defaultDispatchQueue(), converter: any CaptureCommon.CVImageBufferConvertable = BgraToRGBImageBufferConverter())
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func detectObject(buffer: CoreVideo.CVImageBuffer, completion: @escaping (Swift.Result<IDLiveDocCaptureIAD.DocumentDetector.DetectionResult, any Swift.Error>) -> Swift.Void)
+  #endif
+  public static func defaultDispatchQueue() -> Dispatch.DispatchQueue
+  @objc deinit
+}
+public enum LicenseType {
+  case documentDetector
+  public static func == (a: IDLiveDocCaptureIAD.LicenseType, b: IDLiveDocCaptureIAD.LicenseType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class License {
+  public static func setLicense(_ license: Swift.String, licenseType: IDLiveDocCaptureIAD.LicenseType) throws
+  public static func expirationDate() -> Swift.String
+  @objc deinit
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func createIADBundle(payloadSize: IDLiveDocCaptureIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+extension IDLiveDocCaptureIAD.IDCameraController {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public class func instantiate(delegate: (any IDLiveDocCaptureIAD.IDCameraControllerDelegate)? = nil, imageBoundingBox: CaptureCommon.NormalizedBoundingBox? = nil, cameraPosition: AVFoundation.AVCaptureDevice.Position = .back) -> IDLiveDocCaptureIAD.IDCameraController
+  #endif
+}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning : Swift.Equatable {}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning : Swift.Hashable {}
+extension IDLiveDocCaptureIAD.DocumentDetectionResult.QualityWarning : Swift.RawRepresentable {}
+extension IDLiveDocCaptureIAD.ViewMode : Swift.Hashable {}
+extension IDLiveDocCaptureIAD.PayloadSize : Swift.Equatable {}
+extension IDLiveDocCaptureIAD.PayloadSize : Swift.Hashable {}
+extension IDLiveDocCaptureIAD.LicenseType : Swift.Equatable {}
+extension IDLiveDocCaptureIAD.LicenseType : Swift.Hashable {}

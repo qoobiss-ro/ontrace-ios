@@ -6,22 +6,21 @@ Ontrace SDK provides a set of screens and functionalities that enable applicatio
 
 ### Initialize the Library: In order to be able to use the library our sales team will provide an API KEY. 
 
-### CocoaPods
+### Swift Package Manager
 
-To integrate `OntraceSDK` into your project, add the following to your `Podfile`:
+The published version is the git tag, for example `0.0.30`. Release branches such as `releases/release-0.0.30` are not package versions.
 
-```ruby
+In Xcode, choose File → Add Package Dependencies and enter:
 
-platform :ios, '15.0'
+`https://github.com/qoobiss-ro/ontrace-ios.git`
 
-target 'YourMainTarget' do
-  
-  use_frameworks!
+Select the `OntraceSDK` product. Or add this to your `Package.swift`:
 
-  pod 'OntraceSDK', '0.0.16'
-end
-
+```swift
+.package(url: "https://github.com/qoobiss-ro/ontrace-ios.git", from: "0.0.30")
 ```
+
+Then depend on the `OntraceSDK` product and `import OntraceSDK`.
    
 ## Requirements
 
@@ -32,14 +31,6 @@ Xcode 16+
 ## Project setup
 
 Here's a quick example to get started with `OntraceSDK`:
-
-### Disable User Script Sandboxing
-
-To disable **User Script Sandboxing** for your project, follow these steps:
-
-1. Open your **Xcode project**.
-2. Navigate to the **Build Settings** section for your target.
-3. Search for `User Script Sandboxing` and from the dropdown select `NO` .
 
 ### Add Camera Permission key in the plist file
 
@@ -93,13 +84,14 @@ Reading identity document chips requires the ISO7816 entitlement with the applic
 
 ```swift
 import SwiftUI
-import QoobissCoreIdentificationSDK
+import OntraceSDK
 
 struct ContentView: View {
     var body: some View {
         VStack {
             AnyView(IdentificationFlow.startFlowNative(
-                apiKey: "API_KEY",
+                clientId: "CLIENT_ID",
+                clientSecret: "CLIENT_SECRET",
                 onMessage: { message in
                     print("message is \(message)") },
                 onCompleteResult: { result in
