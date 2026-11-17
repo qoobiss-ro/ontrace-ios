@@ -1,0 +1,11 @@
+framework module IDLiveDocCaptureIAD {
+  umbrella header "IDLiveDocCaptureIAD.h"
+  export *
+
+  module * { export * }
+}
+
+module IDLiveDocCaptureIAD.Swift {
+  header "IDLiveDocCaptureIAD-Swift.h"
+  requires objc
+}

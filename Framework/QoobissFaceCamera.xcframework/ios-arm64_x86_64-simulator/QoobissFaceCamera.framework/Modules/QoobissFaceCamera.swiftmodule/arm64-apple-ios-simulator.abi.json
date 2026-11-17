@@ -1,0 +1,3925 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "QoobissFaceCamera",
+    "printedName": "QoobissFaceCamera",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceAttemptClock",
+        "printedName": "FaceAttemptClock",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "firstDetectionMs",
+            "printedName": "firstDetectionMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO16firstDetectionMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16firstDetectionMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO16firstDetectionMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16firstDetectionMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectionGapMs",
+            "printedName": "detectionGapMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO14detectionGapMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO14detectionGapMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO14detectionGapMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO14detectionGapMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "okFloorMs",
+            "printedName": "okFloorMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO9okFloorMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO9okFloorMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO9okFloorMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO9okFloorMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "okIntervals",
+            "printedName": "okIntervals",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO11okIntervalsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO11okIntervalsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO11okIntervalsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO11okIntervalsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "okMaxMs",
+            "printedName": "okMaxMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO7okMaxMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO7okMaxMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO7okMaxMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO7okMaxMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "captureFloorMs",
+            "printedName": "captureFloorMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO14captureFloorMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO14captureFloorMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO14captureFloorMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO14captureFloorMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "captureIntervals",
+            "printedName": "captureIntervals",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO16captureIntervalsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16captureIntervalsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO16captureIntervalsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16captureIntervalsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "captureMaxMs",
+            "printedName": "captureMaxMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO12captureMaxMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO12captureMaxMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO12captureMaxMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO12captureMaxMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "helpAfterMs",
+            "printedName": "helpAfterMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO11helpAfterMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO11helpAfterMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO11helpAfterMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO11helpAfterMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attemptMs",
+            "printedName": "attemptMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO9attemptMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO9attemptMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO9attemptMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO9attemptMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeDelayMs",
+            "printedName": "closeDelayMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO12closeDelayMsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO12closeDelayMsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO12closeDelayMsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO12closeDelayMsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectorErrorsInARow",
+            "printedName": "detectorErrorsInARow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO20detectorErrorsInARowSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO20detectorErrorsInARowSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO20detectorErrorsInARowSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO20detectorErrorsInARowSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectorRestarts",
+            "printedName": "detectorRestarts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO16detectorRestartsSivpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16detectorRestartsSivpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12AttemptClockO16detectorRestartsSivgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO16detectorRestartsSivgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "adaptive",
+            "printedName": "adaptive(intervalMs:floor:intervals:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera0B12AttemptClockO8adaptive10intervalMs5floor9intervals3maxSiSd_S3itFZ",
+            "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO8adaptive10intervalMs5floor9intervals3maxSiSd_S3itFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera0B12AttemptClockO",
+        "mangledName": "$s17QoobissFaceCamera0B12AttemptClockO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "IDLiveFaceCamera",
+        "printedName": "IDLiveFaceCamera",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdLiveFaceStop",
+        "printedName": "IdLiveFaceStop",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "restart",
+            "printedName": "restart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissFaceCamera.IdLiveFaceStop.Type) -> QoobissFaceCamera.IdLiveFaceStop",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdLiveFaceStop",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                    "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceStop.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceStop",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17QoobissFaceCamera06IdLiveB4StopO7restartyA2CmF",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB4StopO7restartyA2CmF",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fail",
+            "printedName": "fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissFaceCamera.IdLiveFaceStop.Type) -> (Swift.String) -> QoobissFaceCamera.IdLiveFaceStop",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> QoobissFaceCamera.IdLiveFaceStop",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceStop",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceStop.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceStop",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17QoobissFaceCamera06IdLiveB4StopO4failyACSScACmF",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB4StopO4failyACSScACmF",
+            "moduleName": "QoobissFaceCamera"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdLiveFaceStop",
+                "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdLiveFaceStop",
+                "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera06IdLiveB4StopO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB4StopO2eeoiySbAC_ACtFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO",
+        "mangledName": "$s17QoobissFaceCamera06IdLiveB4StopO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QoobissFaceCameraView",
+        "printedName": "QoobissFaceCameraView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "attemptStartedAt",
+            "printedName": "attemptStartedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV16attemptStartedAt10Foundation4DateVvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onCoach",
+            "printedName": "onCoach",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_Sbtcvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_SbtcvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV7onCoachyySSSg_SbtcvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onHint",
+            "printedName": "onHint",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV6onHintyySScvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onHintyySScvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onHintyySScvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onHintyySScvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onHintyySScvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onHintyySScvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onHintyySScvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onHintyySScvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onLiveFrame",
+            "printedName": "onLiveFrame",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV11onLiveFrameySo7UIImageCcSgvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onCaptured",
+            "printedName": "onCaptured",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceVideo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IdLiveFaceVideo",
+                            "printedName": "QoobissFaceCamera.IdLiveFaceVideo",
+                            "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "QoobissFaceCamera.IdLiveFaceVideo?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "IdLiveFaceVideo",
+                                "printedName": "QoobissFaceCamera.IdLiveFaceVideo",
+                                "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "QoobissFaceCamera.IdLiveFaceVideo?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "IdLiveFaceVideo",
+                                "printedName": "QoobissFaceCamera.IdLiveFaceVideo",
+                                "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV10onCapturedyy10Foundation4DataV_AGSiAA06IdLiveB5VideoVSgtcvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onStop",
+            "printedName": "onStop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissFaceCamera.IdLiveFaceStop) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdLiveFaceStop",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                    "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissFaceCamera.IdLiveFaceStop) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceStop",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissFaceCamera.IdLiveFaceStop) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceStop",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvs",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0Ocvs",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0OcvM",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV6onStopyyAA06IdLivebF0OcvM",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(attemptStartedAt:onCoach:onHint:onLiveFrame:onCaptured:onStop:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QoobissFaceCameraView",
+                "printedName": "QoobissFaceCamera.QoobissFaceCameraView",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, Foundation.Data, Swift.Int, QoobissFaceCamera.IdLiveFaceVideo?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceVideo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IdLiveFaceVideo",
+                            "printedName": "QoobissFaceCamera.IdLiveFaceVideo",
+                            "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissFaceCamera.IdLiveFaceStop) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdLiveFaceStop",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceStop",
+                    "usr": "s:17QoobissFaceCamera06IdLiveB4StopO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV16attemptStartedAt7onCoach0H4Hint0H9LiveFrame0H8Captured0H4StopAC10Foundation4DateV_ySSSg_SbtcySScySo7UIImageCcSgyAJ4DataV_ARSiAA02IdkB5VideoVSgtcyAA0skbN0Octcfc",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV16attemptStartedAt7onCoach0H4Hint0H9LiveFrame0H8Captured0H4StopAC10Foundation4DateV_ySSSg_SbtcySScySo7UIImageCcSgyAJ4DataV_ARSiAA02IdkB5VideoVSgtcyAA0skbN0Octcfc",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0abC4ViewV4bodyQrvp",
+            "mangledName": "$s17QoobissFaceCamera0abC4ViewV4bodyQrvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0abC4ViewV4bodyQrvg",
+                "mangledName": "$s17QoobissFaceCamera0abC4ViewV4bodyQrvg",
+                "moduleName": "QoobissFaceCamera",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17QoobissFaceCamera0abC4ViewV",
+        "mangledName": "$s17QoobissFaceCamera0abC4ViewV",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceCaptureCoach",
+        "printedName": "FaceCaptureCoach",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ovalWidthFraction",
+            "printedName": "ovalWidthFraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO17ovalWidthFraction14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO17ovalWidthFraction12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO17ovalWidthFraction14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO17ovalWidthFraction12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ovalHeightFraction",
+            "printedName": "ovalHeightFraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO18ovalHeightFraction14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO18ovalHeightFraction12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO18ovalHeightFraction14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO18ovalHeightFraction12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeChecks",
+            "printedName": "activeChecks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO12activeChecksSaySSGvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO12activeChecksSaySSGvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO12activeChecksSaySSGvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO12activeChecksSaySSGvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Oval",
+            "printedName": "Oval",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissFaceCamera.FaceCaptureCoach.Oval.Type) -> QoobissFaceCamera.FaceCaptureCoach.Oval",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Oval",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                        "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Oval",
+                            "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO4noneyA2EmF",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO4noneyA2EmF",
+                "moduleName": "QoobissFaceCamera"
+              },
+              {
+                "kind": "Var",
+                "name": "warn",
+                "printedName": "warn",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissFaceCamera.FaceCaptureCoach.Oval.Type) -> QoobissFaceCamera.FaceCaptureCoach.Oval",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Oval",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                        "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Oval",
+                            "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO4warnyA2EmF",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO4warnyA2EmF",
+                "moduleName": "QoobissFaceCamera"
+              },
+              {
+                "kind": "Var",
+                "name": "ok",
+                "printedName": "ok",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QoobissFaceCamera.FaceCaptureCoach.Oval.Type) -> QoobissFaceCamera.FaceCaptureCoach.Oval",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Oval",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                        "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Oval",
+                            "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO2okyA2EmF",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO2okyA2EmF",
+                "moduleName": "QoobissFaceCamera"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO9hashValueSivp",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO9hashValueSivp",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO9hashValueSivg",
+                    "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO9hashValueSivg",
+                    "moduleName": "QoobissFaceCamera",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO4hash4intoys6HasherVz_tF",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Oval",
+                    "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                    "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Oval",
+                    "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                    "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO2eeoiySbAE_AEtFZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4OvalO",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "oval",
+            "printedName": "oval(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Oval",
+                "printedName": "QoobissFaceCamera.FaceCaptureCoach.Oval",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4OvalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO4oval3forAC4OvalOSSSg_tFZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO4oval3forAC4OvalOSSSg_tFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "message",
+            "printedName": "message(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO7message3forS2SSg_tFZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO7message3forS2SSg_tFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "capturingMessage",
+            "printedName": "capturingMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO16capturingMessageSSvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO16capturingMessageSSvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO16capturingMessageSSvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO16capturingMessageSSvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flowDoneMessage",
+            "printedName": "flowDoneMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO15flowDoneMessageSSvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO15flowDoneMessageSSvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO15flowDoneMessageSSvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO15flowDoneMessageSSvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "helpMessage",
+            "printedName": "helpMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO11helpMessageSSvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO11helpMessageSSvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO11helpMessageSSvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO11helpMessageSSvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startingMessage",
+            "printedName": "startingMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B12CaptureCoachO15startingMessageSSvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO15startingMessageSSvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B12CaptureCoachO15startingMessageSSvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO15startingMessageSSvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera0B12CaptureCoachO",
+        "mangledName": "$s17QoobissFaceCamera0B12CaptureCoachO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceOvalLayout",
+        "printedName": "FaceOvalLayout",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "blurRadius",
+            "printedName": "blurRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B10OvalLayoutO10blurRadius14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO10blurRadius12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B10OvalLayoutO10blurRadius14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO10blurRadius12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featherRadius",
+            "printedName": "featherRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera0B10OvalLayoutO13featherRadius14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO13featherRadius12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera0B10OvalLayoutO13featherRadius14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO13featherRadius12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "QoobissFaceCamera",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "ovalRect",
+            "printedName": "ovalRect(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera0B10OvalLayoutO8ovalRect2inSo6CGRectVSo6CGSizeV_tFZ",
+            "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO8ovalRect2inSo6CGRectVSo6CGSizeV_tFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "blurMaskHole",
+            "printedName": "blurMaskHole(for:feather:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera0B10OvalLayoutO12blurMaskHole3for7featherSo6CGRectVAH_14CoreFoundation7CGFloatVtFZ",
+            "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO12blurMaskHole3for7featherSo6CGRectVAH_12CoreGraphics7CGFloatVtFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera0B10OvalLayoutO",
+        "mangledName": "$s17QoobissFaceCamera0B10OvalLayoutO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdLiveFaceVideo",
+        "printedName": "IdLiveFaceVideo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV3url10Foundation3URLVvp",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV3url10Foundation3URLVvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV3url10Foundation3URLVvg",
+                "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV3url10Foundation3URLVvg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV5widthSivp",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV5widthSivp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV5widthSivg",
+                "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV5widthSivg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV6heightSivp",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV6heightSivp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV6heightSivg",
+                "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV6heightSivg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17QoobissFaceCamera06IdLiveB5VideoV",
+        "mangledName": "$s17QoobissFaceCamera06IdLiveB5VideoV",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "IDLiveFaceCamera",
+        "printedName": "IDLiveFaceCamera",
+        "declKind": "Import",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdLiveFaceLicenseError",
+        "printedName": "IdLiveFaceLicenseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "emptyLicense",
+            "printedName": "emptyLicense",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QoobissFaceCamera.IdLiveFaceLicenseError.Type) -> QoobissFaceCamera.IdLiveFaceLicenseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IdLiveFaceLicenseError",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceLicenseError",
+                    "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QoobissFaceCamera.IdLiveFaceLicenseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IdLiveFaceLicenseError",
+                        "printedName": "QoobissFaceCamera.IdLiveFaceLicenseError",
+                        "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO05emptyF0yA2CmF",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO05emptyF0yA2CmF",
+            "moduleName": "QoobissFaceCamera"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO16errorDescriptionSSSgvp",
+            "moduleName": "QoobissFaceCamera",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO16errorDescriptionSSSgvg",
+                "moduleName": "QoobissFaceCamera",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdLiveFaceLicenseError",
+                "printedName": "QoobissFaceCamera.IdLiveFaceLicenseError",
+                "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdLiveFaceLicenseError",
+                "printedName": "QoobissFaceCamera.IdLiveFaceLicenseError",
+                "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO9hashValueSivp",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO9hashValueSivp",
+            "moduleName": "QoobissFaceCamera",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO9hashValueSivg",
+                "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO9hashValueSivg",
+                "moduleName": "QoobissFaceCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "QoobissFaceCamera",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera06IdLiveB12LicenseErrorO",
+        "mangledName": "$s17QoobissFaceCamera06IdLiveB12LicenseErrorO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdLiveFaceLicense",
+        "printedName": "IdLiveFaceLicense",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17QoobissFaceCamera06IdLiveB7LicenseO5applyyySSKFZ",
+            "mangledName": "$s17QoobissFaceCamera06IdLiveB7LicenseO5applyyySSKFZ",
+            "moduleName": "QoobissFaceCamera",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17QoobissFaceCamera06IdLiveB7LicenseO",
+        "mangledName": "$s17QoobissFaceCamera06IdLiveB7LicenseO",
+        "moduleName": "QoobissFaceCamera",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 6,
+      "value": "15000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 194,
+      "length": 6,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 235,
+      "length": 5,
+      "value": "8000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 311,
+      "length": 6,
+      "value": "30000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 357,
+      "length": 6,
+      "value": "15000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 405,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 444,
+      "length": 6,
+      "value": "40000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 487,
+      "length": 6,
+      "value": "25000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 6,
+      "value": "60000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 572,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 621,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceAttemptClock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 664,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3329,
+      "length": 29,
+      "value": "\"com.qoobiss.face.live-frame\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3482,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3651,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3690,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3727,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3761,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3798,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3931,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "Array",
+      "offset": 3986,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4074,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4113,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4152,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4196,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4240,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4285,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4321,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4357,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4397,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4444,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4508,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4550,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "FloatLiteral",
+      "offset": 4727,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "FloatLiteral",
+      "offset": 4733,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4794,
+      "length": 3,
+      "value": "480"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4844,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4928,
+      "length": 31,
+      "value": "\"com.qoobiss.face.capture-mode\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCameraScreen.swift",
+      "kind": "Array",
+      "offset": 25182,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "FloatLiteral",
+      "offset": 275,
+      "length": 5,
+      "value": "0.682"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "FloatLiteral",
+      "offset": 333,
+      "length": 5,
+      "value": "0.518"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "Array",
+      "offset": 467,
+      "length": 134,
+      "value": "[\"face_not_centered\", \"eyes_closed\", \"dark_image\", \"face_blurry\", \"sunglasses_detected\"]"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "StringLiteral",
+      "offset": 1124,
+      "length": 20,
+      "value": "\"Se face fotografia\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "StringLiteral",
+      "offset": 1185,
+      "length": 14,
+      "value": "\"Un moment…\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "StringLiteral",
+      "offset": 1236,
+      "length": 50,
+      "value": "\"Ține telefonul nemișcat, cu fața în lumină.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "StringLiteral",
+      "offset": 1327,
+      "length": 18,
+      "value": "\"Pornim camera…\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceCaptureCoach.swift",
+      "kind": "Dictionary",
+      "offset": 1399,
+      "length": 916,
+      "value": "[(\"FACE_NOT_FOUND\", \"Nu vedem fața. Privește spre cameră\"), (\"TOO_MANY_FACES\", \"Rămâi singur în imagine\"), (\"FACE_TOO_SMALL\", \"Apropie telefonul de față\"), (\"FACE_TOO_CLOSE\", \"Depărtează puțin telefonul\"), (\"FACE_ANGLE_TOO_LARGE\", \"Privește drept spre cameră\"), (\"FACE_CLOSE_TO_BORDER\", \"Adu fața spre mijlocul imaginii\"), (\"FACE_NOT_CENTERED\", \"Adu fața spre mijlocul imaginii\"), (\"FACE_CROPPED\", \"Fața trebuie să fie întreagă în imagine\"), (\"FACE_OCCLUDED\", \"Nu acoperi fața\"), (\"EYES_CLOSED\", \"Deschide ochii\"), (\"MOUTH_OPEN\", \"Închide gura\"), (\"SUNGLASSES_DETECTED\", \"Scoate ochelarii de soare\"), (\"DARK_IMAGE\", \"Lumina e prea slabă\"), (\"FACE_BLURRY\", \"Imaginea e neclară. Ține telefonul nemișcat\"), (\"faceOther\", \"Poziționează fața în oval\"), (\"faceOk\", \"Perfect, nu te mișca\")]"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceOvalLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 258,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FaceOvalLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FacePreviewRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 35,
+      "value": "\"com.qoobiss.face.preview-recorder\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FacePreviewRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 541,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FacePreviewRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 571,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissFaceCamera\/FacePreviewRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

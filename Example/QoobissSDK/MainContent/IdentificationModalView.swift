@@ -1,5 +1,5 @@
 import SwiftUI
-import QoobissCoreIdentificationSDK
+import OntraceSDK
 
 struct IdentificationModalView: View {
     
@@ -11,7 +11,8 @@ struct IdentificationModalView: View {
         VStack {
             AnyView(
                 IdentificationFlow.startFlowNative(
-                    apiKey: Secrets.apiKey,
+                    clientId: Secrets.clientId,
+                    clientSecret: Secrets.clientSecret,
                     onMessage: { message in
                         print("received message \(message)")
                     },
