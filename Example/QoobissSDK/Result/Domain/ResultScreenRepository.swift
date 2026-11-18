@@ -91,6 +91,11 @@ class ResultRepository: ResultRepositoryProtocol {
     private func parseResponse(_ data: Data, completion: @escaping (Result<ValidationResponse, ResultError>) -> Void) {
         let stringResponse = String(data: data, encoding: .utf8)
         let decrypted = self.decryptionUseCase.call(inputText: stringResponse ?? "")
+
+        if let decrypted {
+            print("Decrypted result preview (first 100 characters):\n\(decrypted.prefix(100))")
+        }
+
         let decryptedRaw = decrypted?.extractJSONPart()
         guard let dataForJsonParsing = decryptedRaw?.data(using: .utf8) else {
             completion(.failure(ResultError(message: "Could not decrypt content")))
