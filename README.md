@@ -118,33 +118,41 @@ There are two scenarios for completing the flow and getting a callback from `onC
 Scenario 1: The user cancels the process on the landing page or the second page (Terms and Conditions).
 Scenario 2: The user successfully completes the entire flow.
 
-The response is of type OntraceCompletionResult. This response contains a requestId and using this API.
+The response is of type `OntraceCompletionResult`. Its `requestId` is the `orderId` used below.
 
-Example:
-https://qoobiss.com/validation/identity/shortresult?orderId=`requestId`
+Fetching the result takes two calls. Replace `YOUR_ORDER_ID`, `YOUR_CLIENT_ID`, and `YOUR_CLIENT_SECRET` with the values for the session. The first response includes `access_token`. Send that value as `YOUR_ACCESS_TOKEN` on the second call.
 
-###Decrypting the short result in Swift
+The example app does this in `ResultRepository`, using `Secrets.clientId` and `Secrets.clientSecret`.
 
-The short result endpoint returns an encrypted payload.
-The HTTP body is a Base64‑encoded AES‑CBC ciphertext, encrypted with:
-Algorithm: AES‑CBC with PKCS#7 padding
+**1. Request an access token**
+
+```bash
+curl --location 'https://eu-api.ontrace.online/api/v2/token/client' \
+--header 'Content-Type: application/json' \
+--data '{
+    "clientId": "YOUR_CLIENT_ID",
+    "clientSecret": "YOUR_CLIENT_SECRET",
+    "orderId": "YOUR_ORDER_ID"
+}'
+```
+
+**2. Fetch the result**
+
+```bash
+curl --location 'https://eu-api.ontrace.online/api/v2/validation/identity/result?orderId=YOUR_ORDER_ID' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
+
+### Decrypting the result
+
+The `identity/result` body is a Base64-encoded AES-CBC ciphertext:
+Algorithm: AES-CBC with PKCS#7 padding
 IV: 16 zero bytes (0x00…00)
-Key: raw bytes of the decryption key string provided to you together with your API key
-You must decrypt this value on the client using the corresponding decryption key.
+Key: raw bytes of the decryption key string provided with your client credentials
+
+Decrypt it with `DecryptResponseUseCase`, then take the JSON object out of the plaintext:
 
 ```swift
-var request = URLRequest(url: URL(string: "https://apiontrace.id-kyc.com/validation/identity/resultlight?orderId="YOUR_SESSION_ORDER_ID"")!,timeoutInterval: Double.infinity)
-request.addValue("YOUR_API_KEY", forHTTPHeaderField: "ApiKey")
-
-request.httpMethod = "GET"
-
-let task = URLSession.shared.dataTask(with: request) { data, response, error in 
-  guard let data = data else {
-    print(String(describing: error))
-    return
-  }
-  print(String(data: data, encoding: .utf8)!)
-}
-
-task.resume()
+let decrypted = DecryptResponseUseCase().call(inputText: responseBody)
+let json = decrypted?.extractJSONPart()
 ```

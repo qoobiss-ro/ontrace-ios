@@ -19,10 +19,10 @@ extension String {
     }
     
     func extractJSONPart() -> String? {
-        if let range = range(of: "{") {
-            return String(self[range.lowerBound...])
-        }
-        return nil
+        guard let start = firstIndex(of: "{"),
+              let end = lastIndex(of: "}"),
+              start < end else { return nil }
+        return String(self[start...end])
     }
     
     func removeBase64Prefix() -> String? {

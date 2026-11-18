@@ -5,20 +5,24 @@ struct DecryptResponseUseCase {
 
     func call(inputText: String) -> String? {
         let keyData = Data(Secrets.decryptionKey.utf8)
-        let ivData = Data(repeating: 0, count: 16)
-        
-        let encryptedBase64 = inputText
-        if let encryptedData = Data(base64Encoded: encryptedBase64),
-           let decryptedData = aesCBCDecrypt(encryptedData: encryptedData, keyData: keyData, ivData: ivData)
-        {
-            let decryptedText = String(decoding: decryptedData, as: Unicode.UTF8.self)
-            return decryptedText
-        } else {
+        let blockSize = kCCBlockSizeAES128
+
+        guard keyData.count == kCCKeySizeAES256,
+              let payload = Data(base64Encoded: inputText),
+              payload.count >= 2 * blockSize,
+              payload.count.isMultiple(of: blockSize),
+              let decryptedData = aesCBCDecrypt(
+                  encryptedData: payload.dropFirst(blockSize),
+                  keyData: keyData,
+                  ivData: payload.prefix(blockSize)
+              ) else {
             print("Decryption failed!")
             return nil
         }
+
+        return String(decoding: decryptedData, as: Unicode.UTF8.self)
     }
-    
+
     private func aesCBCDecrypt(encryptedData: Data, keyData: Data, ivData: Data) -> Data? {
         let keyLength = keyData.count
         let dataLength = encryptedData.count
@@ -26,8 +30,6 @@ struct DecryptResponseUseCase {
         
         let decryptedBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: dataLength + kCCBlockSizeAES128)
         defer { decryptedBuffer.deallocate() }
-        
-        var decryptedData = Data(count: dataLength + kCCBlockSizeAES128)
         
         let result = encryptedData.withUnsafeBytes { encryptedBytes in
             let encryptedPointer = encryptedBytes.baseAddress?.assumingMemoryBound(to: UInt8.self)
@@ -57,8 +59,6 @@ struct DecryptResponseUseCase {
             return nil
         }
         
-        decryptedData.removeAll()
-        decryptedData.append(decryptedBuffer, count: numBytesDecrypted)
-        return decryptedData
+        return Data(bytes: decryptedBuffer, count: numBytesDecrypted)
     }
 }
