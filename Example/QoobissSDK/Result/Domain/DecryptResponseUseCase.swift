@@ -15,6 +15,7 @@ struct DecryptResponseUseCase {
             return decryptedText
         } else {
             print("Decryption failed!")
+            print("Decrypt input:\n\(inputText)")
             return nil
         }
     }
