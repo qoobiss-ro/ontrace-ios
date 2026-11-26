@@ -1180,6 +1180,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4166,6 +4173,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -5960,6 +5974,13 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "QoobissCoreIdentificationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -19388,13 +19409,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -19702,20 +19716,6 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "QoobissCoreIdentificationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QoobissCoreIdentificationSDK"
       },
@@ -22087,30 +22087,37 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 637,
+      "offset": 754,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 678,
+      "offset": 795,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 715,
+      "offset": 832,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 754,
+      "offset": 871,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1488,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/PhoneNumberOTELDelegate.swift",
@@ -22652,6 +22659,13 @@
       "value": "2500000000"
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/NFCViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11481,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/Domain\/NFCReadSession.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
@@ -22671,6 +22685,20 @@
       "offset": 689,
       "length": 13,
       "value": "1500000000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/Domain\/FullKYCResultHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9949,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/Domain\/FullSDKNfcHandoff.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1028,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/NFCOTELDelegate.swift",
@@ -22748,6 +22776,13 @@
       "offset": 508,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCReadStepViews.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12782,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/NFC\/View\/NFCModalOverlay.swift",
@@ -23485,289 +23520,387 @@
       "value": "\"Colorness\""
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureOutcome.swift",
+      "kind": "StringLiteral",
+      "offset": 1011,
+      "length": 15,
+      "value": "\"detector_init\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1874,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2557,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2066,
+      "offset": 3012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2381,
+      "offset": 3327,
       "length": 13,
       "value": "\"overlap —\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
+      "offset": 3463,
       "length": 10,
       "value": "\"tilt —\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3606,
+      "length": 10,
+      "value": "\"flip —\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2586,
+      "offset": 3675,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2976,
+      "offset": 4065,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3027,
+      "offset": 4116,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3079,
+      "offset": 4168,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 4225,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3170,
+      "offset": 4259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3304,
+      "offset": 4393,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 3562,
+      "offset": 4651,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 3732,
+      "offset": 4821,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3856,
+      "offset": 4945,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3899,
+      "offset": 4988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3941,
+      "offset": 5030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4443,
+      "offset": 5532,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4485,
+      "offset": 5574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4622,
+      "offset": 5711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4767,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4920,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4960,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5123,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5249,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5387,
+      "offset": 5856,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5540,
+      "offset": 6009,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5692,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5835,
+      "offset": 6049,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5982,
+      "offset": 6212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6117,
+      "offset": 6366,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6415,
+      "length": 11,
+      "value": "750000000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 6485,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6613,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6751,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6904,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7056,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7199,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7346,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7481,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 6178,
+      "offset": 7542,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 6243,
+      "offset": 7607,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 6748,
+      "offset": 8055,
       "length": 4,
       "value": "0.82"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6892,
+      "offset": 8199,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7041,
+      "offset": 8348,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21026,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 38723,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 38771,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 67691,
-      "length": 4,
-      "value": "true"
+      "kind": "IntegerLiteral",
+      "offset": 8489,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 67737,
+      "offset": 8809,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9026,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 69414,
+      "offset": 9172,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9218,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9259,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 9387,
+      "length": 6,
+      "value": "\"auto\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24618,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 42900,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 42948,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 77307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 69452,
+      "offset": 77353,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 79526,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/IdCapture\/IdCaptureViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 79564,
       "length": 1,
       "value": "0"
     },
@@ -24151,176 +24284,183 @@
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3748,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3664,
+      "offset": 3816,
       "length": 5,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3696,
+      "offset": 3848,
       "length": 5,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3728,
+      "offset": 3880,
       "length": 5,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3765,
+      "offset": 3917,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3874,
+      "offset": 4026,
       "length": 4,
       "value": "85.6"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3881,
+      "offset": 4033,
       "length": 4,
       "value": "54.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3943,
+      "offset": 4095,
       "length": 5,
       "value": "105.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3951,
+      "offset": 4103,
       "length": 4,
       "value": "74.0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3989,
+      "offset": 4141,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4248,
+      "offset": 4400,
       "length": 4,
       "value": "1.48"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4283,
+      "offset": 4435,
       "length": 4,
       "value": "1.52"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4316,
+      "offset": 4468,
       "length": 5,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4352,
+      "offset": 4504,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4383,
+      "offset": 4535,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4418,
+      "offset": 4570,
       "length": 4,
       "value": "0.06"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4461,
+      "offset": 4613,
       "length": 4,
       "value": "1.02"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4533,
+      "offset": 4685,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4562,
+      "offset": 4714,
       "length": 3,
       "value": "900"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4599,
+      "offset": 4751,
       "length": 6,
       "value": "60000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4641,
+      "offset": 4793,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4766,
+      "offset": 4918,
       "length": 5,
       "value": "\"TD1\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4787,
+      "offset": 4939,
       "length": 5,
       "value": "\"TD2\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4941,
+      "offset": 5093,
       "length": 5,
       "value": "\"TD1\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4962,
+      "offset": 5114,
       "length": 5,
       "value": "\"TD2\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4987,
+      "offset": 5139,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -25076,294 +25216,315 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1507,
+      "offset": 1752,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1562,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1590,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1728,
+      "offset": 1807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1754,
+      "offset": 1835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 2086,
+      "offset": 1973,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1999,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 2403,
+      "offset": 2648,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 2466,
+      "offset": 2711,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2491,
+      "offset": 2736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2796,
+      "offset": 3041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 2972,
+      "offset": 3217,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3353,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 3082,
+      "offset": 3463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 3156,
+      "offset": 3537,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 3205,
+      "offset": 3586,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 3365,
+      "offset": 3746,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 3484,
+      "offset": 3865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 3515,
+      "offset": 3896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 3578,
+      "offset": 3959,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 3603,
+      "offset": 3984,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 3628,
+      "offset": 4009,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 3676,
+      "offset": 4057,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "StringLiteral",
-      "offset": 3946,
+      "offset": 4327,
       "length": 27,
       "value": "\"com.ontrace.capture-guide\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 4266,
+      "offset": 4647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 4309,
+      "offset": 4690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 4663,
+      "offset": 5044,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 7534,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
-      "kind": "IntegerLiteral",
-      "offset": 20692,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
-      "kind": "IntegerLiteral",
-      "offset": 20747,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20791,
+      "offset": 7973,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 37018,
+      "offset": 13990,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14025,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26184,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26239,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26283,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 43643,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "FloatLiteral",
-      "offset": 37051,
+      "offset": 43676,
       "length": 4,
       "value": "0.70"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "FloatLiteral",
-      "offset": 37065,
+      "offset": 43690,
       "length": 4,
       "value": "0.70"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 37218,
+      "offset": 43843,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38293,
+      "offset": 44918,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38311,
+      "offset": 44936,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38326,
+      "offset": 44951,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38340,
+      "offset": 44965,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38376,
+      "offset": 45001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 38394,
+      "offset": 45019,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 38592,
+      "offset": 45217,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 38610,
+      "offset": 45235,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CaptureGuide\/CaptureGuideEngine.swift",
       "kind": "Array",
-      "offset": 38641,
+      "offset": 45266,
       "length": 2,
       "value": "[]"
     },
@@ -25861,181 +26022,181 @@
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
       "offset": 486,
-      "length": 11,
-      "value": "\"712345678\""
+      "length": 12,
+      "value": "\"0712345678\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 529,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 591,
       "length": 4,
       "value": "\"DE\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 611,
       "length": 10,
       "value": "\"Germania\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 641,
+      "offset": 642,
       "length": 10,
       "value": "\"🇩🇪\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 671,
+      "offset": 672,
       "length": 5,
       "value": "\"+49\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "IntegerLiteral",
-      "offset": 708,
+      "offset": 709,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 741,
+      "offset": 742,
       "length": 13,
       "value": "\"15123456789\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 847,
       "length": 4,
       "value": "\"FR\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 867,
       "length": 9,
       "value": "\"Franța\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 896,
+      "offset": 897,
       "length": 10,
       "value": "\"🇫🇷\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 926,
+      "offset": 927,
       "length": 5,
       "value": "\"+33\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "IntegerLiteral",
-      "offset": 963,
+      "offset": 964,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 996,
       "length": 11,
       "value": "\"612345678\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1097,
+      "offset": 1098,
       "length": 4,
       "value": "\"IT\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1117,
+      "offset": 1118,
       "length": 8,
       "value": "\"Italia\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1147,
       "length": 10,
       "value": "\"🇮🇹\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1177,
       "length": 5,
       "value": "\"+39\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "IntegerLiteral",
-      "offset": 1213,
+      "offset": 1214,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1246,
+      "offset": 1247,
       "length": 12,
       "value": "\"3123456789\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1349,
+      "offset": 1350,
       "length": 4,
       "value": "\"ES\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 1370,
       "length": 8,
       "value": "\"Spania\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1398,
+      "offset": 1399,
       "length": 10,
       "value": "\"🇪🇸\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1428,
+      "offset": 1429,
       "length": 5,
       "value": "\"+34\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "IntegerLiteral",
-      "offset": 1465,
+      "offset": 1466,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/PhoneCountry.swift",
       "kind": "StringLiteral",
-      "offset": 1497,
+      "offset": 1498,
       "length": 11,
       "value": "\"612345678\""
     },
@@ -26339,6 +26500,62 @@
       "offset": 3308,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3427,
+      "length": 15,
+      "value": "\"Fotografiază\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3550,
+      "length": 55,
+      "value": "\"Nu am putut trimite poza actului. Încearcă din nou.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3640,
+      "length": 41,
+      "value": "\"Sesiunea de identificare s-a încheiat.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3716,
+      "length": 53,
+      "value": "\"Acest dispozitiv nu poate continua captura actului.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3808,
+      "length": 57,
+      "value": "\"Nu am detectat înclinarea actului. Încearcă din nou.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3904,
+      "length": 62,
+      "value": "\"Timpul pentru captura actului a expirat. Încearcă din nou.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3998,
+      "length": 76,
+      "value": "\"Pozele nu sunt utilizabile. Urmează îndrumările și încearcă din nou.\""
+    },
+    {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCaptureStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 4105,
+      "length": 54,
+      "value": "\"Licența de captură a actului nu este disponibilă.\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/IDScan\/CameraContent\/IdCapturingConstants.swift",
@@ -27293,6 +27510,13 @@
       "value": "\"Phone\""
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/PhoneNumber\/Domain\/Model\/UpdateSessionIpInfoModels.swift",
+      "kind": "BooleanLiteral",
+      "offset": 235,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Completion\/CompletionTelemetry.swift",
       "kind": "StringLiteral",
       "offset": 90,
@@ -27477,63 +27701,63 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5462,
+      "offset": 5675,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5618,
+      "offset": 5831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5857,
+      "offset": 6070,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6096,
+      "offset": 6309,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6775,
+      "offset": 6988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6916,
+      "offset": 7129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "BooleanLiteral",
-      "offset": 7867,
+      "offset": 8080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "StringLiteral",
-      "offset": 10630,
+      "offset": 10843,
       "length": 11,
       "value": "\"Cancelled\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/EnvironmentData.swift",
       "kind": "StringLiteral",
-      "offset": 10667,
+      "offset": 10880,
       "length": 19,
       "value": "\"Cancelled by user\""
     },
@@ -27692,6 +27916,13 @@
       "value": "128"
     },
     {
+      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/EidApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1724,
+      "length": 5,
+      "value": "\"app\""
+    },
+    {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
       "kind": "StringLiteral",
       "offset": 114,
@@ -27722,28 +27953,28 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
       "kind": "BooleanLiteral",
-      "offset": 616,
+      "offset": 641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
       "kind": "BooleanLiteral",
-      "offset": 747,
+      "offset": 772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
       "kind": "BooleanLiteral",
-      "offset": 959,
+      "offset": 984,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Environment\/KycSessionData.swift",
       "kind": "Array",
-      "offset": 1077,
+      "offset": 1102,
       "length": 2,
       "value": "[]"
     },
@@ -28856,14 +29087,14 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Error\/ErrorScreenViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 823,
+      "offset": 939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/Error\/ErrorScreenViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 1075,
       "length": 1,
       "value": "3"
     },
@@ -29353,65 +29584,37 @@
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/EidRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 557,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/EidRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1368,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/EidRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 6771,
+      "offset": 6800,
       "length": 27,
       "value": "\"com.qoobiss.eid.installId\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/EidModels.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 2256,
       "length": 8,
       "value": "\"return\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/EidModels.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 4195,
       "length": 8,
       "value": "\"return\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/IPInfoLiteModel.swift",
-      "kind": "StringLiteral",
-      "offset": 353,
-      "length": 9,
-      "value": "\"as_name\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/IPInfoLiteModel.swift",
-      "kind": "StringLiteral",
-      "offset": 387,
-      "length": 11,
-      "value": "\"as_domain\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/IPInfoLiteModel.swift",
-      "kind": "StringLiteral",
-      "offset": 426,
-      "length": 14,
-      "value": "\"country_code\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/Repository\/Model\/IPInfoLiteModel.swift",
-      "kind": "StringLiteral",
-      "offset": 491,
-      "length": 16,
-      "value": "\"continent_code\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/OTP\/Domain\/Model\/OtpCheckRequestModel.swift",
@@ -29790,20 +29993,6 @@
       "offset": 439,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/IPInfoConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 84,
-      "length": 16,
-      "value": "\"IPInfoAPIToken\""
-    },
-    {
-      "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Networking\/IPInfoConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 132,
-      "length": 16,
-      "value": "\"b4169004e06800\""
     },
     {
       "filePath": "\/Users\/vladbuhaescu\/Documents\/Developement\/qoobiss-sdk\/QoobissCoreIdentificationSDK\/QoobissCoreIdentificationSDK\/Steps\/FaceDetection\/HeadGesture.swift",
