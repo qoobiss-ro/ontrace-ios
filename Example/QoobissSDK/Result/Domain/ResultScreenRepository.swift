@@ -15,7 +15,8 @@ protocol ResultRepositoryProtocol {
 class ResultRepository: ResultRepositoryProtocol {
     
     private let decryptionUseCase = DecryptResponseUseCase()
-    private let baseURL = "https://eu-api.ontrace.online/api/v2/"
+    /// Must match the XCFramework bake (`framework_script.sh --env staging` → eu-apistg).
+    private let baseURL = "https://eu-apistg-ontrace.qoobiss.com/api/v2/"
     
     func getResult(requestId: String, completion: @escaping (Result<ValidationResponse, ResultError>) -> Void) {
         requestAccessToken(orderId: requestId) { [weak self] result in

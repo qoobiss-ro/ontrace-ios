@@ -8,7 +8,7 @@ Ontrace SDK provides a set of screens and functionalities that enable applicatio
 
 ### Swift Package Manager
 
-The published version is the git tag `0.1.0`. The release branch `releases/release-0.1.0` is not the package version.
+The published version is the git tag `0.1.1`. The release branch `releases/release-0.1.1` is not the package version.
 
 In Xcode, choose File → Add Package Dependencies and enter:
 
@@ -17,7 +17,7 @@ In Xcode, choose File → Add Package Dependencies and enter:
 Select the `OntraceSDK` product. Or add this to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/qoobiss-ro/ontrace-ios.git", from: "0.1.0")
+.package(url: "https://github.com/qoobiss-ro/ontrace-ios.git", from: "0.1.1")
 ```
 
 Then depend on the `OntraceSDK` product and `import OntraceSDK`.
@@ -118,7 +118,7 @@ There are two scenarios for completing the flow and getting a callback from `onC
 Scenario 1: The user cancels the process on the landing page or the second page (Terms and Conditions).
 Scenario 2: The user successfully completes the entire flow.
 
-The response is of type `OntraceCompletionResult`. Its `requestId` is the `orderId` used below.
+The order ID is visible to the integrating app. `onCompleteResult` receives an `OntraceCompletionResult`, and its public `requestId` is that order ID. Use `requestId` as `orderId` on the token and result calls below.
 
 Fetching the result takes two calls. Replace `YOUR_ORDER_ID`, `YOUR_CLIENT_ID`, and `YOUR_CLIENT_SECRET` with the values for the session. The first response includes `access_token`. Send that value as `YOUR_ACCESS_TOKEN` on the second call.
 
@@ -127,7 +127,7 @@ The example app does this in `ResultRepository`, using `Secrets.clientId` and `S
 **1. Request an access token**
 
 ```bash
-curl --location 'https://eu-api.ontrace.online/api/v2/token/client' \
+curl --location 'https://eu-apistg-ontrace.qoobiss.com/api/v2/token/client' \
 --header 'Content-Type: application/json' \
 --data '{
     "clientId": "YOUR_CLIENT_ID",
@@ -139,16 +139,19 @@ curl --location 'https://eu-api.ontrace.online/api/v2/token/client' \
 **2. Fetch the result**
 
 ```bash
-curl --location 'https://eu-api.ontrace.online/api/v2/validation/identity/result?orderId=YOUR_ORDER_ID' \
+curl --location 'https://eu-apistg-ontrace.qoobiss.com/api/v2/validation/identity/result?orderId=YOUR_ORDER_ID' \
 --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
 ### Decrypting the result
 
-The `identity/result` body is a Base64-encoded AES-CBC ciphertext:
-Algorithm: AES-CBC with PKCS#7 padding
-IV: 16 zero bytes (0x00…00)
-Key: raw bytes of the decryption key string provided with your client credentials
+The `identity/result` body is Base64 text. Read it as text, then:
+
+1. Base64-decode the body.
+2. The first 16 bytes are the IV. The rest is the ciphertext.
+3. The key is the decryption key string as UTF-8 bytes. It must be exactly 32 bytes (AES-256). There is no hash or key derivation.
+4. Decrypt with AES-256-CBC and remove the PKCS#7 padding.
+5. The plaintext is UTF-8 JSON (`ValidationResponse`). It may start with a byte-order mark; take the object from the first `{`.
 
 Decrypt it with `DecryptResponseUseCase`, then take the JSON object out of the plaintext:
 

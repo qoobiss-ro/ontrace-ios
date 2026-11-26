@@ -25,12 +25,13 @@ Do not treat `internal_release/*` branch names as the published SDK version. See
 
 0. Bump version from CocoaPods Trunk (`./release/00_bump_sdk_from_cocoapods.sh`), fill `CHANGELOG.md` `[Unreleased]`, run release branch/tag/wiki scripts for `--product sdk` as in `release/README.md`.
 1. After Podfile changes: `pod install` in this repo (enables `BUILD_LIBRARY_FOR_DISTRIBUTION` on OpenTelemetry + SwiftProtobuf).
-2. Run `QoobissCoreIdentificationSDK/framework_script.sh` — builds and copies into `Qoobiss_iOS_SDK/Framework/`:
+2. Run `scripts/framework_script.sh` — builds and copies into `Qoobiss_iOS_SDK/Framework/`:
    - `QoobissCoreIdentificationSDK.xcframework`, `NFCSDK.xcframework`
    - `OpenTelemetryApi` / `OpenTelemetrySdk` / `OpenTelemetryProtocolExporterCommon` / `OpenTelemetryProtocolExporterHttp`
    - `SwiftProtobuf.xcframework`  
    (`Lottie` + `OpenSSL` stay as existing vendor binaries.)  
    Do **not** declare OpenTelemetry as CocoaPods `spec.dependency` — ship the matching binaries only (avoids dyld Symbol not found).
+   - API host is compile-time (`BaseURL`): default `--env prod`; use `--env staging` (`eu-apistg-ontrace.qoobiss.com`) or `--env qa` when needed.
 3. Ensure `OntraceSDK.podspec` `vendored_frameworks` lists all of the above and version matches the release (step 0).
 4. In `Qoobiss_iOS_SDK/Example`: `pod install`, clean rebuild, smoke-test launch.
 5. Validate: `pod lib lint --no-clean --verbose --allow-warnings`
